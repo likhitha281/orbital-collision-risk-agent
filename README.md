@@ -147,11 +147,62 @@ automatically every 4 hours by committing a fresh `docs/latest.json` — GitHub
 Pages just serves whatever's currently in `docs/` on `main`, so no manual
 redeploy step is needed.
 
+## Docker & other orchestration options
+
+The pipeline itself doesn't change — these are different ways to package
+and schedule the same `run_baseline.py` logic, depending on where you want
+it to run.
+
+### Docker
+
+Containerizing decouples the pipeline from any specific runner (GitHub
+Actions, your laptop, a cloud VM) — build once, run identically anywhere
+Docker runs:
+
+```bash
+docker build -t orbital-collision-agent .
+docker run --rm -v $(pwd)/output:/app/output orbital-collision-agent
+# live mode:
+docker run --rm -v $(pwd)/output:/app/output -e ANTHROPIC_API_KEY \
+    orbital-collision-agent --live --live-group stations --output /app/output/report.md
+```
+
+Or via `docker-compose.yml`:
+
+```bash
+docker compose run --rm baseline   # static sample
+docker compose run --rm live       # live Celestrak fetch
+```
+
+### Scheduling options compared
+
+| Approach | Where it runs | Setup cost | When it's worth it |
+|---|---|---|---|
+| **GitHub Actions cron** (what this repo uses — `.github/workflows/live-monitor.yml`) | GitHub's runners | Already done | Default choice at this project's scale: one data source, one job, no dependencies between tasks |
+| **Docker + Ofelia** (`docker-compose.yml`, `scheduled` profile) | Any host you control | `docker compose --profile scheduled up -d` | You want scheduling off GitHub's infrastructure entirely, e.g. a home server or VPS |
+| **Kubernetes CronJob** (`k8s/cronjob.yaml`) | A k8s cluster | Requires a cluster + image registry | This pipeline needs to run alongside other infrastructure you already operate on k8s |
+| **Prefect** (`orchestration/prefect_flow.py`) | Prefect server/Cloud + your compute | `pip install prefect` + a deployment | The pipeline grows: multiple data sources, tasks that depend on each other, need for per-task retries, backfills, or a UI showing exactly which step failed |
+
+**Honest take**: for what this project does today — one fetch, one screen,
+one report, every 4 hours — the GitHub Actions cron job is genuinely the
+right amount of infrastructure, not a placeholder waiting to be replaced.
+Docker and Prefect are here to show the next step and make the tradeoff
+concrete, not because the current pipeline needs them. Reaching for Airflow
+or Kubernetes for a single scheduled script is a common over-engineering
+mistake — the honest engineering signal is knowing when *not* to add the
+heavier tool, not defaulting to it.
+
 ## Project layout
 
 ```
 orbital-collision-agent/
 ├── run_baseline.py          # CLI entrypoint / orchestrator
+├── Dockerfile
+├── docker-compose.yml
+├── k8s/cronjob.yaml          # Kubernetes-native scheduling alternative
+├── orchestration/
+│   ├── prefect_flow.py       # same pipeline as an orchestrated flow
+│   └── README.md
 ├── src/
 │   ├── tle_loader.py               # tool: parse TLE files
 │   ├── live_fetch.py               # tool: cached live pull from Celestrak

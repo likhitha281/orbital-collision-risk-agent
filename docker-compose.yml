@@ -1,0 +1,33 @@
+services:
+  # One-off run: `docker compose run --rm baseline`
+  baseline:
+    build: .
+    volumes:
+      - ./output:/app/output
+    command: ["--input", "data/sample_catalog.tle", "--output", "/app/output/report.md"]
+
+  # Live run against Celestrak: `docker compose run --rm live`
+  live:
+    build: .
+    volumes:
+      - ./output:/app/output
+      - ./data/live_cache:/app/data/live_cache
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+    command: ["--live", "--live-group", "stations", "--output", "/app/output/report.md"]
+
+  # Self-hosted scheduling alternative to GitHub Actions: runs `live` on a
+  # cron schedule using Ofelia (a lightweight Docker-native cron — no
+  # separate scheduler service, no database, just labels on containers).
+  # Start with: `docker compose --profile scheduled up -d`
+  scheduler:
+    image: mcuadros/ofelia:latest
+    profiles: ["scheduled"]
+    depends_on:
+      - live
+    command: daemon --docker
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    labels:
+      ofelia.job-run.live-refresh.schedule: "@every 4h"
+      ofelia.job-run.live-refresh.container: "orbital-collision-agent-live-1"

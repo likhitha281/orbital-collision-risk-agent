@@ -1,0 +1,47 @@
+# Kubernetes-native scheduling alternative to GitHub Actions or the
+# docker-compose + Ofelia setup — useful if this pipeline needs to run
+# alongside other infrastructure on a real cluster.
+#
+# Build and push the image first:
+#   docker build -t YOUR_REGISTRY/orbital-collision-agent:latest .
+#   docker push YOUR_REGISTRY/orbital-collision-agent:latest
+#
+# Then: kubectl apply -f k8s/cronjob.yaml
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: orbital-collision-agent-live
+spec:
+  # Every 4 hours — matches Celestrak's own refresh cadence (src/live_fetch.py).
+  schedule: "0 */4 * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: orbital-collision-agent
+              image: YOUR_REGISTRY/orbital-collision-agent:latest
+              args: ["--live", "--live-group", "stations", "--output", "/output/report.md"]
+              env:
+                - name: ANTHROPIC_API_KEY
+                  valueFrom:
+                    secretKeyRef:
+                      name: orbital-collision-agent-secrets
+                      key: anthropic-api-key
+                      optional: true
+              volumeMounts:
+                - name: output
+                  mountPath: /output
+                - name: live-cache
+                  mountPath: /app/data/live_cache
+          volumes:
+            - name: output
+              persistentVolumeClaim:
+                claimName: orbital-collision-agent-output
+            - name: live-cache
+              emptyDir: {}

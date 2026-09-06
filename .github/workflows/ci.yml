@@ -25,3 +25,17 @@ jobs:
 
       - name: Run baseline on sample catalog
         run: python run_baseline.py --input data/sample_catalog.tle --output /tmp/report.md
+
+  docker-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Docker image
+        run: docker build -t orbital-collision-agent .
+      - name: Run built image against sample catalog
+        run: |
+          mkdir -p output
+          chmod 777 output  # container runs as a non-root user (see Dockerfile)
+          docker run --rm -v $(pwd)/output:/app/output orbital-collision-agent \
+            --input data/sample_catalog.tle --output /app/output/report.md
+          test -s output/report.md
