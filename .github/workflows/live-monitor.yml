@@ -34,15 +34,19 @@ jobs:
           mkdir -p reports
           python run_baseline.py --live --live-group stations --output reports/latest.md
 
+      - name: Publish to dashboard
+        run: |
+          cp reports/latest.json docs/latest.json
+
       - name: Snapshot with timestamp
         run: |
           ts=$(date -u +"%Y-%m-%dT%H-%M-%SZ")
           cp reports/latest.md "reports/${ts}.md"
 
-      - name: Commit updated report
+      - name: Commit updated report and dashboard data
         run: |
           git config user.name "orbital-collision-agent-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add reports/
+          git add reports/ docs/latest.json
           git diff --cached --quiet || git commit -m "Live report update: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push

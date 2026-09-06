@@ -23,7 +23,7 @@ from src.conjunction import screen_conjunctions
 from src.knowledge_base import KnowledgeBase
 from src.live_fetch import LiveFetchError, fetch_live_catalog
 from src.reasoning_agent import generate_event_report
-from src.report import render_report
+from src.report import render_json, render_report
 from src.tle_loader import load_catalog
 
 
@@ -70,6 +70,11 @@ def main() -> int:
     report_text = render_report(str(input_path), assessments)
     with open(args.output, "w") as f:
         f.write(report_text)
+
+    json_output = str(args.output).rsplit(".", 1)[0] + ".json"
+    with open(json_output, "w") as f:
+        f.write(render_json(str(input_path), assessments))
+    print(f"      Also wrote structured summary to {json_output}")
 
     print("\nDone.")
     print(report_text)

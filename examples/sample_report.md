@@ -1,7 +1,7 @@
 # Orbital Collision-Risk Report
 
 - Catalog file: `data/sample_catalog.tle`
-- Generated: 2026-09-06T17:42:04+00:00
+- Generated: 2026-09-06T18:14:02+00:00
 - Conjunctions flagged: 1
 
 > **Note on Pc**: the probability-of-collision figures below use an *assumed* generic position-uncertainty covariance (TLEs do not include real covariance data), so treat Pc as illustrative of the method, not an operational-grade number. Risk tiers are driven by miss distance for that reason. See the main README's Research & References and Limitations sections.

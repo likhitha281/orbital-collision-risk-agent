@@ -4,6 +4,9 @@
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+**🔴 [Live dashboard](https://YOUR_USERNAME.github.io/orbital-collision-agent/)** — no login, no setup, updates automatically every 4 hours.
+
+
 A multi-tool agentic system that ingests real satellite orbital data (TLEs),
 propagates orbits with SGP4, screens for close approaches between objects,
 computes a research-grounded probability of collision (the 2D-Pc method,
@@ -123,6 +126,27 @@ stations` (a few dozen objects) runs fast; `--live-group active` (thousands
 of objects) will be very slow without the spatial-partitioning improvement
 noted in Limitations. Start small.
 
+## Live dashboard setup (one-time, ~2 minutes)
+
+The dashboard at `docs/index.html` is a static page — no server, no build
+step — that reads `docs/latest.json`. To make it public:
+
+1. Push this repo to GitHub (see below if you haven't yet).
+2. Repo **Settings → Pages** → under "Build and deployment", set **Source**
+   to "Deploy from a branch", branch `main`, folder `/docs` → **Save**.
+3. GitHub gives you a URL like
+   `https://YOUR_USERNAME.github.io/orbital-collision-agent/` within a
+   minute or two. That's the link for a resume or a recruiter — no login,
+   no setup on their end.
+4. Replace `YOUR_USERNAME` in `README.md` and `docs/index.html` (dashboard
+   link, CI badge, footer links), commit, push.
+
+The page ships with `docs/latest.json` seeded from the sample run, so it
+works immediately; `live-monitor.yml` (above) then keeps it updated
+automatically every 4 hours by committing a fresh `docs/latest.json` — GitHub
+Pages just serves whatever's currently in `docs/` on `main`, so no manual
+redeploy step is needed.
+
 ## Project layout
 
 ```
@@ -141,6 +165,8 @@ orbital-collision-agent/
 ├── reports/                 # auto-populated by the live-monitor workflow
 ├── tests/
 ├── docs/
+│   ├── index.html           # static live dashboard (GitHub Pages)
+│   ├── latest.json          # data the dashboard reads (auto-updated)
 │   ├── architecture.md
 │   └── RESEARCH.md          # real papers/standards this is built on
 └── .github/workflows/

@@ -1,0 +1,26 @@
+{
+  "catalog_path": "data/sample_catalog.tle",
+  "generated_at": "2026-09-06T18:14:02+00:00",
+  "conjunctions_flagged": 1,
+  "events": [
+    {
+      "object_a": "ISS (ZARYA)",
+      "object_b": "TEST-DEBRIS-1 (SYNTHETIC)",
+      "norad_a": "25544",
+      "norad_b": "99999",
+      "time_utc": "2025-11-04T10:15:19Z",
+      "miss_distance_km": 2.767,
+      "relative_speed_km_s": 0.0031,
+      "involves_synthetic": true,
+      "probability_of_collision": 7.82576859886395e-22,
+      "risk_tier": "MEDIUM",
+      "grounding_notes": [
+        "risk-tiers",
+        "maneuver-tradeoffs",
+        "false-positive-context"
+      ],
+      "recommendation": "Miss distance of 2.767 km warrants close monitoring and a maneuver plan on standby, with a re-screen as the event approaches.",
+      "recommendation_source": "rule_based_fallback"
+    }
+  ]
+}

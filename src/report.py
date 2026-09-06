@@ -1,10 +1,12 @@
 """
 report.py
 ---------
-Formats the agent's per-event assessments into a single Markdown report.
+Formats the agent's per-event assessments into a Markdown report and a
+structured JSON summary (the JSON is what the dashboard in docs/ reads).
 """
 from __future__ import annotations
 
+import json
 from datetime import datetime, timezone
 
 
@@ -52,3 +54,32 @@ def render_report(catalog_path: str, assessments: list[dict]) -> str:
         lines.append("")
 
     return "\n".join(lines)
+
+
+def render_json(catalog_path: str, assessments: list[dict]) -> str:
+    """Structured summary of the same run, for machine consumption (the
+    static dashboard in docs/ fetches this directly)."""
+    payload = {
+        "catalog_path": catalog_path,
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "conjunctions_flagged": len(assessments),
+        "events": [
+            {
+                "object_a": a["event"]["object_a"],
+                "object_b": a["event"]["object_b"],
+                "norad_a": a["event"]["norad_a"],
+                "norad_b": a["event"]["norad_b"],
+                "time_utc": a["event"]["time_utc"],
+                "miss_distance_km": a["event"]["miss_distance_km"],
+                "relative_speed_km_s": a["event"]["relative_speed_km_s"],
+                "involves_synthetic": a["event"]["involves_synthetic"],
+                "probability_of_collision": a["event"]["probability_of_collision"],
+                "risk_tier": a["risk_tier"],
+                "grounding_notes": a["grounding_notes"],
+                "recommendation": a["recommendation"],
+                "recommendation_source": a["recommendation_source"],
+            }
+            for a in assessments
+        ],
+    }
+    return json.dumps(payload, indent=2)
