@@ -6,10 +6,15 @@
 
 A multi-tool agentic system that ingests real satellite orbital data (TLEs),
 propagates orbits with SGP4, screens for close approaches between objects,
-retrieves relevant space-traffic-management practice, and produces a
-grounded, human-readable collision-risk report — with an LLM-generated
-narrative that falls back to a deterministic rule-based writer when no API
-key is available.
+computes a research-grounded probability of collision (the 2D-Pc method,
+Foster & Estes 1992), retrieves relevant space-traffic-management practice,
+and produces a grounded, human-readable collision-risk report — with an
+LLM-generated narrative that falls back to a deterministic rule-based writer
+when no API key is available.
+
+📄 See [`docs/RESEARCH.md`](docs/RESEARCH.md) for the actual papers and
+standards this implementation is based on, and an honest account of where it
+simplifies relative to production space-situational-awareness systems.
 
 Built as a capstone baseline for CSE598 (Agentic AI Systems). This is
 **phase 1**: a small, runnable, reproducible baseline. The evaluation and
@@ -83,9 +88,9 @@ tracking data lining up with a real conjunction at run time.
 
 Full report: [`examples/sample_report.md`](examples/sample_report.md).
 
-| Object A | Object B | Miss distance | Risk tier |
-|---|---|---|---|
-| ISS (ZARYA) | TEST-DEBRIS-1 (synthetic) | 2.77 km | MEDIUM |
+| Object A | Object B | Miss distance | Pc (2D-Pc, assumed covariance) | Risk tier |
+|---|---|---|---|---|
+| ISS (ZARYA) | TEST-DEBRIS-1 (synthetic) | 2.77 km | 7.8e-22 | MEDIUM |
 
 ## Using real catalog data
 
@@ -107,15 +112,18 @@ catalog (see [Limitations](#limitations-and-next-steps)).
 orbital-collision-agent/
 ├── run_baseline.py          # CLI entrypoint / orchestrator
 ├── src/
-│   ├── tle_loader.py        # tool: parse TLE files
-│   ├── conjunction.py       # tool: SGP4 propagation + screening
-│   ├── knowledge_base.py    # tool: TF-IDF retrieval (RAG-lite)
-│   ├── reasoning_agent.py   # tool: LLM narrative + rule-based fallback
-│   └── report.py            # formats final Markdown report
+│   ├── tle_loader.py               # tool: parse TLE files
+│   ├── conjunction.py              # tool: SGP4 propagation + screening
+│   ├── probability_of_collision.py # tool: 2D-Pc (Foster & Estes, 1992)
+│   ├── knowledge_base.py           # tool: TF-IDF retrieval (RAG-lite)
+│   ├── reasoning_agent.py          # tool: LLM narrative + rule-based fallback
+│   └── report.py                   # formats final Markdown report
 ├── data/sample_catalog.tle  # real ISS TLE + synthetic test object
 ├── examples/sample_report.md
-├── tests/test_conjunction.py
-└── docs/architecture.md
+├── tests/
+├── docs/
+│   ├── architecture.md
+│   └── RESEARCH.md          # real papers/standards this is built on
 ```
 
 ## Evaluation plan (for the improved system)
@@ -143,8 +151,31 @@ things future iterations should beat. Planned comparisons:
 - The knowledge base is five hand-written notes, not a real corpus of
   operator handbooks — a real version would need licensed or public
   domain source documents and a proper vector index.
-- No probability-of-collision (Pc) computation yet — miss distance alone is
-  a coarse proxy; a real system would fold in covariance/uncertainty.
+- Pc uses an **assumed, generic covariance** (see
+  [`docs/RESEARCH.md`](docs/RESEARCH.md)) because TLEs don't carry real
+  tracking-derived uncertainty — the method is correctly implemented, but
+  the number itself isn't operational-grade.
+
+## Research & References
+
+The methods here aren't invented for this project — see
+[`docs/RESEARCH.md`](docs/RESEARCH.md) for the actual papers (Foster &
+Estes 1992 on the 2D-Pc method, Vallado et al. on SGP4, Kessler & Cour-Palais
+1978 on why debris risk compounds) and standards (CCSDS Conjunction Data
+Message format) this implementation draws on, plus an honest comparison
+against what production space-situational-awareness systems do differently.
+
+## Scope and honesty about "production use"
+
+This is a capstone-grade baseline, not a production SSA product — real
+conjunction assessment is a capital-intensive field with entrenched,
+well-funded providers (NASA CARA, the 18th Space Defense Squadron, LeoLabs,
+Slingshot Aerospace, COMSPOC) who have access to tracking data and
+covariance this project doesn't. What's genuinely solid here: the orbital
+mechanics are real (SGP4), the Pc method is the actual one used in the
+field, and every simplification is disclosed rather than hidden. That's the
+honest pitch for a portfolio project, and it's also what would need to
+change first for anyone to take a "real product" claim seriously.
 
 ## License
 

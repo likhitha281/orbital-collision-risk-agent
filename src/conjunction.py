@@ -18,6 +18,7 @@ from itertools import combinations
 import numpy as np
 from skyfield.api import load
 
+from .probability_of_collision import compute_pc
 from .tle_loader import CatalogObject
 
 
@@ -31,6 +32,7 @@ class ConjunctionEvent:
     miss_distance_km: float
     relative_speed_km_s: float
     involves_synthetic: bool
+    probability_of_collision: float
 
 
 def screen_conjunctions(
@@ -67,6 +69,8 @@ def screen_conjunctions(
             closest_diff = (a.satellite - b.satellite).at(times[idx])
             rel_speed = float(np.linalg.norm(closest_diff.velocity.km_per_s))
 
+            pc = compute_pc(miss_distance_km=min_dist)
+
             events.append(
                 ConjunctionEvent(
                     object_a=a.name,
@@ -77,6 +81,7 @@ def screen_conjunctions(
                     miss_distance_km=round(min_dist, 3),
                     relative_speed_km_s=round(rel_speed, 4),
                     involves_synthetic=a.is_synthetic or b.is_synthetic,
+                    probability_of_collision=pc.probability,
                 )
             )
 
