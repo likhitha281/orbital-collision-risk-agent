@@ -1,0 +1,48 @@
+name: Live monitor
+
+# Runs on a schedule to re-fetch live TLE data and republish the risk report.
+# Cadence matches Celestrak's own ~2-hour refresh cycle (see src/live_fetch.py) —
+# running more often than that cannot produce fresher results and risks being
+# rate-limited, so this is genuinely as "real-time" as the free public data
+# source supports.
+on:
+  schedule:
+    - cron: "0 */4 * * *"  # every 4 hours
+  workflow_dispatch: {}     # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  live-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run live baseline (stations group)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          mkdir -p reports
+          python run_baseline.py --live --live-group stations --output reports/latest.md
+
+      - name: Snapshot with timestamp
+        run: |
+          ts=$(date -u +"%Y-%m-%dT%H-%M-%SZ")
+          cp reports/latest.md "reports/${ts}.md"
+
+      - name: Commit updated report
+        run: |
+          git config user.name "orbital-collision-agent-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add reports/
+          git diff --cached --quiet || git commit -m "Live report update: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push

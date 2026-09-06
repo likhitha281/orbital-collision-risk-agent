@@ -92,19 +92,36 @@ Full report: [`examples/sample_report.md`](examples/sample_report.md).
 |---|---|---|---|---|
 | ISS (ZARYA) | TEST-DEBRIS-1 (synthetic) | 2.77 km | 7.8e-22 | MEDIUM |
 
-## Using real catalog data
+## Running it "live"
 
-Any standard 3-line TLE file works as input — e.g. current catalogs from
-[Celestrak](https://celestrak.org/NORAD/elements/). Download a group (e.g.
-active satellites) to a `.tle` file and point `--input` at it:
+`--live` fetches the current catalog from Celestrak instead of using a static
+file:
 
 ```bash
-python run_baseline.py --input path/to/downloaded_catalog.tle --output report.md
+python run_baseline.py --live --live-group stations --output report.md
 ```
 
-Note: screening is currently O(n²) in the number of objects, so start with a
-few dozen to a few hundred objects rather than the full multi-thousand-object
-catalog (see [Limitations](#limitations-and-next-steps)).
+**On cadence**: Celestrak's own data is refreshed roughly every 2 hours, and
+they ask users not to poll more often than that — `live_fetch.py` enforces
+this with a local cache, so re-running the command more frequently just
+serves the cached copy instead of hammering their servers. This is a
+meaningful constraint, not a corner cut: no free public tracking data source
+updates faster than that, so "real-time" here genuinely means "always
+within one refresh cycle of current."
+
+**Keeping it running automatically**: `.github/workflows/live-monitor.yml`
+runs on that same 4-hour cadence via GitHub Actions, fetches live data,
+regenerates the report, and commits it to `reports/latest.md` — so the repo
+itself stays continuously up to date without you doing anything. Trigger it
+manually anytime from the repo's Actions tab, or just let the schedule run.
+Add an `ANTHROPIC_API_KEY` repository secret to get LLM-generated narratives
+in the scheduled runs (optional — falls back to the rule-based writer
+without it).
+
+**Scaling note**: screening is O(n²) in catalog size, so `--live-group
+stations` (a few dozen objects) runs fast; `--live-group active` (thousands
+of objects) will be very slow without the spatial-partitioning improvement
+noted in Limitations. Start small.
 
 ## Project layout
 
@@ -113,6 +130,7 @@ orbital-collision-agent/
 ├── run_baseline.py          # CLI entrypoint / orchestrator
 ├── src/
 │   ├── tle_loader.py               # tool: parse TLE files
+│   ├── live_fetch.py               # tool: cached live pull from Celestrak
 │   ├── conjunction.py              # tool: SGP4 propagation + screening
 │   ├── probability_of_collision.py # tool: 2D-Pc (Foster & Estes, 1992)
 │   ├── knowledge_base.py           # tool: TF-IDF retrieval (RAG-lite)
@@ -120,10 +138,14 @@ orbital-collision-agent/
 │   └── report.py                   # formats final Markdown report
 ├── data/sample_catalog.tle  # real ISS TLE + synthetic test object
 ├── examples/sample_report.md
+├── reports/                 # auto-populated by the live-monitor workflow
 ├── tests/
 ├── docs/
 │   ├── architecture.md
 │   └── RESEARCH.md          # real papers/standards this is built on
+└── .github/workflows/
+    ├── ci.yml                # tests on every push
+    └── live-monitor.yml      # scheduled live fetch + report refresh
 ```
 
 ## Evaluation plan (for the improved system)

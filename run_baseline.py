@@ -21,6 +21,7 @@ import sys
 
 from src.conjunction import screen_conjunctions
 from src.knowledge_base import KnowledgeBase
+from src.live_fetch import LiveFetchError, fetch_live_catalog
 from src.reasoning_agent import generate_event_report
 from src.report import render_report
 from src.tle_loader import load_catalog
@@ -28,15 +29,28 @@ from src.tle_loader import load_catalog
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Orbital Collision-Risk Agent baseline")
-    parser.add_argument("--input", default="data/sample_catalog.tle", help="Path to a TLE catalog file")
+    parser.add_argument("--input", default="data/sample_catalog.tle", help="Path to a TLE catalog file (ignored if --live is set)")
+    parser.add_argument("--live", action="store_true", help="Fetch a live catalog from Celestrak instead of using --input")
+    parser.add_argument("--live-group", default="stations", help="Celestrak GROUP to fetch when --live is set (e.g. stations, active, debris)")
     parser.add_argument("--output", default="report.md", help="Path to write the Markdown report to")
     parser.add_argument("--lookahead-seconds", type=int, default=6000, help="How far ahead to screen")
     parser.add_argument("--step-seconds", type=int, default=1, help="Sampling step for screening")
     parser.add_argument("--flag-threshold-km", type=float, default=25.0, help="Miss distance below which an event is flagged")
     args = parser.parse_args()
 
-    print(f"[1/4] Loading TLE catalog from {args.input} ...")
-    catalog = load_catalog(args.input)
+    if args.live:
+        print(f"[0/4] Fetching live catalog (group={args.live_group}) from Celestrak ...")
+        try:
+            input_path = fetch_live_catalog(group=args.live_group)
+        except LiveFetchError as e:
+            print(f"      Live fetch failed: {e}")
+            return 1
+        print(f"      Cached at {input_path}")
+    else:
+        input_path = args.input
+
+    print(f"[1/4] Loading TLE catalog from {input_path} ...")
+    catalog = load_catalog(input_path)
     print(f"      Loaded {len(catalog)} object(s): {[o.name for o in catalog]}")
 
     print(f"[2/4] Screening for conjunctions over {args.lookahead_seconds}s window ...")
@@ -53,7 +67,7 @@ def main() -> int:
     assessments = [generate_event_report(e, kb) for e in events]
 
     print(f"[4/4] Writing report to {args.output} ...")
-    report_text = render_report(args.input, assessments)
+    report_text = render_report(str(input_path), assessments)
     with open(args.output, "w") as f:
         f.write(report_text)
 
