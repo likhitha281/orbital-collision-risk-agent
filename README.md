@@ -1,10 +1,10 @@
 # 🛰️ Orbital Collision-Risk Agent
 
-[![CI](https://github.com/YOUR_USERNAME/orbital-collision-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/orbital-collision-agent/actions/workflows/ci.yml)
+[![CI](https://github.com/likhitha281/orbital-collision-risk-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/likhitha281/orbital-collision-risk-agent/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-**🔴 [Live dashboard](https://YOUR_USERNAME.github.io/orbital-collision-agent/)** — no login, no setup, updates automatically every 4 hours.
+**🔴 [Live dashboard](https://likhitha281.github.io/orbital-collision-risk-agent/)** — no login, no setup, updates automatically every 4 hours.
 
 
 A multi-tool agentic system that ingests real satellite orbital data (TLEs),
@@ -51,8 +51,8 @@ Full breakdown, including design rationale and known limitations, in
 ## Quickstart
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/orbital-collision-agent.git
-cd orbital-collision-agent
+git clone https://github.com/likhitha281/orbital-collision-risk-agent.git
+cd orbital-collision-risk-agent
 pip install -r requirements.txt
 
 python run_baseline.py --input data/sample_catalog.tle --output report.md
@@ -135,11 +135,9 @@ step — that reads `docs/latest.json`. To make it public:
 2. Repo **Settings → Pages** → under "Build and deployment", set **Source**
    to "Deploy from a branch", branch `main`, folder `/docs` → **Save**.
 3. GitHub gives you a URL like
-   `https://YOUR_USERNAME.github.io/orbital-collision-agent/` within a
+   `https://likhitha281.github.io/orbital-collision-risk-agent/` within a
    minute or two. That's the link for a resume or a recruiter — no login,
    no setup on their end.
-4. Replace `YOUR_USERNAME` in `README.md` and `docs/index.html` (dashboard
-   link, CI badge, footer links), commit, push.
 
 The page ships with `docs/latest.json` seeded from the sample run, so it
 works immediately; `live-monitor.yml` (above) then keeps it updated
