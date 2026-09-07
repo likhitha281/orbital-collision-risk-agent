@@ -74,6 +74,19 @@ KNOWLEDGE_ENTRIES = [
             "as a confirmed collision prediction."
         ),
     },
+    {
+        "id": "pc-threshold",
+        "text": (
+            "When a probability of collision is computed from real tracking-derived "
+            "covariance (not an assumed placeholder), the most commonly cited "
+            "operational action threshold is around 1 in 10,000 (1e-4): events at or "
+            "above that level are typically escalated for an active maneuver "
+            "evaluation, events in the 1e-6 to 1e-4 range warrant monitoring, and "
+            "events below 1e-6 are usually logged without further action. Individual "
+            "operators adjust this based on asset value, maneuver cost, and mission "
+            "phase."
+        ),
+    },
 ]
 
 

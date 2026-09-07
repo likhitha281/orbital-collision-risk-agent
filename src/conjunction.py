@@ -33,6 +33,15 @@ class ConjunctionEvent:
     relative_speed_km_s: float
     involves_synthetic: bool
     probability_of_collision: float
+    # "assumed_covariance": our own toy Pc from probability_of_collision.py
+    # "socrates_real": real Pc from CelesTrak SOCRATES Plus (STK/CAT, real
+    #                  orbit-determination covariance) — see socrates_client.py
+    pc_provenance: str = "assumed_covariance"
+    # True when the underlying TLE(s) are old enough that the prediction
+    # should be treated as indicative rather than authoritative (see the
+    # "tracking-uncertainty" knowledge-base note). Only meaningful/set for
+    # pc_provenance == "socrates_real" — see triage.py.
+    stale_tle: bool = False
 
 
 def screen_conjunctions(

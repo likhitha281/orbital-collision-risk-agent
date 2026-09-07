@@ -6,23 +6,27 @@
 
 **🔴 [Live dashboard](https://likhitha281.github.io/orbital-collision-risk-agent/)** — no login, no setup, updates automatically every 4 hours.
 
+This project has two parts, and they do different jobs:
 
-A multi-tool agentic system that ingests real satellite orbital data (TLEs),
-propagates orbits with SGP4, screens for close approaches between objects,
-computes a research-grounded probability of collision (the 2D-Pc method,
-Foster & Estes 1992), retrieves relevant space-traffic-management practice,
-and produces a grounded, human-readable collision-risk report — with an
-LLM-generated narrative that falls back to a deterministic rule-based writer
-when no API key is available.
+- **Phase 1 — `run_baseline.py`**: an SGP4-from-scratch physics baseline.
+  Ingests TLEs, propagates orbits, screens for close approaches, computes a
+  research-grounded probability of collision (2D-Pc, Foster & Estes 1992).
+  Demonstrates understanding of the underlying orbital mechanics.
+- **Phase 2 — `run_triage.py`**: the actual accessible-triage product.
+  Doesn't reimplement screening — pulls real, published conjunction data
+  from [CelesTrak's SOCRATES Plus](https://celestrak.org/SOCRATES/) (real
+  Pc, real covariance, computed with professional STK/CAT tooling) and adds
+  the one thing that data doesn't already have: a prioritized, explained,
+  plain-language triage layer for anyone without a dedicated SSA analyst on
+  staff. See [`docs/RESEARCH.md`](docs/RESEARCH.md) for exactly why this
+  split exists and what real prior art (SOCRATES, and the open-source
+  SIMPLETON screener) this project deliberately does not try to replace.
 
-📄 See [`docs/RESEARCH.md`](docs/RESEARCH.md) for the actual papers and
-standards this implementation is based on, and an honest account of where it
-simplifies relative to production space-situational-awareness systems.
+📄 [`docs/RESEARCH.md`](docs/RESEARCH.md) has the actual papers, data
+sources, and an honest account of where each phase simplifies relative to
+production space-situational-awareness systems.
 
-Built as a capstone baseline for CSE598 (Agentic AI Systems). This is
-**phase 1**: a small, runnable, reproducible baseline. The evaluation and
-scaling plan for phase 2 is in [`docs/architecture.md`](docs/architecture.md)
-and the proposal writeup.
+Originally built as a capstone baseline for CSE598 (Agentic AI Systems).
 
 ## Why this problem
 
@@ -71,6 +75,31 @@ Run the test suite:
 ```bash
 python -m pytest tests/ -v
 ```
+
+## Phase 2: real-data triage
+
+```bash
+python run_triage.py --max-results 50 --min-probability 1e-6 --output triage_report.md
+```
+
+This fetches real conjunction data from CelesTrak SOCRATES Plus (see
+`src/socrates_client.py` — respects their usage policy with a 10-hour
+minimum re-fetch cache, matching SOCRATES's own update cadence), filters
+and prioritizes by real probability of collision, and runs the same
+knowledge-base + narrative layer as phase 1. Every report explicitly labels
+whether Pc is real (`socrates_real`) or this project's own assumed-covariance
+estimate (`assumed_covariance`) — see [`examples/sample_triage_report.md`](examples/sample_triage_report.md)
+for a worked example (generated with mocked data matching the real schema,
+since this can't reach the network from every environment — run it yourself
+for a live report).
+
+**One thing to verify before relying on this**: `src/socrates_client.py`
+assumes SOCRATES Plus's CSV export accepts a `FORMAT=CSV` parameter,
+following the convention CelesTrak uses elsewhere — this project's sandbox
+couldn't confirm that URL directly (see the module docstring). Open the
+built URL in a browser once and adjust if needed; the CSV column parsing
+itself is taken verbatim from CelesTrak's documented format and is correct
+regardless.
 
 ## Sample output
 
@@ -206,52 +235,64 @@ orbital-collision-agent/
 │   ├── live_fetch.py               # tool: cached live pull from Celestrak
 │   ├── conjunction.py              # tool: SGP4 propagation + screening
 │   ├── probability_of_collision.py # tool: 2D-Pc (Foster & Estes, 1992)
+│   ├── socrates_client.py          # tool: real conjunction data (CelesTrak SOCRATES Plus)
+│   ├── triage.py                   # phase 2: adapts real data into the pipeline
 │   ├── knowledge_base.py           # tool: TF-IDF retrieval (RAG-lite)
 │   ├── reasoning_agent.py          # tool: LLM narrative + rule-based fallback
-│   └── report.py                   # formats final Markdown report
+│   └── report.py                   # formats final Markdown/JSON report (provenance-aware)
+├── run_baseline.py          # phase 1 entrypoint (SGP4 physics baseline)
+├── run_triage.py            # phase 2 entrypoint (real-data triage layer)
 ├── data/sample_catalog.tle  # real ISS TLE + synthetic test object
-├── examples/sample_report.md
+├── examples/
+│   ├── sample_report.md          # phase 1 example output
+│   └── sample_triage_report.md   # phase 2 example output
 ├── reports/                 # auto-populated by the live-monitor workflow
 ├── tests/
 ├── docs/
 │   ├── index.html           # static live dashboard (GitHub Pages)
 │   ├── latest.json          # data the dashboard reads (auto-updated)
 │   ├── architecture.md
-│   └── RESEARCH.md          # real papers/standards this is built on
+│   └── RESEARCH.md          # real papers/data sources this is built on
 └── .github/workflows/
     ├── ci.yml                # tests on every push
     └── live-monitor.yml      # scheduled live fetch + report refresh
 ```
 
-## Evaluation plan (for the improved system)
+## What's next (honest, unfinished list)
 
-The baseline's coarse, fixed-grid screening and rule-based fallback are the
-things future iterations should beat. Planned comparisons:
-
-- **Screening accuracy**: fixed-grid sampling vs. adaptive root-finding for
-  true minimum distance, validated against known historical conjunction
-  events.
-- **Recommendation quality**: LLM narrative vs. rule-based template, rated by
-  human preference / LLM-as-judge on concreteness and operational relevance.
-- **Latency & cost**: end-to-end run time and API cost per catalog size.
-- **Scale**: current O(n²) screening vs. a spatially-partitioned approach, as
-  catalog size grows from dozens to thousands of objects.
+- **Dashboard doesn't show phase 2 yet** — `docs/index.html` currently
+  reads phase 1's `latest.json`. Wiring `run_triage.py` into
+  `live-monitor.yml` and giving the dashboard a phase 1/phase 2 toggle is
+  the natural next step, not yet done.
+- **Screening accuracy**: phase 1's fixed-grid sampling vs. adaptive
+  root-finding for the true minimum — phase 2 sidesteps this by using
+  SOCRATES's real numbers instead, but phase 1 still has this gap.
+- **Recommendation quality**: LLM narrative vs. rule-based template,
+  ideally rated by human preference on concreteness and operational
+  relevance — not yet measured, just asserted.
+- **Scale**: phase 1's O(n²) screening won't reach full-catalog size; phase
+  2 doesn't have this problem since SOCRATES already screens the full
+  catalog.
 
 ## Limitations and next steps
 
-- Fixed-grid time sampling can miss the true closest approach between
-  samples — next step is adaptive/root-finding refinement near flagged
-  windows.
-- O(n²) pairwise screening won't scale to full real-world catalogs
-  (~30,000+ tracked objects) without spatial partitioning (e.g. orbit-shell
-  bucketing) to cut down candidate pairs first.
-- The knowledge base is five hand-written notes, not a real corpus of
+- Fixed-grid time sampling (phase 1) can miss the true closest approach
+  between samples — next step is adaptive/root-finding refinement near
+  flagged windows.
+- O(n²) pairwise screening (phase 1) won't scale to full real-world catalogs
+  (~30,000+ tracked objects) without spatial partitioning — phase 2 avoids
+  this entirely by consuming SOCRATES's already-full-catalog results.
+- The knowledge base is six hand-written notes, not a real corpus of
   operator handbooks — a real version would need licensed or public
   domain source documents and a proper vector index.
-- Pc uses an **assumed, generic covariance** (see
+- Phase 1's Pc uses an **assumed, generic covariance** (see
   [`docs/RESEARCH.md`](docs/RESEARCH.md)) because TLEs don't carry real
-  tracking-derived uncertainty — the method is correctly implemented, but
-  the number itself isn't operational-grade.
+  tracking-derived uncertainty. Phase 2's Pc is real (SOCRATES Plus), but
+  this project doesn't independently verify CelesTrak's numbers — it trusts
+  and clearly attributes them.
+- `src/socrates_client.py`'s exact CSV endpoint parameter is unverified
+  from this sandbox (see the module docstring) — a one-time manual check
+  needed before relying on it.
 
 ## Research & References
 
@@ -264,15 +305,22 @@ against what production space-situational-awareness systems do differently.
 
 ## Scope and honesty about "production use"
 
-This is a capstone-grade baseline, not a production SSA product — real
-conjunction assessment is a capital-intensive field with entrenched,
-well-funded providers (NASA CARA, the 18th Space Defense Squadron, LeoLabs,
-Slingshot Aerospace, COMSPOC) who have access to tracking data and
-covariance this project doesn't. What's genuinely solid here: the orbital
-mechanics are real (SGP4), the Pc method is the actual one used in the
-field, and every simplification is disclosed rather than hidden. That's the
-honest pitch for a portfolio project, and it's also what would need to
-change first for anyone to take a "real product" claim seriously.
+Phase 1 is a capstone-grade physics baseline, not a production SSA
+product — real conjunction assessment is a capital-intensive field with
+entrenched, well-funded providers (NASA CARA, the 18th Space Defense
+Squadron, LeoLabs, Slingshot Aerospace, COMSPOC) who have access to
+tracking data and covariance this project doesn't, and CelesTrak's free
+SOCRATES Plus service already does full-catalog screening better than
+phase 1 does or reasonably could.
+
+Phase 2 makes a narrower, more defensible claim: it's an accessibility
+layer on top of SOCRATES's real, trusted data, aimed at operators and
+students without a dedicated SSA analyst — not a replacement for
+professional conjunction assessment, and every report says so explicitly
+(real vs. assumed Pc, staleness flags, "drafting aid, not decision-maker"
+framing throughout). See [`docs/RESEARCH.md`](docs/RESEARCH.md) for the
+full reasoning behind that positioning, including the open-source prior
+art (SIMPLETON) that shaped it.
 
 ## License
 

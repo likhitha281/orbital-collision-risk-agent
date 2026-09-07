@@ -49,6 +49,28 @@ state vectors, covariance, and Pc results in a standardized way. This
 project doesn't consume or emit real CDMs yet, but the report format is
 loosely inspired by the same fields (objects, TCA, miss distance, Pc).
 
+**SOCRATES Plus — real, free, full-catalog conjunction screening (CelesTrak/CSSI).**
+The Center for Space Standards and Innovation has run SOCRATES (Satellite
+Orbital Conjunction Reports Assessing Threatening Encounters in Space) as a
+free public service since 2004, screening the full active-payload catalog
+against the entire tracked object catalog roughly three times a day using
+professional Systems Tool Kit (STK) Conjunction Analysis Tools, with real
+orbit-determination covariance. This is the actual reference data this
+project's phase 2 triage layer (`run_triage.py`, `src/socrates_client.py`)
+consumes directly, rather than reimplementing inferior screening — see
+"What phase 2 actually adds" below.
+
+**SIMPLETON — validated open-source all-vs-all screening.**
+Salad109/SIMPLETON (github.com/Salad109/SIMPLETON) is an open-source
+project that performs full-catalog all-vs-all conjunction screening
+(~450M pairs) in under 30 seconds on consumer hardware, validated against
+SOCRATES at 99.8% agreement on equivalent scope and backtested against two
+real historical collisions (Iridium 33/Cosmos 2251, 2009; CERISE/Ariane
+debris, 1996) with millisecond-level TCA accuracy. Citing this here
+deliberately: before building anything, it's worth knowing this problem —
+fast, validated, full-catalog screening — is already solved and open
+source. This project does not attempt to re-solve it.
+
 **Risk tiering and operational thresholds.**
 The commonly cited operational threshold for treating a conjunction as
 "actionable" is a probability of collision around 1 in 10,000 (1e-4),
@@ -83,13 +105,52 @@ Slingshot Aerospace, and COMSPOC:
 - **Human-in-the-loop review** before any maneuver recommendation is acted
   on — this project's LLM narrative is a drafting aid, not a decision-maker.
 
+## What phase 2 actually adds
+
+Phase 1 (`run_baseline.py`) reimplements screening from scratch with SGP4
+and a toy assumed-covariance Pc — useful for demonstrating understanding of
+the underlying orbital mechanics, but not something that should compete
+with SOCRATES or SIMPLETON on raw screening.
+
+Phase 2 (`run_triage.py`) doesn't reimplement screening at all. It fetches
+SOCRATES Plus's own real, published conjunction data (`src/socrates_client.py`)
+— real Pc, real covariance, real STK/CAT propagation — and runs it through
+the same knowledge-base grounding and LLM/rule-based narrative layer as
+phase 1 (`src/reasoning_agent.py`, unchanged). The actual value-add is
+narrow and specific: SOCRATES and SIMPLETON both output a table of numbers
+that assumes the reader is a trained SSA analyst. Phase 2 turns that table
+into a prioritized, explained, plain-language triage list — including
+surfacing when the underlying tracking data is stale (`src/triage.py`,
+via the DSE fields SOCRATES already publishes) — for someone who doesn't
+have a dedicated analyst on staff. That's the honest, currently-unclaimed
+niche this project occupies.
+
 ## On this being "used by companies"
 
-This is a genuinely well-grounded educational baseline, and getting each
+The phase 1 baseline is a well-grounded educational exercise — getting each
 piece scientifically right (SGP4, the actual Foster-Estes method, real
-citations) is worth doing regardless of adoption. But real SSA is a
-capital-intensive, liability-sensitive field with entrenched, well-funded
-providers who have real tracking data this project doesn't have access to.
-The honest pitch to a company or recruiter is "I understood the real method
-well enough to implement it correctly and know exactly where it's
-simplified" — not "this replaces a production system."
+citations) is worth doing regardless of adoption, but it doesn't compete
+with production screening.
+
+Phase 2 is a narrower, more honest claim: a genuinely useful accessibility
+layer on top of real, trusted data (SOCRATES Plus), for an audience
+(smaller operators, university cubesat teams, students, educators) that
+realistically doesn't have a dedicated SSA analyst reading a raw CSV every
+morning. That's a real gap and a real product shape — but it still carries
+real liability if presented as more authoritative than it is. Concretely,
+this means:
+
+- Every report explicitly labels Pc provenance (real vs. assumed) — never
+  presented as this project's own analysis when it's SOCRATES's number.
+- The narrative layer is explicitly framed to itself and to the reader as
+  a drafting aid, not a decision-maker — any actual maneuver decision
+  needs a human analyst and, ideally, direct engagement with the object's
+  actual operator or CSpOC.
+- Staleness (DSE) is surfaced, not hidden, because acting on out-of-date
+  tracking data is exactly the kind of overconfidence that causes harm in
+  this domain.
+
+The honest pitch to a company or recruiter is "I understood the real
+method and the real data landscape well enough to build something that
+adds genuine value without overclaiming what it is" — not "this replaces
+a production system."
