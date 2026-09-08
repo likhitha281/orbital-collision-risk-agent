@@ -26,8 +26,6 @@ This project has two parts, and they do different jobs:
 sources, and an honest account of where each phase simplifies relative to
 production space-situational-awareness systems.
 
-Originally built as a capstone baseline for CSE598 (Agentic AI Systems).
-
 ## Why this problem
 
 Low Earth orbit is getting crowded — tens of thousands of tracked objects,
