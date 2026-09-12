@@ -74,7 +74,7 @@ Run the test suite:
 python -m pytest tests/ -v
 ```
 
-## Phase 2: real-data triage
+## Phase 2: real-data triage with trend-aware reasoning
 
 ```bash
 python run_triage.py --max-results 50 --min-probability 1e-6 --output triage_report.md
@@ -82,14 +82,39 @@ python run_triage.py --max-results 50 --min-probability 1e-6 --output triage_rep
 
 This fetches real conjunction data from CelesTrak SOCRATES Plus (see
 `src/socrates_client.py` — respects their usage policy with a 10-hour
-minimum re-fetch cache, matching SOCRATES's own update cadence), filters
-and prioritizes by real probability of collision, and runs the same
-knowledge-base + narrative layer as phase 1. Every report explicitly labels
-whether Pc is real (`socrates_real`) or this project's own assumed-covariance
-estimate (`assumed_covariance`) — see [`examples/sample_triage_report.md`](examples/sample_triage_report.md)
+minimum re-fetch cache, matching SOCRATES's own update cadence), persists
+every observation to a local SQLite history (`data/orbital_history.db`),
+and — this is the part that makes it reasoning rather than narration —
+compares each new observation against everything on record for that same
+object pair. A single run reports what it has; repeated runs (e.g. via the
+scheduled `live-monitor.yml` workflow) let it say things like "probability
+of collision increased 51x across the last three observations," which is
+qualitatively different from restating one snapshot in English.
+
+Three pieces work together, deliberately kept separate:
+
+- **`risk_scoring.py`** — a deterministic priority score (0-100) from three
+  named, weighted factors: Pc severity, urgency (time to closest approach),
+  and tracking-data freshness. The LLM never sees this computation and
+  can't influence it.
+- **`trends.py`** — escalating / decreasing / stable / insufficient_data,
+  computed from the oldest vs. newest observation on record.
+- **`analyst.py`** — the actual reasoning agent. It's given the current
+  observation, the deterministic score, and the trend, and asked *why does
+  this matter, what changed, what's missing, how confident should we be*.
+  Its output schema has no field for a probability or a priority score —
+  it is structurally unable to report an altered number, not just
+  instructed not to. Falls back to a rule-based writer with the same
+  contract when no `ANTHROPIC_API_KEY` is set.
+
+Every report explicitly labels whether Pc is real (`socrates_real`) or
+this project's own assumed-covariance estimate (`assumed_covariance`) —
+see [`examples/sample_triage_report.md`](examples/sample_triage_report.md)
 for a worked example (generated with mocked data matching the real schema,
-since this can't reach the network from every environment — run it yourself
-for a live report).
+since this can't reach the network from every environment — run it
+yourself for a live report). See [`docs/RESEARCH.md`](docs/RESEARCH.md)
+for the full story on why this shape, including a real scoring bug this
+project's own tests caught during development.
 
 **One thing to verify before relying on this**: `src/socrates_client.py`
 assumes SOCRATES Plus's CSV export accepts a `FORMAT=CSV` parameter,
@@ -234,10 +259,14 @@ orbital-collision-agent/
 │   ├── conjunction.py              # tool: SGP4 propagation + screening
 │   ├── probability_of_collision.py # tool: 2D-Pc (Foster & Estes, 1992)
 │   ├── socrates_client.py          # tool: real conjunction data (CelesTrak SOCRATES Plus)
-│   ├── triage.py                   # phase 2: adapts real data into the pipeline
-│   ├── knowledge_base.py           # tool: TF-IDF retrieval (RAG-lite)
-│   ├── reasoning_agent.py          # tool: LLM narrative + rule-based fallback
-│   └── report.py                   # formats final Markdown/JSON report (provenance-aware)
+│   ├── observation_store.py        # phase 2: SQLite observation history (enables trend detection)
+│   ├── risk_scoring.py             # phase 2: deterministic priority scoring (Pc + urgency + freshness)
+│   ├── trends.py                   # phase 2: escalating/decreasing/stable detection across history
+│   ├── analyst.py                  # phase 2: evidence-grounded reasoning agent (cannot alter numbers)
+│   ├── triage.py                   # phase 2 v1: adapts real data into the phase 1-style pipeline
+│   ├── knowledge_base.py           # phase 1: TF-IDF retrieval (RAG-lite)
+│   ├── reasoning_agent.py          # phase 1: LLM narrative + rule-based fallback
+│   └── report.py                   # phase 1: formats final Markdown/JSON report (provenance-aware)
 ├── run_baseline.py          # phase 1 entrypoint (SGP4 physics baseline)
 ├── run_triage.py            # phase 2 entrypoint (real-data triage layer)
 ├── data/sample_catalog.tle  # real ISS TLE + synthetic test object
@@ -259,9 +288,16 @@ orbital-collision-agent/
 ## What's next (honest, unfinished list)
 
 - **Dashboard doesn't show phase 2 yet** — `docs/index.html` currently
-  reads phase 1's `latest.json`. Wiring `run_triage.py` into
-  `live-monitor.yml` and giving the dashboard a phase 1/phase 2 toggle is
-  the natural next step, not yet done.
+  reads phase 1's `latest.json`. Wiring `run_triage.py`'s richer output
+  (priority score, trend, analyst reasoning) into `live-monitor.yml` and
+  the dashboard is the natural next step, not yet done. The trend data is
+  now genuinely there to visualize (a Pc-over-time chart per event); it
+  just isn't wired to anything visual yet.
+- **`live-monitor.yml` doesn't run `run_triage.py` yet** — the scheduled
+  workflow currently only runs phase 1. It needs to run phase 2 on the
+  same schedule for the SQLite history (and therefore trend detection) to
+  actually accumulate over time in production rather than only in local
+  testing.
 - **Screening accuracy**: phase 1's fixed-grid sampling vs. adaptive
   root-finding for the true minimum — phase 2 sidesteps this by using
   SOCRATES's real numbers instead, but phase 1 still has this gap.

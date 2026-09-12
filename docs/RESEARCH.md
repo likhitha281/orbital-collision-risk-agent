@@ -114,16 +114,56 @@ with SOCRATES or SIMPLETON on raw screening.
 
 Phase 2 (`run_triage.py`) doesn't reimplement screening at all. It fetches
 SOCRATES Plus's own real, published conjunction data (`src/socrates_client.py`)
-— real Pc, real covariance, real STK/CAT propagation — and runs it through
-the same knowledge-base grounding and LLM/rule-based narrative layer as
-phase 1 (`src/reasoning_agent.py`, unchanged). The actual value-add is
-narrow and specific: SOCRATES and SIMPLETON both output a table of numbers
-that assumes the reader is a trained SSA analyst. Phase 2 turns that table
-into a prioritized, explained, plain-language triage list — including
-surfacing when the underlying tracking data is stale (`src/triage.py`,
-via the DSE fields SOCRATES already publishes) — for someone who doesn't
-have a dedicated analyst on staff. That's the honest, currently-unclaimed
-niche this project occupies.
+— real Pc, real covariance, real STK/CAT propagation.
+
+## From narration to reasoning
+
+The first version of phase 2 took a real conjunction record and asked an
+LLM to turn it into prose. That's narration, not reasoning — it has nothing
+to reason *about* beyond the one snapshot it was given, and a rule-based
+template does the same job with less risk. This was a fair critique of the
+initial implementation, and the fix wasn't a bigger prompt — it was giving
+the agent actual evidence to reason over. Three pieces:
+
+1. **History (`src/observation_store.py`)** — a SQLite-backed log of every
+   observation, keyed by object pair + TCA. Each scheduled run appends new
+   observations rather than overwriting; nothing is reasoned about across
+   time without this.
+2. **Deterministic priority scoring (`src/risk_scoring.py`)** — Pc severity,
+   time-to-TCA urgency, and tracking-data freshness are three separate,
+   named, weighted factors, not a single miss-distance-or-Pc threshold. This
+   directly fixes a real bug an earlier version had: with Pc weighted
+   additively rather than as a gate, a near-zero probability paired with an
+   imminent, fresh-data TCA could still score MEDIUM on urgency and
+   freshness alone — the exact "Pc=7.8e-22 but MEDIUM" problem a reviewer
+   flagged. `_tier()` now caps the ceiling by Pc severity first: urgency and
+   freshness modulate priority within a tier the collision probability
+   already justifies, they can't manufacture concern out of a negligible
+   Pc. `tests/test_risk_scoring.py::test_near_zero_pc_does_not_produce_high_tier`
+   pins this down; it failed against the pre-fix scoring logic during
+   development, which is exactly what it's there to catch.
+3. **Trend detection (`src/trends.py`)** — compares the oldest and newest
+   observation on record for a given pair+TCA (not just the last two, so
+   one noisy update doesn't flip the verdict) and classifies escalating,
+   decreasing, stable, or insufficient_data.
+
+**The agent (`src/analyst.py`)** is then given the current observation, the
+deterministic assessment, and the trend, and asked analyst questions: why
+does this matter, what changed, what's missing, how confident should we be,
+what's next. The constraint that makes this trustworthy isn't just prompt
+wording — `AnalystOutput` has no field anywhere for a probability or a
+priority score. It is structurally unable to report an altered number,
+because there's nowhere to put one, whether the answer comes from the LLM
+or the rule-based fallback. `tests/test_analyst.py` verifies this: the
+fallback path is checked to reproduce the exact input Pc and tier verbatim,
+and a standalone test asserts the output schema itself has no numeric
+override field, independent of what any model does.
+
+Demonstrated end-to-end with two simulated runs against the same mocked
+object pair: run 1 correctly reported `insufficient_data` (nothing to
+compare yet); run 2, with Pc raised from 1.2e-6 to 6.1e-5 in the fixture,
+correctly detected a 50.8x escalation and moved the priority tier from
+MEDIUM to HIGH — matching the actual ratio, not an invented one.
 
 ## On this being "used by companies"
 

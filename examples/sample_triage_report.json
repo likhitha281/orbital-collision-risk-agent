@@ -1,7 +1,6 @@
 {
-  "source_label": "CelesTrak SOCRATES Plus (real conjunction data, STK/CAT propagation, real covariance)",
-  "pc_provenance": "socrates_real",
-  "generated_at": "2026-09-07T21:57:27+00:00",
+  "source_label": "CelesTrak SOCRATES Plus (real conjunction data)",
+  "generated_at": "2026-09-12T05:53:59+00:00",
   "conjunctions_flagged": 3,
   "events": [
     {
@@ -9,60 +8,118 @@
       "object_b": "COSMOS 2251 DEB [-]",
       "norad_a": "25544",
       "norad_b": "90001",
-      "time_utc": "2026-09-10T04:12:33.000000",
-      "miss_distance_km": 1.234,
+      "time_utc": "2026-09-12T04:12:33.000000",
+      "miss_distance_km": 0.62,
       "relative_speed_km_s": 7.891,
-      "involves_synthetic": false,
-      "probability_of_collision": 0.00023,
+      "probability_of_collision": 6.1e-05,
       "pc_provenance": "socrates_real",
-      "risk_tier": "HIGH",
-      "grounding_notes": [
-        "pc-threshold",
-        "risk-tiers",
-        "maneuver-tradeoffs"
+      "priority_score": 75.1,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 63.1,
+        "urgency_score": 100.0,
+        "freshness_score": 81.7
+      },
+      "score_reasons": [
+        "Closest approach is soon (0.0h away)"
       ],
-      "recommendation": "Probability of collision 2.30e-04 is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
-      "recommendation_source": "rule_based_fallback"
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "ISS (ZARYA) [+] vs COSMOS 2251 DEB [-]: probability of collision 6.10e-05, priority HIGH (score 75.1/100).",
+        "why_it_matters": "Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
     },
     {
       "object_a": "STARLINK-3011 [+]",
-      "object_b": "FENGYU 1C DEB [-]",
+      "object_b": "FENGYUN 1C DEB [-]",
       "norad_a": "48274",
       "norad_b": "90002",
-      "time_utc": "2026-09-11T14:22:10.000000",
+      "time_utc": "2026-09-13T14:22:10.000000",
       "miss_distance_km": 3.1,
       "relative_speed_km_s": 9.2,
-      "involves_synthetic": false,
       "probability_of_collision": 4.1e-06,
       "pc_provenance": "socrates_real",
-      "risk_tier": "MEDIUM",
-      "grounding_notes": [
-        "pc-threshold",
-        "risk-tiers",
-        "maneuver-tradeoffs"
+      "priority_score": 50.1,
+      "priority_tier": "MEDIUM",
+      "score_breakdown": {
+        "pc_score": 43.5,
+        "urgency_score": 59.9,
+        "freshness_score": 60.0
+      },
+      "score_reasons": [
+        "No individual factor is extreme; priority reflects a moderate combination"
       ],
-      "recommendation": "Probability of collision 4.10e-06 warrants close monitoring and a maneuver plan on standby, with a re-screen as the event approaches.",
-      "recommendation_source": "rule_based_fallback"
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "STARLINK-3011 [+] vs FENGYUN 1C DEB [-]: probability of collision 4.10e-06, priority MEDIUM (score 50.1/100).",
+        "why_it_matters": "No individual factor is extreme; priority reflects a moderate combination",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
+        "confidence": "low",
+        "limitations": [
+          "No individual factor is extreme; priority reflects a moderate combination",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
     },
     {
       "object_a": "NOAA 19 [+]",
       "object_b": "IRIDIUM 33 DEB [-]",
       "norad_a": "33591",
       "norad_b": "90003",
-      "time_utc": "2026-09-12T02:00:00.000000",
+      "time_utc": "2026-09-14T02:00:00.000000",
       "miss_distance_km": 4.5,
       "relative_speed_km_s": 7.4,
-      "involves_synthetic": false,
       "probability_of_collision": 5e-07,
       "pc_provenance": "socrates_real",
-      "risk_tier": "LOW",
-      "grounding_notes": [
-        "pc-threshold",
-        "risk-tiers",
-        "maneuver-tradeoffs"
+      "priority_score": 27.6,
+      "priority_tier": "LOW",
+      "score_breakdown": {
+        "pc_score": 28.3,
+        "urgency_score": 42.3,
+        "freshness_score": 0.0
+      },
+      "score_reasons": [
+        "Underlying tracking data is 10.0 days old \u2014 treat as less certain"
       ],
-      "recommendation": "Probability of collision 5.00e-07 is outside the typical action threshold. Log the event and continue routine monitoring. Underlying tracking data is more than 7 days old \u2014 treat this as indicative and re-screen against fresher data before acting.",
-      "recommendation_source": "rule_based_fallback"
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "NOAA 19 [+] vs IRIDIUM 33 DEB [-]: probability of collision 5.00e-07, priority LOW (score 27.6/100).",
+        "why_it_matters": "Underlying tracking data is 10.0 days old \u2014 treat as less certain",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Log the event; no immediate action needed.",
+        "confidence": "low",
+        "limitations": [
+          "Underlying tracking data is 10.0 days old \u2014 treat as less certain",
+          "Underlying tracking data is more than 7 days old.",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
     }
   ]
 }
