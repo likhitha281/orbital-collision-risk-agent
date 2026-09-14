@@ -1,7 +1,7 @@
 {
   "source_label": "data/live_cache/stations.tle",
   "pc_provenance": "assumed_covariance",
-  "generated_at": "2026-09-14T02:07:09+00:00",
+  "generated_at": "2026-09-14T09:21:17+00:00",
   "conjunctions_flagged": 25,
   "events": [
     {
@@ -9,7 +9,7 @@
       "object_b": "POISK",
       "norad_a": "25544",
       "norad_b": "36086",
-      "time_utc": "2026-09-13T15:03:04Z",
+      "time_utc": "2026-09-14T03:26:14Z",
       "miss_distance_km": 0.0,
       "relative_speed_km_s": 0.0,
       "involves_synthetic": false,
@@ -29,7 +29,7 @@
       "object_b": "ISS (NAUKA)",
       "norad_a": "25544",
       "norad_b": "49044",
-      "time_utc": "2026-09-13T15:03:04Z",
+      "time_utc": "2026-09-14T03:26:14Z",
       "miss_distance_km": 0.0,
       "relative_speed_km_s": 0.0,
       "involves_synthetic": false,
@@ -49,7 +49,7 @@
       "object_b": "ISS (NAUKA)",
       "norad_a": "36086",
       "norad_b": "49044",
-      "time_utc": "2026-09-13T15:03:04Z",
+      "time_utc": "2026-09-14T03:26:14Z",
       "miss_distance_km": 0.0,
       "relative_speed_km_s": 0.0,
       "involves_synthetic": false,
@@ -69,7 +69,7 @@
       "object_b": "CSS (MENGTIAN)",
       "norad_a": "48274",
       "norad_b": "54216",
-      "time_utc": "2026-09-13T19:35:34Z",
+      "time_utc": "2026-09-14T03:16:32Z",
       "miss_distance_km": 0.0,
       "relative_speed_km_s": 0.0,
       "involves_synthetic": false,
@@ -89,7 +89,7 @@
       "object_b": "TIANZHOU-10",
       "norad_a": "53239",
       "norad_b": "69049",
-      "time_utc": "2026-09-13T14:58:59Z",
+      "time_utc": "2026-09-13T22:39:57Z",
       "miss_distance_km": 0.0,
       "relative_speed_km_s": 0.0,
       "involves_synthetic": false,
@@ -109,7 +109,7 @@
       "object_b": "SHENZHOU-23 (SZ-23)",
       "norad_a": "53239",
       "norad_b": "69180",
-      "time_utc": "2026-09-13T14:58:59Z",
+      "time_utc": "2026-09-13T22:39:57Z",
       "miss_distance_km": 0.0,
       "relative_speed_km_s": 0.0,
       "involves_synthetic": false,
@@ -129,7 +129,7 @@
       "object_b": "CYGNUS NG-24",
       "norad_a": "67796",
       "norad_b": "68689",
-      "time_utc": "2026-09-13T08:51:29Z",
+      "time_utc": "2026-09-13T15:03:04Z",
       "miss_distance_km": 0.0,
       "relative_speed_km_s": 0.0,
       "involves_synthetic": false,
@@ -149,7 +149,7 @@
       "object_b": "PROGRESS-MS 34",
       "norad_a": "67796",
       "norad_b": "68837",
-      "time_utc": "2026-09-13T08:51:29Z",
+      "time_utc": "2026-09-13T15:03:04Z",
       "miss_distance_km": 0.0,
       "relative_speed_km_s": 0.0,
       "involves_synthetic": false,
@@ -169,7 +169,7 @@
       "object_b": "PROGRESS-MS 34",
       "norad_a": "68689",
       "norad_b": "68837",
-      "time_utc": "2026-09-13T08:51:29Z",
+      "time_utc": "2026-09-13T15:03:04Z",
       "miss_distance_km": 0.0,
       "relative_speed_km_s": 0.0,
       "involves_synthetic": false,
@@ -189,7 +189,7 @@
       "object_b": "SHENZHOU-23 (SZ-23)",
       "norad_a": "69049",
       "norad_b": "69180",
-      "time_utc": "2026-09-13T14:58:59Z",
+      "time_utc": "2026-09-13T22:39:57Z",
       "miss_distance_km": 0.0,
       "relative_speed_km_s": 0.0,
       "involves_synthetic": false,
@@ -205,35 +205,15 @@
       "recommendation_source": "rule_based_fallback"
     },
     {
-      "object_a": "CSS (WENTIAN)",
-      "object_b": "CSS (MENGTIAN)",
-      "norad_a": "53239",
-      "norad_b": "54216",
-      "time_utc": "2026-09-13T15:23:55Z",
-      "miss_distance_km": 0.014,
-      "relative_speed_km_s": 0.0001,
-      "involves_synthetic": false,
-      "probability_of_collision": 0.002217330709608681,
-      "pc_provenance": "assumed_covariance",
-      "risk_tier": "HIGH",
-      "grounding_notes": [
-        "risk-tiers",
-        "maneuver-tradeoffs",
-        "false-positive-context"
-      ],
-      "recommendation": "Miss distance of 0.014 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
-      "recommendation_source": "rule_based_fallback"
-    },
-    {
       "object_a": "CSS (TIANHE)",
       "object_b": "CSS (WENTIAN)",
       "norad_a": "48274",
       "norad_b": "53239",
-      "time_utc": "2026-09-13T19:58:20Z",
-      "miss_distance_km": 0.023,
-      "relative_speed_km_s": 0.0001,
+      "time_utc": "2026-09-14T04:19:10Z",
+      "miss_distance_km": 0.049,
+      "relative_speed_km_s": 0.0,
       "involves_synthetic": false,
-      "probability_of_collision": 0.002213419244896684,
+      "probability_of_collision": 0.002190737636293233,
       "pc_provenance": "assumed_covariance",
       "risk_tier": "HIGH",
       "grounding_notes": [
@@ -241,7 +221,7 @@
         "maneuver-tradeoffs",
         "false-positive-context"
       ],
-      "recommendation": "Miss distance of 0.023 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
+      "recommendation": "Miss distance of 0.049 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
       "recommendation_source": "rule_based_fallback"
     },
     {
@@ -249,11 +229,11 @@
       "object_b": "TIANZHOU-10",
       "norad_a": "48274",
       "norad_b": "69049",
-      "time_utc": "2026-09-13T19:58:20Z",
-      "miss_distance_km": 0.023,
-      "relative_speed_km_s": 0.0001,
+      "time_utc": "2026-09-14T04:19:10Z",
+      "miss_distance_km": 0.049,
+      "relative_speed_km_s": 0.0,
       "involves_synthetic": false,
-      "probability_of_collision": 0.002213419244896684,
+      "probability_of_collision": 0.002190737636293233,
       "pc_provenance": "assumed_covariance",
       "risk_tier": "HIGH",
       "grounding_notes": [
@@ -261,7 +241,7 @@
         "maneuver-tradeoffs",
         "false-positive-context"
       ],
-      "recommendation": "Miss distance of 0.023 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
+      "recommendation": "Miss distance of 0.049 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
       "recommendation_source": "rule_based_fallback"
     },
     {
@@ -269,11 +249,11 @@
       "object_b": "SHENZHOU-23 (SZ-23)",
       "norad_a": "48274",
       "norad_b": "69180",
-      "time_utc": "2026-09-13T19:58:20Z",
-      "miss_distance_km": 0.023,
-      "relative_speed_km_s": 0.0001,
+      "time_utc": "2026-09-14T04:19:10Z",
+      "miss_distance_km": 0.049,
+      "relative_speed_km_s": 0.0,
       "involves_synthetic": false,
-      "probability_of_collision": 0.002213419244896684,
+      "probability_of_collision": 0.002190737636293233,
       "pc_provenance": "assumed_covariance",
       "risk_tier": "HIGH",
       "grounding_notes": [
@@ -281,7 +261,7 @@
         "maneuver-tradeoffs",
         "false-positive-context"
       ],
-      "recommendation": "Miss distance of 0.023 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
+      "recommendation": "Miss distance of 0.049 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
       "recommendation_source": "rule_based_fallback"
     },
     {
@@ -289,11 +269,11 @@
       "object_b": "TIANZHOU-10",
       "norad_a": "54216",
       "norad_b": "69049",
-      "time_utc": "2026-09-13T19:58:20Z",
-      "miss_distance_km": 0.023,
-      "relative_speed_km_s": 0.0001,
+      "time_utc": "2026-09-14T04:19:10Z",
+      "miss_distance_km": 0.049,
+      "relative_speed_km_s": 0.0,
       "involves_synthetic": false,
-      "probability_of_collision": 0.002213419244896684,
+      "probability_of_collision": 0.002190737636293233,
       "pc_provenance": "assumed_covariance",
       "risk_tier": "HIGH",
       "grounding_notes": [
@@ -301,7 +281,7 @@
         "maneuver-tradeoffs",
         "false-positive-context"
       ],
-      "recommendation": "Miss distance of 0.023 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
+      "recommendation": "Miss distance of 0.049 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
       "recommendation_source": "rule_based_fallback"
     },
     {
@@ -309,11 +289,31 @@
       "object_b": "SHENZHOU-23 (SZ-23)",
       "norad_a": "54216",
       "norad_b": "69180",
-      "time_utc": "2026-09-13T19:58:20Z",
-      "miss_distance_km": 0.023,
+      "time_utc": "2026-09-14T04:19:10Z",
+      "miss_distance_km": 0.049,
+      "relative_speed_km_s": 0.0,
+      "involves_synthetic": false,
+      "probability_of_collision": 0.002190737636293233,
+      "pc_provenance": "assumed_covariance",
+      "risk_tier": "HIGH",
+      "grounding_notes": [
+        "risk-tiers",
+        "maneuver-tradeoffs",
+        "false-positive-context"
+      ],
+      "recommendation": "Miss distance of 0.049 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
+      "recommendation_source": "rule_based_fallback"
+    },
+    {
+      "object_a": "CSS (WENTIAN)",
+      "object_b": "CSS (MENGTIAN)",
+      "norad_a": "53239",
+      "norad_b": "54216",
+      "time_utc": "2026-09-13T23:08:50Z",
+      "miss_distance_km": 0.061,
       "relative_speed_km_s": 0.0001,
       "involves_synthetic": false,
-      "probability_of_collision": 0.002213419244896684,
+      "probability_of_collision": 0.002174870512961523,
       "pc_provenance": "assumed_covariance",
       "risk_tier": "HIGH",
       "grounding_notes": [
@@ -321,7 +321,7 @@
         "maneuver-tradeoffs",
         "false-positive-context"
       ],
-      "recommendation": "Miss distance of 0.023 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
+      "recommendation": "Miss distance of 0.061 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
       "recommendation_source": "rule_based_fallback"
     },
     {
@@ -329,11 +329,11 @@
       "object_b": "CREW DRAGON 12",
       "norad_a": "25544",
       "norad_b": "67796",
-      "time_utc": "2026-09-13T15:33:19Z",
-      "miss_distance_km": 0.16,
-      "relative_speed_km_s": 0.0002,
+      "time_utc": "2026-09-14T04:00:11Z",
+      "miss_distance_km": 0.36,
+      "relative_speed_km_s": 0.0004,
       "involves_synthetic": false,
-      "probability_of_collision": 0.0019270498793932849,
+      "probability_of_collision": 0.0010792672720193071,
       "pc_provenance": "assumed_covariance",
       "risk_tier": "HIGH",
       "grounding_notes": [
@@ -341,7 +341,7 @@
         "maneuver-tradeoffs",
         "false-positive-context"
       ],
-      "recommendation": "Miss distance of 0.16 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
+      "recommendation": "Miss distance of 0.36 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
       "recommendation_source": "rule_based_fallback"
     },
     {
@@ -349,11 +349,11 @@
       "object_b": "CYGNUS NG-24",
       "norad_a": "25544",
       "norad_b": "68689",
-      "time_utc": "2026-09-13T15:33:19Z",
-      "miss_distance_km": 0.16,
-      "relative_speed_km_s": 0.0002,
+      "time_utc": "2026-09-14T04:00:11Z",
+      "miss_distance_km": 0.36,
+      "relative_speed_km_s": 0.0004,
       "involves_synthetic": false,
-      "probability_of_collision": 0.0019270498793932849,
+      "probability_of_collision": 0.0010792672720193071,
       "pc_provenance": "assumed_covariance",
       "risk_tier": "HIGH",
       "grounding_notes": [
@@ -361,7 +361,7 @@
         "maneuver-tradeoffs",
         "false-positive-context"
       ],
-      "recommendation": "Miss distance of 0.16 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
+      "recommendation": "Miss distance of 0.36 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
       "recommendation_source": "rule_based_fallback"
     },
     {
@@ -369,11 +369,11 @@
       "object_b": "PROGRESS-MS 34",
       "norad_a": "25544",
       "norad_b": "68837",
-      "time_utc": "2026-09-13T15:33:19Z",
-      "miss_distance_km": 0.16,
-      "relative_speed_km_s": 0.0002,
+      "time_utc": "2026-09-14T04:00:11Z",
+      "miss_distance_km": 0.36,
+      "relative_speed_km_s": 0.0004,
       "involves_synthetic": false,
-      "probability_of_collision": 0.0019270498793932849,
+      "probability_of_collision": 0.0010792672720193071,
       "pc_provenance": "assumed_covariance",
       "risk_tier": "HIGH",
       "grounding_notes": [
@@ -381,7 +381,7 @@
         "maneuver-tradeoffs",
         "false-positive-context"
       ],
-      "recommendation": "Miss distance of 0.16 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
+      "recommendation": "Miss distance of 0.36 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
       "recommendation_source": "rule_based_fallback"
     },
     {
@@ -389,11 +389,11 @@
       "object_b": "CREW DRAGON 12",
       "norad_a": "36086",
       "norad_b": "67796",
-      "time_utc": "2026-09-13T15:33:19Z",
-      "miss_distance_km": 0.16,
-      "relative_speed_km_s": 0.0002,
+      "time_utc": "2026-09-14T04:00:11Z",
+      "miss_distance_km": 0.36,
+      "relative_speed_km_s": 0.0004,
       "involves_synthetic": false,
-      "probability_of_collision": 0.0019270498793932849,
+      "probability_of_collision": 0.0010792672720193071,
       "pc_provenance": "assumed_covariance",
       "risk_tier": "HIGH",
       "grounding_notes": [
@@ -401,7 +401,7 @@
         "maneuver-tradeoffs",
         "false-positive-context"
       ],
-      "recommendation": "Miss distance of 0.16 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
+      "recommendation": "Miss distance of 0.36 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
       "recommendation_source": "rule_based_fallback"
     },
     {
@@ -409,11 +409,11 @@
       "object_b": "CYGNUS NG-24",
       "norad_a": "36086",
       "norad_b": "68689",
-      "time_utc": "2026-09-13T15:33:19Z",
-      "miss_distance_km": 0.16,
-      "relative_speed_km_s": 0.0002,
+      "time_utc": "2026-09-14T04:00:11Z",
+      "miss_distance_km": 0.36,
+      "relative_speed_km_s": 0.0004,
       "involves_synthetic": false,
-      "probability_of_collision": 0.0019270498793932849,
+      "probability_of_collision": 0.0010792672720193071,
       "pc_provenance": "assumed_covariance",
       "risk_tier": "HIGH",
       "grounding_notes": [
@@ -421,7 +421,7 @@
         "maneuver-tradeoffs",
         "false-positive-context"
       ],
-      "recommendation": "Miss distance of 0.16 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
+      "recommendation": "Miss distance of 0.36 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
       "recommendation_source": "rule_based_fallback"
     },
     {
@@ -429,11 +429,11 @@
       "object_b": "PROGRESS-MS 34",
       "norad_a": "36086",
       "norad_b": "68837",
-      "time_utc": "2026-09-13T15:33:19Z",
-      "miss_distance_km": 0.16,
-      "relative_speed_km_s": 0.0002,
+      "time_utc": "2026-09-14T04:00:11Z",
+      "miss_distance_km": 0.36,
+      "relative_speed_km_s": 0.0004,
       "involves_synthetic": false,
-      "probability_of_collision": 0.0019270498793932849,
+      "probability_of_collision": 0.0010792672720193071,
       "pc_provenance": "assumed_covariance",
       "risk_tier": "HIGH",
       "grounding_notes": [
@@ -441,7 +441,7 @@
         "maneuver-tradeoffs",
         "false-positive-context"
       ],
-      "recommendation": "Miss distance of 0.16 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
+      "recommendation": "Miss distance of 0.36 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
       "recommendation_source": "rule_based_fallback"
     },
     {
@@ -449,11 +449,11 @@
       "object_b": "CREW DRAGON 12",
       "norad_a": "49044",
       "norad_b": "67796",
-      "time_utc": "2026-09-13T15:33:19Z",
-      "miss_distance_km": 0.16,
-      "relative_speed_km_s": 0.0002,
+      "time_utc": "2026-09-14T04:00:11Z",
+      "miss_distance_km": 0.36,
+      "relative_speed_km_s": 0.0004,
       "involves_synthetic": false,
-      "probability_of_collision": 0.0019270498793932849,
+      "probability_of_collision": 0.0010792672720193071,
       "pc_provenance": "assumed_covariance",
       "risk_tier": "HIGH",
       "grounding_notes": [
@@ -461,7 +461,7 @@
         "maneuver-tradeoffs",
         "false-positive-context"
       ],
-      "recommendation": "Miss distance of 0.16 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
+      "recommendation": "Miss distance of 0.36 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
       "recommendation_source": "rule_based_fallback"
     },
     {
@@ -469,11 +469,11 @@
       "object_b": "CYGNUS NG-24",
       "norad_a": "49044",
       "norad_b": "68689",
-      "time_utc": "2026-09-13T15:33:19Z",
-      "miss_distance_km": 0.16,
-      "relative_speed_km_s": 0.0002,
+      "time_utc": "2026-09-14T04:00:11Z",
+      "miss_distance_km": 0.36,
+      "relative_speed_km_s": 0.0004,
       "involves_synthetic": false,
-      "probability_of_collision": 0.0019270498793932849,
+      "probability_of_collision": 0.0010792672720193071,
       "pc_provenance": "assumed_covariance",
       "risk_tier": "HIGH",
       "grounding_notes": [
@@ -481,7 +481,7 @@
         "maneuver-tradeoffs",
         "false-positive-context"
       ],
-      "recommendation": "Miss distance of 0.16 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
+      "recommendation": "Miss distance of 0.36 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
       "recommendation_source": "rule_based_fallback"
     },
     {
@@ -489,11 +489,11 @@
       "object_b": "PROGRESS-MS 34",
       "norad_a": "49044",
       "norad_b": "68837",
-      "time_utc": "2026-09-13T15:33:19Z",
-      "miss_distance_km": 0.16,
-      "relative_speed_km_s": 0.0002,
+      "time_utc": "2026-09-14T04:00:11Z",
+      "miss_distance_km": 0.36,
+      "relative_speed_km_s": 0.0004,
       "involves_synthetic": false,
-      "probability_of_collision": 0.0019270498793932849,
+      "probability_of_collision": 0.0010792672720193071,
       "pc_provenance": "assumed_covariance",
       "risk_tier": "HIGH",
       "grounding_notes": [
@@ -501,7 +501,7 @@
         "maneuver-tradeoffs",
         "false-positive-context"
       ],
-      "recommendation": "Miss distance of 0.16 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
+      "recommendation": "Miss distance of 0.36 km is inside the high-concern band. Recommend an active maneuver evaluation and re-screening against the freshest available tracking data before the predicted close-approach time.",
       "recommendation_source": "rule_based_fallback"
     }
   ]
