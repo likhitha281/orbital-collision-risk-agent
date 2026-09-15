@@ -1,0 +1,17 @@
+name = "orbital-risk-chatbot"
+main = "worker.js"
+compatibility_date = "2024-09-01"
+
+# ANTHROPIC_API_KEY is set via `wrangler secret put ANTHROPIC_API_KEY`,
+# NOT here — secrets should never be committed to a config file, even one
+# that's easy to gitignore. See README.md in this folder.
+
+[vars]
+ALLOWED_ORIGIN = "https://likhitha281.github.io"
+
+# Optional: enables per-IP rate limiting (see worker.js). Without this
+# binding, rate limiting is skipped entirely rather than failing closed.
+# Uncomment after creating the namespace (see README.md):
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT_KV"
+# id = "YOUR_KV_NAMESPACE_ID"

@@ -84,6 +84,41 @@
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
   .error { background: rgba(255,92,92,0.1); border: 1px solid rgba(255,92,92,0.3); border-radius: 10px; padding: 16px; color: var(--high); font-size: 13px; }
+
+  /* Chat widget */
+  #chat-toggle {
+    position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px;
+    border-radius: 50%; background: var(--accent); border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4); z-index: 100; font-size: 22px;
+  }
+  #chat-panel {
+    position: fixed; bottom: 92px; right: 24px; width: 360px; max-width: calc(100vw - 32px);
+    height: 480px; max-height: calc(100vh - 140px); background: var(--panel);
+    border: 1px solid var(--border); border-radius: 14px; display: none;
+    flex-direction: column; overflow: hidden; z-index: 100; box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  }
+  #chat-panel.open { display: flex; }
+  #chat-header {
+    padding: 14px 16px; border-bottom: 1px solid var(--border); font-size: 13px;
+    font-weight: 600; display: flex; justify-content: space-between; align-items: center;
+  }
+  #chat-header .close { cursor: pointer; color: var(--text-dim); font-size: 18px; }
+  #chat-messages { flex: 1; overflow-y: auto; padding: 12px 16px; display: flex; flex-direction: column; gap: 10px; }
+  .chat-msg { font-size: 13px; line-height: 1.5; max-width: 88%; padding: 8px 12px; border-radius: 10px; }
+  .chat-msg.user { align-self: flex-end; background: var(--accent); color: #051424; }
+  .chat-msg.bot { align-self: flex-start; background: #1c2534; color: var(--text); }
+  .chat-msg.error-msg { align-self: flex-start; background: rgba(255,92,92,0.15); color: var(--high); }
+  .chat-msg.pending { align-self: flex-start; color: var(--text-dim); font-style: italic; }
+  #chat-input-row { display: flex; gap: 8px; padding: 12px; border-top: 1px solid var(--border); }
+  #chat-input {
+    flex: 1; background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+    padding: 8px 10px; color: var(--text); font-size: 13px; font-family: inherit;
+  }
+  #chat-input:focus { outline: none; border-color: var(--accent); }
+  #chat-send { background: var(--accent); border: none; border-radius: 8px; padding: 0 14px; cursor: pointer; color: #051424; font-weight: 600; font-size: 13px; }
+  #chat-send:disabled { opacity: 0.5; cursor: not-allowed; }
+  #chat-note { font-size: 10.5px; color: var(--text-dim); padding: 0 16px 10px; }
 </style>
 </head>
 <body>
@@ -112,7 +147,26 @@
   </footer>
 </div>
 
+<button id="chat-toggle" title="Ask about this data">💬</button>
+<div id="chat-panel">
+  <div id="chat-header">
+    <span>Ask about this data</span>
+    <span class="close" id="chat-close">✕</span>
+  </div>
+  <div id="chat-messages"></div>
+  <div id="chat-note">Answers are grounded in the data above only — it can't see full history, and won't invent numbers.</div>
+  <div id="chat-input-row">
+    <input id="chat-input" type="text" placeholder="e.g. what's the highest priority event?" maxlength="500">
+    <button id="chat-send">Ask</button>
+  </div>
+</div>
+
 <script>
+// Set after deploying the Cloudflare Worker (see chatbot/README.md).
+const CHATBOT_WORKER_URL = "https://orbital-risk-chatbot.YOUR-SUBDOMAIN.workers.dev";
+
+let currentDashboardData = null;
+
 async function loadDashboard() {
   const statusBar = document.getElementById('status-bar');
   const statsEl = document.getElementById('stats');
@@ -122,6 +176,7 @@ async function loadDashboard() {
     const res = await fetch('latest.json?_=' + Date.now());
     if (!res.ok) throw new Error('latest.json not found (status ' + res.status + ')');
     const data = await res.json();
+    currentDashboardData = data;
 
     const generated = new Date(data.generated_at);
     const ageMinutes = Math.round((Date.now() - generated.getTime()) / 60000);
@@ -184,6 +239,66 @@ function escapeHtml(str) {
   div.textContent = str;
   return div.innerHTML;
 }
+
+// --- Chat widget ---
+const chatToggle = document.getElementById('chat-toggle');
+const chatPanel = document.getElementById('chat-panel');
+const chatClose = document.getElementById('chat-close');
+const chatMessages = document.getElementById('chat-messages');
+const chatInput = document.getElementById('chat-input');
+const chatSend = document.getElementById('chat-send');
+
+chatToggle.addEventListener('click', () => chatPanel.classList.toggle('open'));
+chatClose.addEventListener('click', () => chatPanel.classList.remove('open'));
+
+function appendChatMessage(text, cls) {
+  const div = document.createElement('div');
+  div.className = `chat-msg ${cls}`;
+  div.textContent = text;
+  chatMessages.appendChild(div);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+  return div;
+}
+
+async function sendChatMessage() {
+  const question = chatInput.value.trim();
+  if (!question) return;
+
+  if (CHATBOT_WORKER_URL.includes('YOUR-SUBDOMAIN')) {
+    appendChatMessage(question, 'user');
+    appendChatMessage('Chatbot backend not deployed yet — see chatbot/README.md to set it up.', 'error-msg');
+    chatInput.value = '';
+    return;
+  }
+
+  appendChatMessage(question, 'user');
+  chatInput.value = '';
+  chatSend.disabled = true;
+  const pending = appendChatMessage('Thinking…', 'pending');
+
+  try {
+    const res = await fetch(CHATBOT_WORKER_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ question, dashboardData: currentDashboardData }),
+    });
+    const data = await res.json();
+    pending.remove();
+    if (!res.ok) {
+      appendChatMessage(data.error || `Request failed (${res.status})`, 'error-msg');
+    } else {
+      appendChatMessage(data.answer, 'bot');
+    }
+  } catch (err) {
+    pending.remove();
+    appendChatMessage('Network error reaching the chatbot backend.', 'error-msg');
+  } finally {
+    chatSend.disabled = false;
+  }
+}
+
+chatSend.addEventListener('click', sendChatMessage);
+chatInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') sendChatMessage(); });
 
 loadDashboard();
 </script>

@@ -155,6 +155,23 @@ python run_baseline.py --live --live-group stations --output report.md  # live C
 Full detail in [`docs/RESEARCH.md`](docs/RESEARCH.md), including why this
 split exists and what it deliberately doesn't try to replace.
 
+## Chatbot (optional)
+
+The dashboard has a chat widget for asking questions about the current
+data in plain language — "what's the highest priority event," "is
+anything escalating." It's grounded strictly in the dashboard's JSON
+snapshot and instructed never to invent a number that isn't in it, same
+philosophy as `src/analyst.py`.
+
+Requires a small backend, because GitHub Pages is static hosting and an
+API key can never safely live in client-side JavaScript. `chatbot/worker.js`
+is a Cloudflare Worker (free tier) that holds the key server-side; see
+[`chatbot/README.md`](chatbot/README.md) for the ~10-minute deploy, and
+honest notes on what CORS does and doesn't protect against. Its
+request-handling logic (CORS, validation, rate limiting, error handling)
+is tested directly with Node in `chatbot/test_worker.mjs` — 11 checks, no
+live deployment required to verify the logic.
+
 ## Deployment options
 
 The pipeline logic doesn't change — these just package and schedule it
@@ -189,9 +206,13 @@ current pipeline needs them:
 ├── examples/                 # worked example outputs
 ├── tests/                    # 41 tests
 ├── docs/
-│   ├── index.html            # live dashboard (GitHub Pages)
+│   ├── index.html            # live dashboard (GitHub Pages) + chat widget
 │   ├── latest.json           # data the dashboard reads (auto-updated)
 │   └── RESEARCH.md           # papers, data sources, and the honest history of this project
+├── chatbot/
+│   ├── worker.js              # Cloudflare Worker backend (holds the API key server-side)
+│   ├── test_worker.mjs        # tests the worker logic without a live deployment
+│   └── wrangler.toml
 ├── Dockerfile, docker-compose.yml, k8s/, orchestration/   # deployment options, not defaults
 └── .github/workflows/
     ├── ci.yml                # tests on every push
