@@ -1,19 +1,14 @@
 name: Live monitor
 
-# Runs phase 2 (real SOCRATES data + deterministic scoring + trend
-# detection) on a schedule and publishes results to the dashboard.
+# Runs the production triage pipeline using real SOCRATES data,
+# deterministic scoring, and trend detection.
 #
-# Cadence matches SOCRATES Plus's own ~10-11 hour refresh cycle (see
-# src/socrates_client.py) — running more often can't produce fresher data.
-#
-# The SQLite observation history (data/orbital_history.db) is what makes
-# trend detection possible across runs. It's cached between runs rather
-# than committed to git, so the repo's history doesn't fill up with binary
-# diffs every 12 hours.
+# The workflow runs every 12 hours and can also be started manually.
+
 on:
   schedule:
     - cron: "0 */12 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -21,8 +16,10 @@ permissions:
 jobs:
   live-run:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -40,18 +37,38 @@ jobs:
           restore-keys: |
             orbital-history-
 
-      - name: Run triage (phase 2)
+      - name: Run triage
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           mkdir -p reports
-          python run_triage.py --max-results 100 --min-probability 1e-7 --limit 30 \
-            --output reports/latest.md --db-path data/orbital_history.db
 
-      - name: Publish to dashboard
-        run: cp reports/latest.json docs/latest.json
+          python run_triage.py \
+            --max-results 100 \
+            --min-probability 1e-7 \
+            --limit 30 \
+            --output reports/latest.md \
+            --db-path data/orbital_history.db
 
-      - name: Snapshot with timestamp
+      # Do not publish anything unless the generated JSON exists
+      # and can be parsed successfully.
+      - name: Validate generated dashboard JSON
+        run: |
+          test -f reports/latest.json
+
+          python -m json.tool reports/latest.json > /dev/null
+
+          echo "reports/latest.json is valid JSON."
+
+      - name: Publish dashboard data
+        run: |
+          cp reports/latest.json docs/latest.json
+
+          python -m json.tool docs/latest.json > /dev/null
+
+          echo "docs/latest.json is valid JSON."
+
+      - name: Create timestamped report snapshot
         run: |
           ts=$(date -u +"%Y-%m-%dT%H-%M-%SZ")
           cp reports/latest.md "reports/${ts}.md"
@@ -60,6 +77,12 @@ jobs:
         run: |
           git config user.name "orbital-collision-agent-bot"
           git config user.email "actions@users.noreply.github.com"
+
           git add reports/ docs/latest.json
-          git diff --cached --quiet || git commit -m "Live triage update: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No dashboard changes to commit."
+          else
+            git commit -m "Live triage update: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi
