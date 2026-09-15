@@ -90,11 +90,11 @@
 <div class="wrap">
   <header>
     <h1>Orbital Collision-Risk Agent</h1>
-    <p class="subtitle">Live conjunction screening for tracked orbital objects — refreshed automatically every 4 hours</p>
+    <p class="subtitle">Deterministic priority scoring and trend detection on real conjunction data — refreshed automatically every 12 hours</p>
     <div class="badges">
-      <span class="badge">SGP4 propagation</span>
-      <span class="badge">2D-Pc (Foster &amp; Estes, 1992)</span>
-      <span class="badge">Multi-tool agent</span>
+      <span class="badge">Real Pc (CelesTrak SOCRATES Plus)</span>
+      <span class="badge">Deterministic scoring</span>
+      <span class="badge">Trend detection</span>
     </div>
   </header>
 
@@ -127,14 +127,14 @@ async function loadDashboard() {
     const ageMinutes = Math.round((Date.now() - generated.getTime()) / 60000);
     statusBar.innerHTML = `
       <span><span class="dot"></span>Last run: ${generated.toUTCString()} (${ageMinutes} min ago)</span>
-      <span style="font-family: var(--mono); color: var(--text-dim);">catalog: ${escapeHtml(data.catalog_path)}</span>
+      <span style="font-family: var(--mono); color: var(--text-dim);">source: ${escapeHtml(data.source_label || data.catalog_path || 'unknown')}</span>
     `;
 
     statsEl.innerHTML = `
-      <div class="stat"><div class="label">Conjunctions flagged</div><div class="value">${data.conjunctions_flagged}</div></div>
-      <div class="stat"><div class="label">High risk</div><div class="value">${data.events.filter(e => e.risk_tier === 'HIGH').length}</div></div>
-      <div class="stat"><div class="label">Medium risk</div><div class="value">${data.events.filter(e => e.risk_tier === 'MEDIUM').length}</div></div>
-      <div class="stat"><div class="label">Low risk</div><div class="value">${data.events.filter(e => e.risk_tier === 'LOW').length}</div></div>
+      <div class="stat"><div class="label">Conjunctions tracked</div><div class="value">${data.conjunctions_flagged}</div></div>
+      <div class="stat"><div class="label">High priority</div><div class="value">${data.events.filter(e => e.priority_tier === 'HIGH').length}</div></div>
+      <div class="stat"><div class="label">Medium priority</div><div class="value">${data.events.filter(e => e.priority_tier === 'MEDIUM').length}</div></div>
+      <div class="stat"><div class="label">Escalating</div><div class="value">${data.events.filter(e => e.trend && e.trend.direction === 'escalating').length}</div></div>
     `;
 
     if (data.events.length === 0) {
@@ -142,22 +142,36 @@ async function loadDashboard() {
       return;
     }
 
-    eventsEl.innerHTML = data.events.map(e => `
+    const trendLabel = (t) => ({
+      escalating: '▲ escalating',
+      decreasing: '▼ decreasing',
+      stable: '→ stable',
+      insufficient_data: '• first observation',
+    }[t] || t);
+
+    eventsEl.innerHTML = data.events.map(e => {
+      const tier = (e.priority_tier || 'LOW').toLowerCase();
+      const trend = e.trend || {};
+      const analysis = e.analysis || {};
+      return `
       <div class="event">
         <div class="event-header">
           <div class="event-title">${escapeHtml(e.object_a)} vs ${escapeHtml(e.object_b)}</div>
-          <span class="tier ${e.risk_tier.toLowerCase()}">${e.risk_tier}</span>
+          <span class="tier ${tier}">${e.priority_tier} · ${e.priority_score}/100</span>
         </div>
         <div class="event-grid">
           <div><div class="k">Miss distance</div><div class="v">${e.miss_distance_km} km</div></div>
           <div><div class="k">Probability (Pc)</div><div class="v">${e.probability_of_collision.toExponential(2)}</div></div>
-          <div><div class="k">Rel. speed</div><div class="v">${e.relative_speed_km_s} km/s</div></div>
           <div><div class="k">TCA (UTC)</div><div class="v">${escapeHtml(e.time_utc)}</div></div>
+          <div><div class="k">Trend</div><div class="v">${trendLabel(trend.direction)}${trend.pc_change_ratio ? ' (' + trend.pc_change_ratio + '×)' : ''}</div></div>
         </div>
-        <div class="recommendation"><strong>Recommendation</strong> (${e.recommendation_source}): ${escapeHtml(e.recommendation)}</div>
-        ${e.involves_synthetic ? '<div class="synthetic-note">Involves a synthetic test object (seeded for demo/reproducibility)</div>' : ''}
+        <div class="recommendation"><strong>${escapeHtml(analysis.summary || '')}</strong></div>
+        ${analysis.trend_explanation ? `<div class="recommendation">${escapeHtml(analysis.trend_explanation)}</div>` : ''}
+        ${analysis.suggested_next_step ? `<div class="recommendation"><strong>Next step</strong> (${escapeHtml(analysis.confidence || '')} confidence, ${escapeHtml(analysis.source || '')}): ${escapeHtml(analysis.suggested_next_step)}</div>` : ''}
+        ${analysis.limitations && analysis.limitations.length ? `<div class="synthetic-note">${escapeHtml(analysis.limitations.join('; '))}</div>` : ''}
       </div>
-    `).join('');
+    `;
+    }).join('');
 
   } catch (err) {
     statusBar.innerHTML = '';

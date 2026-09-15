@@ -1,14 +1,19 @@
 name: Live monitor
 
-# Runs on a schedule to re-fetch live TLE data and republish the risk report.
-# Cadence matches Celestrak's own ~2-hour refresh cycle (see src/live_fetch.py) —
-# running more often than that cannot produce fresher results and risks being
-# rate-limited, so this is genuinely as "real-time" as the free public data
-# source supports.
+# Runs phase 2 (real SOCRATES data + deterministic scoring + trend
+# detection) on a schedule and publishes results to the dashboard.
+#
+# Cadence matches SOCRATES Plus's own ~10-11 hour refresh cycle (see
+# src/socrates_client.py) — running more often can't produce fresher data.
+#
+# The SQLite observation history (data/orbital_history.db) is what makes
+# trend detection possible across runs. It's cached between runs rather
+# than committed to git, so the repo's history doesn't fill up with binary
+# diffs every 12 hours.
 on:
   schedule:
-    - cron: "0 */4 * * *"  # every 4 hours
-  workflow_dispatch: {}     # lets you trigger a run manually from the Actions tab
+    - cron: "0 */12 * * *"
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -27,16 +32,24 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run live baseline (stations group)
+      - name: Restore observation history
+        uses: actions/cache@v4
+        with:
+          path: data/orbital_history.db
+          key: orbital-history-${{ github.run_id }}
+          restore-keys: |
+            orbital-history-
+
+      - name: Run triage (phase 2)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           mkdir -p reports
-          python run_baseline.py --live --live-group stations --output reports/latest.md
+          python run_triage.py --max-results 100 --min-probability 1e-7 --limit 30 \
+            --output reports/latest.md --db-path data/orbital_history.db
 
       - name: Publish to dashboard
-        run: |
-          cp reports/latest.json docs/latest.json
+        run: cp reports/latest.json docs/latest.json
 
       - name: Snapshot with timestamp
         run: |
@@ -48,5 +61,5 @@ jobs:
           git config user.name "orbital-collision-agent-bot"
           git config user.email "actions@users.noreply.github.com"
           git add reports/ docs/latest.json
-          git diff --cached --quiet || git commit -m "Live report update: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git diff --cached --quiet || git commit -m "Live triage update: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push

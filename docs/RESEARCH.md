@@ -165,6 +165,53 @@ compare yet); run 2, with Pc raised from 1.2e-6 to 6.1e-5 in the fixture,
 correctly detected a 50.8x escalation and moved the priority tier from
 MEDIUM to HIGH — matching the actual ratio, not an invented one.
 
+## Why this project stopped calling itself an agent
+
+Everything above is real and load-bearing engineering. It is still not an
+agent, and the project's own earlier README overclaimed by calling it one.
+
+The technical definition, not a stylistic one: ReAct (Yao et al., 2022,
+*"ReAct: Synergizing Reasoning and Acting in Language Models,"* ICLR 2023)
+and Toolformer (Schick et al., 2023, NeurIPS) both define agentic behavior
+as an LLM choosing which action to take next, from a real set of options,
+based on something it just observed, in a sequence that isn't fully
+enumerable by the programmer ahead of time. Voyager (Wang et al., 2023,
+*"An Open-Ended Embodied Agent with Large Language Models"*) is the clean
+extreme version: an agent that writes and accumulates its own skills
+because the task space is genuinely open-ended.
+
+This pipeline's control flow is fixed: fetch, persist, score, check trend,
+explain — the same order, unconditionally, every run. The LLM call never
+chooses between options; it has exactly one job, every time. By the
+field's own definition, that disqualifies it from being called an agent,
+regardless of how good the explanation it produces is.
+
+This isn't a gap to apologize for. The reason the pipeline doesn't need
+agentic behavior is that its core decision — how urgent is this event,
+given (Pc, time-to-TCA, data age) — is a bounded, well-defined, computable
+mapping. Agents exist to handle *ambiguity about what to do next*; this
+problem doesn't have that ambiguity, so introducing autonomy here would
+trade away reproducibility and auditability for nothing. Real
+space-situational-awareness organizations make the same call, for the same
+reason.
+
+If this project ever grows a genuinely agentic piece, the honest candidate
+is object-identity resolution: SOCRATES gives a name string, not a
+confirmed identity, and reconciling that against messy, sometimes
+conflicting catalog data is a real open-ended, unpredictable-length
+investigation — the kind of problem ReAct-style tool use is actually for.
+It isn't built, because doing it just to be able to say "now it's agentic"
+would repeat the same mistake this section is correcting.
+
+Also worth reading before building any multi-agent system: Cemri et al.,
+*"Why Do Multi-Agent LLM Systems Fail?"* (2025, arXiv:2503.13657) — a
+taxonomy of real, observed failure modes (agents talking past each other,
+no shared ground truth, cascading errors) that's a more useful starting
+point than any tutorial. And as a concrete cautionary tale about vague
+goals and no stopping condition: AutoGPT's well-documented infinite-loop
+failures, where agents given open-ended goals like "research X" mostly
+just looped rather than converging.
+
 ## On this being "used by companies"
 
 The phase 1 baseline is a well-grounded educational exercise — getting each
