@@ -42,7 +42,7 @@ import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
 
-SOCRATES_BASE_URL = "https://celestrak.org/SOCRATES-Plus/table-socrates.php"
+SOCRATES_BASE_URL = "https://celestrak.org/SOCRATES/table-socrates.php"
 FORMAT_PARAM = "FORMAT=CSV"  # unverified assumption — see module docstring
 DEFAULT_CACHE_PATH = Path("data/socrates_cache/latest.csv")
 MIN_REFETCH_SECONDS = 10 * 60 * 60  # 10 hours — matches SOCRATES Plus's own update cadence
