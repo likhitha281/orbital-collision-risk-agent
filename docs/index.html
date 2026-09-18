@@ -264,7 +264,7 @@ async function sendChatMessage() {
   const question = chatInput.value.trim();
   if (!question) return;
 
-  if (CHATBOT_WORKER_URL.includes('YOUR-SUBDOMAIN')) {
+  if (CHATBOT_WORKER_URL.includes('likhitha-orbital')) {
     appendChatMessage(question, 'user');
     appendChatMessage('Chatbot backend not deployed yet — see chatbot/README.md to set it up.', 'error-msg');
     chatInput.value = '';
