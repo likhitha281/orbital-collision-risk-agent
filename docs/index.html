@@ -163,7 +163,7 @@
 
 <script>
 // Set after deploying the Cloudflare Worker (see chatbot/README.md).
-const CHATBOT_WORKER_URL ="https://orbital-risk-chatbot.likhitha-orbital.workers.dev";;
+const CHATBOT_WORKER_URL ="https://orbital-risk-chatbot.likhitha-orbital.workers.dev";
 
 let currentDashboardData = null;
 
@@ -263,13 +263,6 @@ function appendChatMessage(text, cls) {
 async function sendChatMessage() {
   const question = chatInput.value.trim();
   if (!question) return;
-
-  if (CHATBOT_WORKER_URL.includes('likhitha-orbital')) {
-    appendChatMessage(question, 'user');
-    appendChatMessage('Chatbot backend not deployed yet — see chatbot/README.md to set it up.', 'error-msg');
-    chatInput.value = '';
-    return;
-  }
 
   appendChatMessage(question, 'user');
   chatInput.value = '';
