@@ -85,22 +85,31 @@ async function checkRateLimit(env, ip) {
 }
 
 function extractAnswer(result) {
-  if (!result) {
-    return "";
-  }
+  if (!result) return "";
 
-  // Workers AI text-generation models normally expose response.
+  // Older/simple Workers AI response shape.
   if (typeof result.response === "string") {
     return result.response.trim();
   }
 
-  // Defensive fallback in case a model returns OpenAI-style choices.
+  // Current chat-completions response shape.
   if (Array.isArray(result.choices)) {
-    return result.choices
-      .map((choice) => choice?.message?.content || choice?.text || "")
-      .filter(Boolean)
-      .join("\n")
-      .trim();
+    for (const choice of result.choices) {
+      const content = choice?.message?.content;
+
+      if (typeof content === "string" && content.trim()) {
+        return content.trim();
+      }
+
+      if (typeof choice?.text === "string" && choice.text.trim()) {
+        return choice.text.trim();
+      }
+    }
+  }
+
+  // Some Workers AI models may return generated text directly.
+  if (typeof result.generated_text === "string") {
+    return result.generated_text.trim();
   }
 
   return "";
@@ -271,8 +280,11 @@ export default {
               content: userContent,
             },
           ],
-          max_tokens: 300,
+          max_completion_tokens: 300,
           temperature: 0.1,
+          chat_template_kwargs: {
+            enable_thinking: false,
+    },
         }
       );
     } catch (err) {
