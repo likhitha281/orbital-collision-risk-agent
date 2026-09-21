@@ -1,15 +1,15 @@
 {
   "source_label": "CelesTrak SOCRATES Plus (real conjunction data)",
-  "generated_at": "2026-09-21T04:36:01+00:00",
+  "generated_at": "2026-09-21T18:08:58+00:00",
   "conjunctions_flagged": 30,
   "events": [
     {
-      "object_a": "SOYUZ-MS 29 [+]",
-      "object_b": "CREW DRAGON 12 [+]",
-      "norad_a": "100057",
-      "norad_b": "67796",
-      "time_utc": "2026-09-20 11:28:40.998",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-20 23:18:47.301",
+      "miss_distance_km": 0.016,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -31,7 +31,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "SOYUZ-MS 29 [+] vs CREW DRAGON 12 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -45,12 +45,12 @@
       }
     },
     {
-      "object_a": "PROGRESS-MS 35 [+]",
-      "object_b": "CREW DRAGON 12 [+]",
-      "norad_a": "100712",
-      "norad_b": "67796",
-      "time_utc": "2026-09-20 11:28:40.998",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 00:07:04.663",
+      "miss_distance_km": 0.001,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -72,7 +72,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PROGRESS-MS 35 [+] vs CREW DRAGON 12 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -86,12 +86,12 @@
       }
     },
     {
-      "object_a": "SOYUZ-MS 29 [+]",
-      "object_b": "CYGNUS NG-24 [+]",
-      "norad_a": "100057",
-      "norad_b": "68689",
-      "time_utc": "2026-09-20 11:28:40.998",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 00:55:14.481",
+      "miss_distance_km": 0.016,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -113,7 +113,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "SOYUZ-MS 29 [+] vs CYGNUS NG-24 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -127,12 +127,12 @@
       }
     },
     {
-      "object_a": "PROGRESS-MS 35 [+]",
-      "object_b": "CYGNUS NG-24 [+]",
-      "norad_a": "100712",
-      "norad_b": "68689",
-      "time_utc": "2026-09-20 11:28:40.998",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 01:43:32.115",
+      "miss_distance_km": 0.001,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -154,7 +154,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PROGRESS-MS 35 [+] vs CYGNUS NG-24 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -168,12 +168,12 @@
       }
     },
     {
-      "object_a": "SOYUZ-MS 29 [+]",
-      "object_b": "PROGRESS-MS 34 [+]",
-      "norad_a": "100057",
-      "norad_b": "68837",
-      "time_utc": "2026-09-20 11:28:40.998",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 02:31:41.648",
+      "miss_distance_km": 0.016,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -195,7 +195,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "SOYUZ-MS 29 [+] vs PROGRESS-MS 34 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -209,12 +209,12 @@
       }
     },
     {
-      "object_a": "PROGRESS-MS 35 [+]",
-      "object_b": "PROGRESS-MS 34 [+]",
-      "norad_a": "100712",
-      "norad_b": "68837",
-      "time_utc": "2026-09-20 11:28:40.998",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 03:19:59.563",
+      "miss_distance_km": 0.001,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -236,7 +236,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PROGRESS-MS 35 [+] vs PROGRESS-MS 34 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -250,12 +250,12 @@
       }
     },
     {
-      "object_a": "SOYUZ-MS 29 [+]",
-      "object_b": "CREW DRAGON 12 [+]",
-      "norad_a": "100057",
-      "norad_b": "67796",
-      "time_utc": "2026-09-20 12:08:46.626",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 04:08:08.833",
+      "miss_distance_km": 0.016,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -277,7 +277,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "SOYUZ-MS 29 [+] vs CREW DRAGON 12 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -291,12 +291,12 @@
       }
     },
     {
-      "object_a": "PROGRESS-MS 35 [+]",
-      "object_b": "CREW DRAGON 12 [+]",
-      "norad_a": "100712",
-      "norad_b": "67796",
-      "time_utc": "2026-09-20 12:08:46.626",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 04:56:27.021",
+      "miss_distance_km": 0.001,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -318,7 +318,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PROGRESS-MS 35 [+] vs CREW DRAGON 12 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -332,12 +332,12 @@
       }
     },
     {
-      "object_a": "SOYUZ-MS 29 [+]",
-      "object_b": "CYGNUS NG-24 [+]",
-      "norad_a": "100057",
-      "norad_b": "68689",
-      "time_utc": "2026-09-20 12:08:46.626",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 05:44:36.018",
+      "miss_distance_km": 0.016,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -359,7 +359,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "SOYUZ-MS 29 [+] vs CYGNUS NG-24 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -373,12 +373,12 @@
       }
     },
     {
-      "object_a": "PROGRESS-MS 35 [+]",
-      "object_b": "CYGNUS NG-24 [+]",
-      "norad_a": "100712",
-      "norad_b": "68689",
-      "time_utc": "2026-09-20 12:08:46.626",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 06:32:54.478",
+      "miss_distance_km": 0.001,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -400,7 +400,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PROGRESS-MS 35 [+] vs CYGNUS NG-24 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -414,12 +414,12 @@
       }
     },
     {
-      "object_a": "SOYUZ-MS 29 [+]",
-      "object_b": "PROGRESS-MS 34 [+]",
-      "norad_a": "100057",
-      "norad_b": "68837",
-      "time_utc": "2026-09-20 12:08:46.626",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 07:21:03.205",
+      "miss_distance_km": 0.015,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -441,7 +441,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "SOYUZ-MS 29 [+] vs PROGRESS-MS 34 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -455,12 +455,12 @@
       }
     },
     {
-      "object_a": "PROGRESS-MS 35 [+]",
-      "object_b": "PROGRESS-MS 34 [+]",
-      "norad_a": "100712",
-      "norad_b": "68837",
-      "time_utc": "2026-09-20 12:08:46.626",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 08:09:21.920",
+      "miss_distance_km": 0.001,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -482,7 +482,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PROGRESS-MS 35 [+] vs PROGRESS-MS 34 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -496,12 +496,12 @@
       }
     },
     {
-      "object_a": "SOYUZ-MS 29 [+]",
-      "object_b": "CREW DRAGON 12 [+]",
-      "norad_a": "100057",
-      "norad_b": "67796",
-      "time_utc": "2026-09-20 12:58:51.562",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 08:57:30.393",
+      "miss_distance_km": 0.015,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -523,7 +523,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "SOYUZ-MS 29 [+] vs CREW DRAGON 12 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -537,12 +537,12 @@
       }
     },
     {
-      "object_a": "PROGRESS-MS 35 [+]",
-      "object_b": "CREW DRAGON 12 [+]",
-      "norad_a": "100712",
-      "norad_b": "67796",
-      "time_utc": "2026-09-20 12:58:51.562",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 09:45:49.371",
+      "miss_distance_km": 0.001,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -564,7 +564,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PROGRESS-MS 35 [+] vs CREW DRAGON 12 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -578,12 +578,12 @@
       }
     },
     {
-      "object_a": "SOYUZ-MS 29 [+]",
-      "object_b": "CYGNUS NG-24 [+]",
-      "norad_a": "100057",
-      "norad_b": "68689",
-      "time_utc": "2026-09-20 12:58:51.562",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 10:33:57.585",
+      "miss_distance_km": 0.015,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -605,7 +605,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "SOYUZ-MS 29 [+] vs CYGNUS NG-24 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -619,12 +619,12 @@
       }
     },
     {
-      "object_a": "PROGRESS-MS 35 [+]",
-      "object_b": "CYGNUS NG-24 [+]",
-      "norad_a": "100712",
-      "norad_b": "68689",
-      "time_utc": "2026-09-20 12:58:51.562",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 11:22:16.811",
+      "miss_distance_km": 0.001,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
@@ -646,7 +646,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PROGRESS-MS 35 [+] vs CYGNUS NG-24 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -660,21 +660,21 @@
       }
     },
     {
-      "object_a": "SOYUZ-MS 29 [+]",
-      "object_b": "PROGRESS-MS 34 [+]",
-      "norad_a": "100057",
-      "norad_b": "68837",
-      "time_utc": "2026-09-20 12:58:51.562",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 12:10:24.788",
+      "miss_distance_km": 0.015,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
+      "priority_score": 99.9,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 100.0
+        "freshness_score": 99.6
       },
       "score_reasons": [
         "Collision probability (1.00e+00) is in the high-concern range",
@@ -687,7 +687,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "SOYUZ-MS 29 [+] vs PROGRESS-MS 34 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 99.9/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -701,21 +701,21 @@
       }
     },
     {
-      "object_a": "PROGRESS-MS 35 [+]",
-      "object_b": "PROGRESS-MS 34 [+]",
-      "norad_a": "100712",
-      "norad_b": "68837",
-      "time_utc": "2026-09-20 12:58:51.562",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 12:58:44.251",
+      "miss_distance_km": 0.001,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
+      "priority_score": 99.9,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 100.0
+        "freshness_score": 99.0
       },
       "score_reasons": [
         "Collision probability (1.00e+00) is in the high-concern range",
@@ -728,7 +728,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PROGRESS-MS 35 [+] vs PROGRESS-MS 34 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 99.9/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -742,21 +742,21 @@
       }
     },
     {
-      "object_a": "SOYUZ-MS 29 [+]",
-      "object_b": "CREW DRAGON 12 [+]",
-      "norad_a": "100057",
-      "norad_b": "67796",
-      "time_utc": "2026-09-20 13:44:40.855",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 13:46:51.989",
+      "miss_distance_km": 0.015,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
+      "priority_score": 99.8,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 100.0
+        "freshness_score": 98.5
       },
       "score_reasons": [
         "Collision probability (1.00e+00) is in the high-concern range",
@@ -769,7 +769,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "SOYUZ-MS 29 [+] vs CREW DRAGON 12 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 99.8/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -783,21 +783,21 @@
       }
     },
     {
-      "object_a": "PROGRESS-MS 35 [+]",
-      "object_b": "CREW DRAGON 12 [+]",
-      "norad_a": "100712",
-      "norad_b": "67796",
-      "time_utc": "2026-09-20 13:44:40.855",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 14:35:11.694",
+      "miss_distance_km": 0.001,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
+      "priority_score": 99.7,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 100.0
+        "freshness_score": 97.9
       },
       "score_reasons": [
         "Collision probability (1.00e+00) is in the high-concern range",
@@ -810,7 +810,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PROGRESS-MS 35 [+] vs CREW DRAGON 12 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 99.7/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -824,21 +824,21 @@
       }
     },
     {
-      "object_a": "SOYUZ-MS 29 [+]",
-      "object_b": "CYGNUS NG-24 [+]",
-      "norad_a": "100057",
-      "norad_b": "68689",
-      "time_utc": "2026-09-20 13:44:40.855",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 15:23:19.249",
+      "miss_distance_km": 0.015,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
+      "priority_score": 99.6,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 100.0
+        "freshness_score": 97.4
       },
       "score_reasons": [
         "Collision probability (1.00e+00) is in the high-concern range",
@@ -851,7 +851,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "SOYUZ-MS 29 [+] vs CYGNUS NG-24 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 99.6/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -865,21 +865,21 @@
       }
     },
     {
-      "object_a": "PROGRESS-MS 35 [+]",
-      "object_b": "CYGNUS NG-24 [+]",
-      "norad_a": "100712",
-      "norad_b": "68689",
-      "time_utc": "2026-09-20 13:44:40.855",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 16:11:39.132",
+      "miss_distance_km": 0.001,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
+      "priority_score": 99.5,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 100.0
+        "freshness_score": 96.8
       },
       "score_reasons": [
         "Collision probability (1.00e+00) is in the high-concern range",
@@ -892,7 +892,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PROGRESS-MS 35 [+] vs CYGNUS NG-24 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 99.5/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -906,21 +906,21 @@
       }
     },
     {
-      "object_a": "SOYUZ-MS 29 [+]",
-      "object_b": "PROGRESS-MS 34 [+]",
-      "norad_a": "100057",
-      "norad_b": "68837",
-      "time_utc": "2026-09-20 13:44:40.855",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 16:59:46.397",
+      "miss_distance_km": 0.015,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
+      "priority_score": 99.4,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 100.0
+        "freshness_score": 96.2
       },
       "score_reasons": [
         "Collision probability (1.00e+00) is in the high-concern range",
@@ -933,7 +933,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "SOYUZ-MS 29 [+] vs PROGRESS-MS 34 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 99.4/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -947,21 +947,21 @@
       }
     },
     {
-      "object_a": "PROGRESS-MS 35 [+]",
-      "object_b": "PROGRESS-MS 34 [+]",
-      "norad_a": "100712",
-      "norad_b": "68837",
-      "time_utc": "2026-09-20 13:44:40.855",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 17:48:06.569",
+      "miss_distance_km": 0.001,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
+      "priority_score": 99.4,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 100.0
+        "freshness_score": 95.7
       },
       "score_reasons": [
         "Collision probability (1.00e+00) is in the high-concern range",
@@ -974,7 +974,7 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PROGRESS-MS 35 [+] vs PROGRESS-MS 34 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 99.4/100).",
         "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
@@ -988,25 +988,25 @@
       }
     },
     {
-      "object_a": "SOYUZ-MS 29 [+]",
-      "object_b": "CREW DRAGON 12 [+]",
-      "norad_a": "100057",
-      "norad_b": "67796",
-      "time_utc": "2026-09-20 14:28:59.037",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 18:36:13.625",
+      "miss_distance_km": 0.015,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
+      "priority_score": 99.3,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 100.0
+        "freshness_score": 95.1
       },
       "score_reasons": [
         "Collision probability (1.00e+00) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
+        "Closest approach is soon (0.5h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -1015,39 +1015,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "SOYUZ-MS 29 [+] vs CREW DRAGON 12 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
-        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 99.3/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.5h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
           "Collision probability (1.00e+00) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
+          "Closest approach is soon (0.5h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "PROGRESS-MS 35 [+]",
-      "object_b": "CREW DRAGON 12 [+]",
-      "norad_a": "100712",
-      "norad_b": "67796",
-      "time_utc": "2026-09-20 14:28:59.037",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 19:24:33.996",
+      "miss_distance_km": 0.001,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
+      "priority_score": 99.2,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 100.0
+        "freshness_score": 94.6
       },
       "score_reasons": [
         "Collision probability (1.00e+00) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
+        "Closest approach is soon (1.3h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -1056,39 +1056,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PROGRESS-MS 35 [+] vs CREW DRAGON 12 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
-        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 99.2/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (1.3h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
           "Collision probability (1.00e+00) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
+          "Closest approach is soon (1.3h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "SOYUZ-MS 29 [+]",
-      "object_b": "CYGNUS NG-24 [+]",
-      "norad_a": "100057",
-      "norad_b": "68689",
-      "time_utc": "2026-09-20 14:28:59.037",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 20:12:40.870",
+      "miss_distance_km": 0.015,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
+      "priority_score": 99.1,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 100.0
+        "freshness_score": 94.0
       },
       "score_reasons": [
         "Collision probability (1.00e+00) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
+        "Closest approach is soon (2.1h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -1097,39 +1097,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "SOYUZ-MS 29 [+] vs CYGNUS NG-24 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
-        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 99.1/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (2.1h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
           "Collision probability (1.00e+00) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
+          "Closest approach is soon (2.1h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "PROGRESS-MS 35 [+]",
-      "object_b": "CYGNUS NG-24 [+]",
-      "norad_a": "100712",
-      "norad_b": "68689",
-      "time_utc": "2026-09-20 14:28:59.037",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 21:01:01.426",
+      "miss_distance_km": 0.0,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
+      "priority_score": 99.0,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 100.0
+        "freshness_score": 93.5
       },
       "score_reasons": [
         "Collision probability (1.00e+00) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
+        "Closest approach is soon (2.9h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -1138,39 +1138,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PROGRESS-MS 35 [+] vs CYGNUS NG-24 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
-        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 99.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (2.9h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
           "Collision probability (1.00e+00) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
+          "Closest approach is soon (2.9h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "SOYUZ-MS 29 [+]",
-      "object_b": "PROGRESS-MS 34 [+]",
-      "norad_a": "100057",
-      "norad_b": "68837",
-      "time_utc": "2026-09-20 14:28:59.037",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 21:49:08.071",
+      "miss_distance_km": 0.015,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
+      "priority_score": 98.9,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 100.0
+        "freshness_score": 92.9
       },
       "score_reasons": [
         "Collision probability (1.00e+00) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
+        "Closest approach is soon (3.7h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -1179,39 +1179,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "SOYUZ-MS 29 [+] vs PROGRESS-MS 34 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
-        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 98.9/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (3.7h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
           "Collision probability (1.00e+00) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
+          "Closest approach is soon (3.7h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "PROGRESS-MS 35 [+]",
-      "object_b": "PROGRESS-MS 34 [+]",
-      "norad_a": "100712",
-      "norad_b": "68837",
-      "time_utc": "2026-09-20 14:28:59.037",
-      "miss_distance_km": 0.005,
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-09-21 22:37:28.844",
+      "miss_distance_km": 0.0,
       "relative_speed_km_s": 0.0,
       "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
+      "priority_score": 98.8,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 100.0
+        "freshness_score": 92.3
       },
       "score_reasons": [
         "Collision probability (1.00e+00) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
+        "Closest approach is soon (4.5h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -1220,14 +1220,14 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PROGRESS-MS 35 [+] vs PROGRESS-MS 34 [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
-        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 1.00e+00, priority HIGH (score 98.8/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (4.5h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
           "Collision probability (1.00e+00) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
+          "Closest approach is soon (4.5h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
