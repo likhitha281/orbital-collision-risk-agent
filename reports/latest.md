@@ -1,7 +1,7 @@
 # Orbital Collision-Risk Triage Report
 
 - Data source: CelesTrak SOCRATES Plus (real conjunction data)
-- Generated: 2026-10-21T17:02:17+00:00
+- Generated: 2026-10-22T04:21:59+00:00
 - Conjunctions flagged: 30
 
 ## 1. SOYUZ-MS 29 [+] vs ISS (ZARYA) [+] — HIGH (100.0/100)
@@ -11,17 +11,17 @@
 - Miss distance: **0.188 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **SOYUZ-MS 29 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -32,17 +32,17 @@
 - Miss distance: **0.188 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **PROGRESS-MS 35 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -53,17 +53,17 @@
 - Miss distance: **0.188 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **CREW DRAGON 13 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -74,17 +74,17 @@
 - Miss distance: **0.188 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **DRAGON CRS-35 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -95,17 +95,17 @@
 - Miss distance: **0.188 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **SOYUZ-MS 29 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -116,17 +116,17 @@
 - Miss distance: **0.188 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **PROGRESS-MS 35 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -137,17 +137,17 @@
 - Miss distance: **0.188 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **CREW DRAGON 13 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -158,17 +158,17 @@
 - Miss distance: **0.188 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **DRAGON CRS-35 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -179,17 +179,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **SOYUZ-MS 29 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -200,17 +200,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **PROGRESS-MS 35 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -221,17 +221,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **CREW DRAGON 13 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -242,17 +242,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **DRAGON CRS-35 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -263,17 +263,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **SOYUZ-MS 29 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -284,17 +284,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **PROGRESS-MS 35 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -305,17 +305,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **CREW DRAGON 13 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -326,17 +326,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **DRAGON CRS-35 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -347,17 +347,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **SOYUZ-MS 29 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -368,17 +368,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **PROGRESS-MS 35 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -389,17 +389,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **CREW DRAGON 13 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -410,17 +410,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **DRAGON CRS-35 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -431,17 +431,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **SOYUZ-MS 29 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -452,17 +452,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **PROGRESS-MS 35 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -473,17 +473,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **CREW DRAGON 13 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -494,17 +494,17 @@
 - Miss distance: **0.189 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **DRAGON CRS-35 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -515,17 +515,17 @@
 - Miss distance: **0.187 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **SOYUZ-MS 29 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -536,17 +536,17 @@
 - Miss distance: **0.187 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **PROGRESS-MS 35 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -557,17 +557,17 @@
 - Miss distance: **0.187 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **CREW DRAGON 13 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -578,17 +578,17 @@
 - Miss distance: **0.187 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **DRAGON CRS-35 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -599,17 +599,17 @@
 - Miss distance: **0.187 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **SOYUZ-MS 29 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
@@ -620,16 +620,16 @@
 - Miss distance: **0.187 km**
 - Probability of collision (real, SOCRATES): **1.000e+00**
 - Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
-- Trend: **insufficient_data** (1 observation(s) so far)
+- Trend: **stable** (Pc ×1.0 across 2 observations)
 
 **PROGRESS-MS 35 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).**
 
 *Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Only one observation is available so far; no trend can be established yet.
+*Trend*: Probability of collision has stayed roughly stable across 2 observations.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: low (rule_based_fallback)
+*Confidence*: moderate (rule_based_fallback)
 
 *Limitations*: Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
