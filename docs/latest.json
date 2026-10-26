@@ -1,6 +1,6 @@
 {
   "source_label": "CelesTrak SOCRATES Plus (real conjunction data)",
-  "generated_at": "2026-10-26T04:23:45+00:00",
+  "generated_at": "2026-10-26T18:36:33+00:00",
   "conjunctions_flagged": 30,
   "events": [
     {
@@ -8,758 +8,20 @@
       "object_b": "CZ-2F DEB [-]",
       "norad_a": "67689",
       "norad_b": "69673",
-      "time_utc": "2026-10-25 06:13:26.445",
-      "miss_distance_km": 0.004,
+      "time_utc": "2026-10-25 20:43:39.447",
+      "miss_distance_km": 0.055,
       "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 100.0
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 100.0/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 07:01:37.868",
-      "miss_distance_km": 0.004,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 100.0
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 100.0/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 07:49:54.006",
-      "miss_distance_km": 0.003,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 100.0,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 99.7
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 100.0/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 08:38:04.501",
-      "miss_distance_km": 0.004,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 99.9,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 99.1
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 99.9/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 09:26:21.565",
-      "miss_distance_km": 0.003,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 99.8,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 98.6
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 99.8/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 10:14:31.123",
-      "miss_distance_km": 0.004,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 99.7,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 98.0
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 99.7/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 11:02:49.131",
-      "miss_distance_km": 0.003,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 99.6,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 97.4
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 99.6/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 11:50:57.745",
-      "miss_distance_km": 0.004,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 99.5,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 96.9
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 99.5/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 12:39:16.703",
-      "miss_distance_km": 0.003,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 99.5,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 96.3
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 99.5/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 13:27:24.361",
-      "miss_distance_km": 0.005,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 99.4,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 95.8
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 99.4/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 14:15:44.275",
-      "miss_distance_km": 0.003,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 99.3,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 95.2
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 99.3/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 15:03:50.967",
-      "miss_distance_km": 0.005,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 99.2,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 94.6
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 99.2/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 15:52:11.856",
-      "miss_distance_km": 0.003,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 99.1,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 94.1
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 99.1/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 16:40:17.564",
-      "miss_distance_km": 0.005,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 99.0,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 93.5
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 99.0/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 17:28:39.445",
-      "miss_distance_km": 0.003,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 98.9,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 93.0
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 98.9/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 18:16:44.164",
-      "miss_distance_km": 0.006,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 98.9,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 92.4
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 98.9/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 19:05:07.030",
-      "miss_distance_km": 0.003,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 98.8,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 91.9
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 98.8/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 19:53:10.754",
-      "miss_distance_km": 0.006,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
-      "pc_provenance": "socrates_real",
-      "priority_score": 98.7,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 91.3
-      },
-      "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 98.7/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "PRC TEST SPACECRAFT 4 [+]",
-      "object_b": "CZ-2F DEB [-]",
-      "norad_a": "67689",
-      "norad_b": "69673",
-      "time_utc": "2026-10-25 20:41:34.632",
-      "miss_distance_km": 0.003,
-      "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
+      "probability_of_collision": 0.2327,
       "pc_provenance": "socrates_real",
       "priority_score": 98.6,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 90.8
+        "freshness_score": 90.7
       },
       "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
+        "Collision probability (2.33e-01) is in the high-concern range",
         "Closest approach is soon (0.0h away)"
       ],
       "trend": {
@@ -769,13 +31,13 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 98.6/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 98.6/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
+          "Collision probability (2.33e-01) is in the high-concern range",
           "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
@@ -787,10 +49,10 @@
       "object_b": "CZ-2F DEB [-]",
       "norad_a": "67689",
       "norad_b": "69673",
-      "time_utc": "2026-10-25 21:29:37.343",
-      "miss_distance_km": 0.006,
+      "time_utc": "2026-10-25 21:31:41.520",
+      "miss_distance_km": 0.067,
       "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
+      "probability_of_collision": 0.2327,
       "pc_provenance": "socrates_real",
       "priority_score": 98.5,
       "priority_tier": "HIGH",
@@ -800,7 +62,7 @@
         "freshness_score": 90.2
       },
       "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
+        "Collision probability (2.33e-01) is in the high-concern range",
         "Closest approach is soon (0.0h away)"
       ],
       "trend": {
@@ -810,13 +72,13 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 98.5/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 98.5/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
+          "Collision probability (2.33e-01) is in the high-concern range",
           "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
@@ -828,10 +90,10 @@
       "object_b": "CZ-2F DEB [-]",
       "norad_a": "67689",
       "norad_b": "69673",
-      "time_utc": "2026-10-25 22:18:02.212",
-      "miss_distance_km": 0.004,
+      "time_utc": "2026-10-25 22:20:05.987",
+      "miss_distance_km": 0.05,
       "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
+      "probability_of_collision": 0.2327,
       "pc_provenance": "socrates_real",
       "priority_score": 98.4,
       "priority_tier": "HIGH",
@@ -841,7 +103,7 @@
         "freshness_score": 89.6
       },
       "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
+        "Collision probability (2.33e-01) is in the high-concern range",
         "Closest approach is soon (0.0h away)"
       ],
       "trend": {
@@ -851,13 +113,13 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 98.4/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 98.4/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
+          "Collision probability (2.33e-01) is in the high-concern range",
           "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
@@ -869,20 +131,20 @@
       "object_b": "CZ-2F DEB [-]",
       "norad_a": "67689",
       "norad_b": "69673",
-      "time_utc": "2026-10-25 23:06:03.918",
-      "miss_distance_km": 0.007,
+      "time_utc": "2026-10-25 23:08:08.797",
+      "miss_distance_km": 0.062,
       "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
+      "probability_of_collision": 0.2327,
       "pc_provenance": "socrates_real",
       "priority_score": 98.4,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 89.1
+        "freshness_score": 89.0
       },
       "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
+        "Collision probability (2.33e-01) is in the high-concern range",
         "Closest approach is soon (0.0h away)"
       ],
       "trend": {
@@ -892,13 +154,13 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 98.4/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 98.4/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
+          "Collision probability (2.33e-01) is in the high-concern range",
           "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
@@ -910,10 +172,10 @@
       "object_b": "CZ-2F DEB [-]",
       "norad_a": "67689",
       "norad_b": "69673",
-      "time_utc": "2026-10-25 23:54:29.826",
-      "miss_distance_km": 0.004,
+      "time_utc": "2026-10-25 23:56:32.521",
+      "miss_distance_km": 0.045,
       "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
+      "probability_of_collision": 0.2327,
       "pc_provenance": "socrates_real",
       "priority_score": 98.3,
       "priority_tier": "HIGH",
@@ -923,7 +185,7 @@
         "freshness_score": 88.5
       },
       "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
+        "Collision probability (2.33e-01) is in the high-concern range",
         "Closest approach is soon (0.0h away)"
       ],
       "trend": {
@@ -933,13 +195,13 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 98.3/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 98.3/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
+          "Collision probability (2.33e-01) is in the high-concern range",
           "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
@@ -951,20 +213,20 @@
       "object_b": "CZ-2F DEB [-]",
       "norad_a": "67689",
       "norad_b": "69673",
-      "time_utc": "2026-10-26 00:42:30.495",
-      "miss_distance_km": 0.007,
+      "time_utc": "2026-10-26 00:44:36.082",
+      "miss_distance_km": 0.057,
       "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
+      "probability_of_collision": 0.2327,
       "pc_provenance": "socrates_real",
       "priority_score": 98.2,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 88.0
+        "freshness_score": 87.9
       },
       "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
+        "Collision probability (2.33e-01) is in the high-concern range",
         "Closest approach is soon (0.0h away)"
       ],
       "trend": {
@@ -974,13 +236,13 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 98.2/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 98.2/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
+          "Collision probability (2.33e-01) is in the high-concern range",
           "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
@@ -992,10 +254,10 @@
       "object_b": "CZ-2F DEB [-]",
       "norad_a": "67689",
       "norad_b": "69673",
-      "time_utc": "2026-10-26 01:30:57.446",
-      "miss_distance_km": 0.004,
+      "time_utc": "2026-10-26 01:32:58.999",
+      "miss_distance_km": 0.04,
       "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
+      "probability_of_collision": 0.2327,
       "pc_provenance": "socrates_real",
       "priority_score": 98.1,
       "priority_tier": "HIGH",
@@ -1005,7 +267,7 @@
         "freshness_score": 87.4
       },
       "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
+        "Collision probability (2.33e-01) is in the high-concern range",
         "Closest approach is soon (0.0h away)"
       ],
       "trend": {
@@ -1015,13 +277,13 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 98.1/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 98.1/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
+          "Collision probability (2.33e-01) is in the high-concern range",
           "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
@@ -1033,10 +295,10 @@
       "object_b": "CZ-2F DEB [-]",
       "norad_a": "67689",
       "norad_b": "69673",
-      "time_utc": "2026-10-26 02:18:57.046",
-      "miss_distance_km": 0.007,
+      "time_utc": "2026-10-26 02:21:03.366",
+      "miss_distance_km": 0.051,
       "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
+      "probability_of_collision": 0.2327,
       "pc_provenance": "socrates_real",
       "priority_score": 98.0,
       "priority_tier": "HIGH",
@@ -1046,7 +308,7 @@
         "freshness_score": 86.8
       },
       "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
+        "Collision probability (2.33e-01) is in the high-concern range",
         "Closest approach is soon (0.0h away)"
       ],
       "trend": {
@@ -1056,13 +318,13 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 98.0/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 98.0/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
+          "Collision probability (2.33e-01) is in the high-concern range",
           "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
@@ -1074,20 +336,20 @@
       "object_b": "CZ-2F DEB [-]",
       "norad_a": "67689",
       "norad_b": "69673",
-      "time_utc": "2026-10-26 03:07:25.046",
-      "miss_distance_km": 0.005,
+      "time_utc": "2026-10-26 03:09:25.479",
+      "miss_distance_km": 0.034,
       "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
+      "probability_of_collision": 0.2327,
       "pc_provenance": "socrates_real",
       "priority_score": 97.9,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 86.3
+        "freshness_score": 86.2
       },
       "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
+        "Collision probability (2.33e-01) is in the high-concern range",
         "Closest approach is soon (0.0h away)"
       ],
       "trend": {
@@ -1097,13 +359,13 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 97.9/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 97.9/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
+          "Collision probability (2.33e-01) is in the high-concern range",
           "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
@@ -1115,10 +377,10 @@
       "object_b": "CZ-2F DEB [-]",
       "norad_a": "67689",
       "norad_b": "69673",
-      "time_utc": "2026-10-26 03:55:23.617",
-      "miss_distance_km": 0.008,
+      "time_utc": "2026-10-26 03:57:30.663",
+      "miss_distance_km": 0.046,
       "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
+      "probability_of_collision": 0.2327,
       "pc_provenance": "socrates_real",
       "priority_score": 97.9,
       "priority_tier": "HIGH",
@@ -1128,7 +390,7 @@
         "freshness_score": 85.7
       },
       "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
+        "Collision probability (2.33e-01) is in the high-concern range",
         "Closest approach is soon (0.0h away)"
       ],
       "trend": {
@@ -1138,13 +400,13 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 97.9/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 97.9/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
+          "Collision probability (2.33e-01) is in the high-concern range",
           "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
@@ -1156,21 +418,21 @@
       "object_b": "CZ-2F DEB [-]",
       "norad_a": "67689",
       "norad_b": "69673",
-      "time_utc": "2026-10-26 04:43:52.666",
-      "miss_distance_km": 0.005,
+      "time_utc": "2026-10-26 04:45:51.939",
+      "miss_distance_km": 0.029,
       "relative_speed_km_s": 0.0,
-      "probability_of_collision": 0.3101,
+      "probability_of_collision": 0.2327,
       "pc_provenance": "socrates_real",
       "priority_score": 97.8,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
         "urgency_score": 100.0,
-        "freshness_score": 85.2
+        "freshness_score": 85.1
       },
       "score_reasons": [
-        "Collision probability (3.10e-01) is in the high-concern range",
-        "Closest approach is soon (0.3h away)"
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -1179,14 +441,670 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 3.10e-01, priority HIGH (score 97.8/100).",
-        "why_it_matters": "Collision probability (3.10e-01) is in the high-concern range; Closest approach is soon (0.3h away)",
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 97.8/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (3.10e-01) is in the high-concern range",
-          "Closest approach is soon (0.3h away)",
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 05:33:57.978",
+      "miss_distance_km": 0.04,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 97.7,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 84.6
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 97.7/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 06:22:18.370",
+      "miss_distance_km": 0.023,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 97.6,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 84.0
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 97.6/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 07:10:25.296",
+      "miss_distance_km": 0.034,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 97.5,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 83.5
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 97.5/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 07:58:44.778",
+      "miss_distance_km": 0.017,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 97.4,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 82.9
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 97.4/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 08:46:52.630",
+      "miss_distance_km": 0.028,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 97.4,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 82.3
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 97.4/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 09:35:11.162",
+      "miss_distance_km": 0.012,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 97.3,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 81.8
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 97.3/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 10:23:19.967",
+      "miss_distance_km": 0.022,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 97.2,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 81.2
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 97.2/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 11:11:37.527",
+      "miss_distance_km": 0.006,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 97.1,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 80.7
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 97.1/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 11:59:47.320",
+      "miss_distance_km": 0.016,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 97.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 80.1
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 97.0/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 12:48:03.867",
+      "miss_distance_km": 0.004,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 96.9,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 79.5
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 96.9/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 13:36:14.681",
+      "miss_distance_km": 0.01,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 96.8,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 79.0
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 96.8/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 14:24:30.187",
+      "miss_distance_km": 0.009,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 96.8,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 78.5
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 96.8/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 15:12:42.052",
+      "miss_distance_km": 0.004,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 96.7,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 77.9
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 96.7/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 16:00:56.474",
+      "miss_distance_km": 0.015,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 96.6,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 77.3
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 96.6/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 16:49:09.434",
+      "miss_distance_km": 0.004,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 96.5,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 76.8
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 96.5/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PRC TEST SPACECRAFT 4 [+]",
+      "object_b": "CZ-2F DEB [-]",
+      "norad_a": "67689",
+      "norad_b": "69673",
+      "time_utc": "2026-10-26 17:37:22.741",
+      "miss_distance_km": 0.021,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 0.2327,
+      "pc_provenance": "socrates_real",
+      "priority_score": 96.4,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 76.2
+      },
+      "score_reasons": [
+        "Collision probability (2.33e-01) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PRC TEST SPACECRAFT 4 [+] vs CZ-2F DEB [-]: probability of collision 2.33e-01, priority HIGH (score 96.4/100).",
+        "why_it_matters": "Collision probability (2.33e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (2.33e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
@@ -1202,16 +1120,56 @@
       "relative_speed_km_s": 7.141,
       "probability_of_collision": 0.3269,
       "pc_provenance": "socrates_real",
-      "priority_score": 92.3,
+      "priority_score": 95.3,
       "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
-        "urgency_score": 88.2,
+        "urgency_score": 100.0,
         "freshness_score": 68.6
       },
       "score_reasons": [
         "Collision probability (3.27e-01) is in the high-concern range",
-        "Closest approach is soon (13.8h away)"
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "stable",
+        "pc_change_ratio": 1.0,
+        "miss_distance_change_km": 0.0,
+        "observations": 3
+      },
+      "analysis": {
+        "summary": "STARLINK-38027 [+] vs STARLINK-36689 [+]: probability of collision 3.27e-01, priority HIGH (score 95.3/100).",
+        "why_it_matters": "Collision probability (3.27e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Probability of collision has stayed roughly stable across 3 observations.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "moderate",
+        "limitations": [
+          "Collision probability (3.27e-01) is in the high-concern range",
+          "Closest approach is soon (0.0h away)"
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "STARLINK-38022 [+]",
+      "object_b": "STARLINK-34859 [+]",
+      "norad_a": "100409",
+      "norad_b": "65348",
+      "time_utc": "2026-10-29 03:45:16.960",
+      "miss_distance_km": 0.028,
+      "relative_speed_km_s": 7.353,
+      "probability_of_collision": 0.307,
+      "pc_provenance": "socrates_real",
+      "priority_score": 70.6,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 22.5,
+        "freshness_score": 33.4
+      },
+      "score_reasons": [
+        "Collision probability (3.07e-01) is in the high-concern range",
+        "Underlying tracking data is 5.0 days old \u2014 treat as less certain"
       ],
       "trend": {
         "direction": "stable",
@@ -1220,14 +1178,56 @@
         "observations": 2
       },
       "analysis": {
-        "summary": "STARLINK-38027 [+] vs STARLINK-36689 [+]: probability of collision 3.27e-01, priority HIGH (score 92.3/100).",
-        "why_it_matters": "Collision probability (3.27e-01) is in the high-concern range; Closest approach is soon (13.8h away)",
+        "summary": "STARLINK-38022 [+] vs STARLINK-34859 [+]: probability of collision 3.07e-01, priority HIGH (score 70.6/100).",
+        "why_it_matters": "Collision probability (3.07e-01) is in the high-concern range; Underlying tracking data is 5.0 days old \u2014 treat as less certain",
         "trend_explanation": "Probability of collision has stayed roughly stable across 2 observations.",
         "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "moderate",
         "limitations": [
-          "Collision probability (3.27e-01) is in the high-concern range",
-          "Closest approach is soon (13.8h away)",
+          "Collision probability (3.07e-01) is in the high-concern range",
+          "Underlying tracking data is 5.0 days old \u2014 treat as less certain",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "STARLINK-37605 [+]",
+      "object_b": "STARLINK-34700 [+]",
+      "norad_a": "100055",
+      "norad_b": "64922",
+      "time_utc": "2026-11-01 13:45:19.085",
+      "miss_distance_km": 0.016,
+      "relative_speed_km_s": 12.046,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 60.0,
+      "priority_tier": "MEDIUM",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 0.0,
+        "freshness_score": 0.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Underlying tracking data is 8.5 days old \u2014 treat as less certain"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "STARLINK-37605 [+] vs STARLINK-34700 [+]: probability of collision 1.00e+00, priority MEDIUM (score 60.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Underlying tracking data is 8.5 days old \u2014 treat as less certain",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Underlying tracking data is 8.5 days old \u2014 treat as less certain",
+          "Underlying tracking data is more than 7 days old.",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
