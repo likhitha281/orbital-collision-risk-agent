@@ -1,17 +1,17 @@
 {
   "source_label": "CelesTrak SOCRATES Plus (real conjunction data)",
-  "generated_at": "2026-10-31T05:12:10+00:00",
+  "generated_at": "2026-10-31T17:09:23+00:00",
   "conjunctions_flagged": 30,
   "events": [
     {
-      "object_a": "STARLINK-5795 [+]",
-      "object_b": "SCS-01 D [+]",
-      "norad_a": "56039",
-      "norad_b": "63985",
-      "time_utc": "2026-10-30 12:46:14.568",
-      "miss_distance_km": 0.017,
-      "relative_speed_km_s": 13.206,
-      "probability_of_collision": 0.2211,
+      "object_a": "SOYUZ-MS 29 [+]",
+      "object_b": "ISS (ZARYA) [+]",
+      "norad_a": "100057",
+      "norad_b": "25544",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
       "priority_score": 100.0,
       "priority_tier": "HIGH",
@@ -21,695 +21,8 @@
         "freshness_score": 100.0
       },
       "score_reasons": [
-        "Collision probability (2.21e-01) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "STARLINK-5795 [+] vs SCS-01 D [+]: probability of collision 2.21e-01, priority HIGH (score 100.0/100).",
-        "why_it_matters": "Collision probability (2.21e-01) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (2.21e-01) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-37947 [+]",
-      "object_b": "STARLINK-35110 [+]",
-      "norad_a": "100261",
-      "norad_b": "65539",
-      "time_utc": "2026-10-31 01:44:36.454",
-      "miss_distance_km": 0.08,
-      "relative_speed_km_s": 2.925,
-      "probability_of_collision": 0.06048,
-      "pc_provenance": "socrates_real",
-      "priority_score": 98.3,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 88.7
-      },
-      "score_reasons": [
-        "Collision probability (6.05e-02) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "STARLINK-37947 [+] vs STARLINK-35110 [+]: probability of collision 6.05e-02, priority HIGH (score 98.3/100).",
-        "why_it_matters": "Collision probability (6.05e-02) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (6.05e-02) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-38264 [+]",
-      "object_b": "STARLINK-37300 [+]",
-      "norad_a": "100308",
-      "norad_b": "68682",
-      "time_utc": "2026-10-31 03:25:15.211",
-      "miss_distance_km": 0.077,
-      "relative_speed_km_s": 0.647,
-      "probability_of_collision": 0.06601,
-      "pc_provenance": "socrates_real",
-      "priority_score": 96.9,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 100.0,
-        "freshness_score": 79.4
-      },
-      "score_reasons": [
-        "Collision probability (6.60e-02) is in the high-concern range",
-        "Closest approach is soon (0.0h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "STARLINK-38264 [+] vs STARLINK-37300 [+]: probability of collision 6.60e-02, priority HIGH (score 96.9/100).",
-        "why_it_matters": "Collision probability (6.60e-02) is in the high-concern range; Closest approach is soon (0.0h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (6.60e-02) is in the high-concern range",
-          "Closest approach is soon (0.0h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "CZ-4B DEB [-]",
-      "object_b": "STARLINK-4707 [+]",
-      "norad_a": "26121",
-      "norad_b": "53721",
-      "time_utc": "2026-10-31 22:44:51.263",
-      "miss_distance_km": 0.017,
-      "relative_speed_km_s": 14.793,
-      "probability_of_collision": 0.1794,
-      "pc_provenance": "socrates_real",
-      "priority_score": 91.5,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 82.5,
-        "freshness_score": 72.8
-      },
-      "score_reasons": [
-        "Collision probability (1.79e-01) is in the high-concern range",
-        "Closest approach is soon (17.5h away)"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "CZ-4B DEB [-] vs STARLINK-4707 [+]: probability of collision 1.79e-01, priority HIGH (score 91.5/100).",
-        "why_it_matters": "Collision probability (1.79e-01) is in the high-concern range; Closest approach is soon (17.5h away)",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (1.79e-01) is in the high-concern range",
-          "Closest approach is soon (17.5h away)",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-37942 [+]",
-      "object_b": "STARLINK-32897 [+]",
-      "norad_a": "100280",
-      "norad_b": "62967",
-      "time_utc": "2026-11-01 11:47:58.539",
-      "miss_distance_km": 0.043,
-      "relative_speed_km_s": 11.669,
-      "probability_of_collision": 0.1397,
-      "pc_provenance": "socrates_real",
-      "priority_score": 86.0,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 62.7,
-        "freshness_score": 69.0
-      },
-      "score_reasons": [
-        "Collision probability (1.40e-01) is in the high-concern range"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "STARLINK-37942 [+] vs STARLINK-32897 [+]: probability of collision 1.40e-01, priority HIGH (score 86.0/100).",
-        "why_it_matters": "Collision probability (1.40e-01) is in the high-concern range",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (1.40e-01) is in the high-concern range",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-38148 [+]",
-      "object_b": "STARLINK-38215 [+]",
-      "norad_a": "100199",
-      "norad_b": "100305",
-      "time_utc": "2026-11-01 13:17:49.440",
-      "miss_distance_km": 0.052,
-      "relative_speed_km_s": 2.924,
-      "probability_of_collision": 0.127,
-      "pc_provenance": "socrates_real",
-      "priority_score": 84.7,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 60.5,
-        "freshness_score": 63.6
-      },
-      "score_reasons": [
-        "Collision probability (1.27e-01) is in the high-concern range"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "STARLINK-38148 [+] vs STARLINK-38215 [+]: probability of collision 1.27e-01, priority HIGH (score 84.7/100).",
-        "why_it_matters": "Collision probability (1.27e-01) is in the high-concern range",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (1.27e-01) is in the high-concern range",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-38237 [+]",
-      "object_b": "STARLINK-34970 [+]",
-      "norad_a": "100373",
-      "norad_b": "65450",
-      "time_utc": "2026-11-01 16:03:26.591",
-      "miss_distance_km": 0.078,
-      "relative_speed_km_s": 0.647,
-      "probability_of_collision": 0.06484,
-      "pc_provenance": "socrates_real",
-      "priority_score": 83.2,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 56.3,
-        "freshness_score": 60.9
-      },
-      "score_reasons": [
-        "Collision probability (6.48e-02) is in the high-concern range"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "STARLINK-38237 [+] vs STARLINK-34970 [+]: probability of collision 6.48e-02, priority HIGH (score 83.2/100).",
-        "why_it_matters": "Collision probability (6.48e-02) is in the high-concern range",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (6.48e-02) is in the high-concern range",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-37394 [+]",
-      "object_b": "STARLINK-36096 [+]",
-      "norad_a": "100475",
-      "norad_b": "66949",
-      "time_utc": "2026-11-01 17:44:45.870",
-      "miss_distance_km": 0.071,
-      "relative_speed_km_s": 7.189,
-      "probability_of_collision": 0.07059,
-      "pc_provenance": "socrates_real",
-      "priority_score": 82.9,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 53.7,
-        "freshness_score": 63.1
-      },
-      "score_reasons": [
-        "Collision probability (7.06e-02) is in the high-concern range"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "STARLINK-37394 [+] vs STARLINK-36096 [+]: probability of collision 7.06e-02, priority HIGH (score 82.9/100).",
-        "why_it_matters": "Collision probability (7.06e-02) is in the high-concern range",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (7.06e-02) is in the high-concern range",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-37448 [+]",
-      "object_b": "STARLINK-34526 [+]",
-      "norad_a": "100041",
-      "norad_b": "64481",
-      "time_utc": "2026-11-02 14:31:31.224",
-      "miss_distance_km": 0.073,
-      "relative_speed_km_s": 6.8,
-      "probability_of_collision": 0.06783,
-      "pc_provenance": "socrates_real",
-      "priority_score": 73.2,
-      "priority_tier": "HIGH",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 22.2,
-        "freshness_score": 50.8
-      },
-      "score_reasons": [
-        "Collision probability (6.78e-02) is in the high-concern range"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "STARLINK-37448 [+] vs STARLINK-34526 [+]: probability of collision 6.78e-02, priority HIGH (score 73.2/100).",
-        "why_it_matters": "Collision probability (6.78e-02) is in the high-concern range",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (6.78e-02) is in the high-concern range",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-38026 [+]",
-      "object_b": "STARLINK-4494 [+]",
-      "norad_a": "100408",
-      "norad_b": "53558",
-      "time_utc": "2026-11-03 16:24:31.706",
-      "miss_distance_km": 0.063,
-      "relative_speed_km_s": 5.313,
-      "probability_of_collision": 0.08977,
-      "pc_provenance": "socrates_real",
-      "priority_score": 64.5,
-      "priority_tier": "MEDIUM",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 30.0
-      },
-      "score_reasons": [
-        "Collision probability (8.98e-02) is in the high-concern range",
-        "Underlying tracking data is 5.2 days old \u2014 treat as less certain"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "STARLINK-38026 [+] vs STARLINK-4494 [+]: probability of collision 8.98e-02, priority MEDIUM (score 64.5/100).",
-        "why_it_matters": "Collision probability (8.98e-02) is in the high-concern range; Underlying tracking data is 5.2 days old \u2014 treat as less certain",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (8.98e-02) is in the high-concern range",
-          "Underlying tracking data is 5.2 days old \u2014 treat as less certain",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-37774 [+]",
-      "object_b": "STARLINK-35031 [+]",
-      "norad_a": "100417",
-      "norad_b": "65404",
-      "time_utc": "2026-11-03 16:16:30.265",
-      "miss_distance_km": 0.06,
-      "relative_speed_km_s": 9.899,
-      "probability_of_collision": 0.08601,
-      "pc_provenance": "socrates_real",
-      "priority_score": 64.3,
-      "priority_tier": "MEDIUM",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 29.0
-      },
-      "score_reasons": [
-        "Collision probability (8.60e-02) is in the high-concern range",
-        "Underlying tracking data is 5.3 days old \u2014 treat as less certain"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "STARLINK-37774 [+] vs STARLINK-35031 [+]: probability of collision 8.60e-02, priority MEDIUM (score 64.3/100).",
-        "why_it_matters": "Collision probability (8.60e-02) is in the high-concern range; Underlying tracking data is 5.3 days old \u2014 treat as less certain",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (8.60e-02) is in the high-concern range",
-          "Underlying tracking data is 5.3 days old \u2014 treat as less certain",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-37821 [+]",
-      "object_b": "STARLINK-37408 [+]",
-      "norad_a": "100404",
-      "norad_b": "69518",
-      "time_utc": "2026-11-03 14:02:55.985",
-      "miss_distance_km": 0.069,
-      "relative_speed_km_s": 7.528,
-      "probability_of_collision": 0.07317,
-      "pc_provenance": "socrates_real",
-      "priority_score": 64.3,
-      "priority_tier": "MEDIUM",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 28.9
-      },
-      "score_reasons": [
-        "Collision probability (7.32e-02) is in the high-concern range",
-        "Underlying tracking data is 5.3 days old \u2014 treat as less certain"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "STARLINK-37821 [+] vs STARLINK-37408 [+]: probability of collision 7.32e-02, priority MEDIUM (score 64.3/100).",
-        "why_it_matters": "Collision probability (7.32e-02) is in the high-concern range; Underlying tracking data is 5.3 days old \u2014 treat as less certain",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (7.32e-02) is in the high-concern range",
-          "Underlying tracking data is 5.3 days old \u2014 treat as less certain",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-37813 [+]",
-      "object_b": "STARLINK-36337 [+]",
-      "norad_a": "100289",
-      "norad_b": "68716",
-      "time_utc": "2026-11-03 15:29:17.440",
-      "miss_distance_km": 0.053,
-      "relative_speed_km_s": 5.37,
-      "probability_of_collision": 0.1204,
-      "pc_provenance": "socrates_real",
-      "priority_score": 63.6,
-      "priority_tier": "MEDIUM",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 24.2
-      },
-      "score_reasons": [
-        "Collision probability (1.20e-01) is in the high-concern range",
-        "Underlying tracking data is 5.5 days old \u2014 treat as less certain"
-      ],
-      "trend": {
-        "direction": "stable",
-        "pc_change_ratio": 1.0,
-        "miss_distance_change_km": 0.0,
-        "observations": 2
-      },
-      "analysis": {
-        "summary": "STARLINK-37813 [+] vs STARLINK-36337 [+]: probability of collision 1.20e-01, priority MEDIUM (score 63.6/100).",
-        "why_it_matters": "Collision probability (1.20e-01) is in the high-concern range; Underlying tracking data is 5.5 days old \u2014 treat as less certain",
-        "trend_explanation": "Probability of collision has stayed roughly stable across 2 observations.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
-        "confidence": "moderate",
-        "limitations": [
-          "Collision probability (1.20e-01) is in the high-concern range",
-          "Underlying tracking data is 5.5 days old \u2014 treat as less certain",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-38307 [+]",
-      "object_b": "STARLINK-35001 [+]",
-      "norad_a": "100377",
-      "norad_b": "65280",
-      "time_utc": "2026-11-03 22:36:32.392",
-      "miss_distance_km": 0.031,
-      "relative_speed_km_s": 15.019,
-      "probability_of_collision": 0.1659,
-      "pc_provenance": "socrates_real",
-      "priority_score": 63.5,
-      "priority_tier": "MEDIUM",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 23.3
-      },
-      "score_reasons": [
-        "Collision probability (1.66e-01) is in the high-concern range",
-        "Underlying tracking data is 5.6 days old \u2014 treat as less certain"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "STARLINK-38307 [+] vs STARLINK-35001 [+]: probability of collision 1.66e-01, priority MEDIUM (score 63.5/100).",
-        "why_it_matters": "Collision probability (1.66e-01) is in the high-concern range; Underlying tracking data is 5.6 days old \u2014 treat as less certain",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (1.66e-01) is in the high-concern range",
-          "Underlying tracking data is 5.6 days old \u2014 treat as less certain",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-37336 [+]",
-      "object_b": "STARLINK-34334 [+]",
-      "norad_a": "100031",
-      "norad_b": "64273",
-      "time_utc": "2026-11-03 22:50:49.694",
-      "miss_distance_km": 0.056,
-      "relative_speed_km_s": 6.887,
-      "probability_of_collision": 0.1077,
-      "pc_provenance": "socrates_real",
-      "priority_score": 63.5,
-      "priority_tier": "MEDIUM",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 23.6
-      },
-      "score_reasons": [
-        "Collision probability (1.08e-01) is in the high-concern range",
-        "Underlying tracking data is 5.6 days old \u2014 treat as less certain"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "STARLINK-37336 [+] vs STARLINK-34334 [+]: probability of collision 1.08e-01, priority MEDIUM (score 63.5/100).",
-        "why_it_matters": "Collision probability (1.08e-01) is in the high-concern range; Underlying tracking data is 5.6 days old \u2014 treat as less certain",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (1.08e-01) is in the high-concern range",
-          "Underlying tracking data is 5.6 days old \u2014 treat as less certain",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-38121 [+]",
-      "object_b": "STARLINK-37865 [+]",
-      "norad_a": "100156",
-      "norad_b": "69550",
-      "time_utc": "2026-11-04 10:04:46.140",
-      "miss_distance_km": 0.061,
-      "relative_speed_km_s": 0.635,
-      "probability_of_collision": 0.09868,
-      "pc_provenance": "socrates_real",
-      "priority_score": 62.5,
-      "priority_tier": "MEDIUM",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 16.9
-      },
-      "score_reasons": [
-        "Collision probability (9.87e-02) is in the high-concern range",
-        "Underlying tracking data is 6.0 days old \u2014 treat as less certain"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "STARLINK-38121 [+] vs STARLINK-37865 [+]: probability of collision 9.87e-02, priority MEDIUM (score 62.5/100).",
-        "why_it_matters": "Collision probability (9.87e-02) is in the high-concern range; Underlying tracking data is 6.0 days old \u2014 treat as less certain",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (9.87e-02) is in the high-concern range",
-          "Underlying tracking data is 6.0 days old \u2014 treat as less certain",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-37458 [+]",
-      "object_b": "STARLINK-34477 [+]",
-      "norad_a": "100033",
-      "norad_b": "64487",
-      "time_utc": "2026-11-04 02:22:25.579",
-      "miss_distance_km": 0.054,
-      "relative_speed_km_s": 6.8,
-      "probability_of_collision": 0.1137,
-      "pc_provenance": "socrates_real",
-      "priority_score": 62.1,
-      "priority_tier": "MEDIUM",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 13.8
-      },
-      "score_reasons": [
-        "Collision probability (1.14e-01) is in the high-concern range",
-        "Underlying tracking data is 6.2 days old \u2014 treat as less certain"
-      ],
-      "trend": {
-        "direction": "insufficient_data",
-        "pc_change_ratio": null,
-        "miss_distance_change_km": null,
-        "observations": 1
-      },
-      "analysis": {
-        "summary": "STARLINK-37458 [+] vs STARLINK-34477 [+]: probability of collision 1.14e-01, priority MEDIUM (score 62.1/100).",
-        "why_it_matters": "Collision probability (1.14e-01) is in the high-concern range; Underlying tracking data is 6.2 days old \u2014 treat as less certain",
-        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
-        "confidence": "low",
-        "limitations": [
-          "Collision probability (1.14e-01) is in the high-concern range",
-          "Underlying tracking data is 6.2 days old \u2014 treat as less certain",
-          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
-        ],
-        "source": "rule_based_fallback"
-      }
-    },
-    {
-      "object_a": "STARLINK-38002 [+]",
-      "object_b": "STARLINK-31829 [+]",
-      "norad_a": "100042",
-      "norad_b": "59770",
-      "time_utc": "2026-11-04 13:32:10.051",
-      "miss_distance_km": 0.011,
-      "relative_speed_km_s": 11.976,
-      "probability_of_collision": 1.0,
-      "pc_provenance": "socrates_real",
-      "priority_score": 62.0,
-      "priority_tier": "MEDIUM",
-      "score_breakdown": {
-        "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 13.5
-      },
-      "score_reasons": [
         "Collision probability (1.00e+00) is in the high-concern range",
-        "Underlying tracking data is 6.2 days old \u2014 treat as less certain"
+        "Closest approach is soon (0.0h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -718,39 +31,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "STARLINK-38002 [+] vs STARLINK-31829 [+]: probability of collision 1.00e+00, priority MEDIUM (score 62.0/100).",
-        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Underlying tracking data is 6.2 days old \u2014 treat as less certain",
+        "summary": "SOYUZ-MS 29 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
           "Collision probability (1.00e+00) is in the high-concern range",
-          "Underlying tracking data is 6.2 days old \u2014 treat as less certain",
+          "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "STARLINK-38141 [+]",
-      "object_b": "STARLINK-37069 [+]",
-      "norad_a": "100188",
-      "norad_b": "68158",
-      "time_utc": "2026-11-04 11:56:34.003",
-      "miss_distance_km": 0.032,
-      "relative_speed_km_s": 15.131,
-      "probability_of_collision": 0.1546,
+      "object_a": "PROGRESS-MS 35 [+]",
+      "object_b": "ISS (ZARYA) [+]",
+      "norad_a": "100712",
+      "norad_b": "25544",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 62.0,
-      "priority_tier": "MEDIUM",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 13.4
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
       },
       "score_reasons": [
-        "Collision probability (1.55e-01) is in the high-concern range",
-        "Underlying tracking data is 6.2 days old \u2014 treat as less certain"
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -759,39 +72,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "STARLINK-38141 [+] vs STARLINK-37069 [+]: probability of collision 1.55e-01, priority MEDIUM (score 62.0/100).",
-        "why_it_matters": "Collision probability (1.55e-01) is in the high-concern range; Underlying tracking data is 6.2 days old \u2014 treat as less certain",
+        "summary": "PROGRESS-MS 35 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (1.55e-01) is in the high-concern range",
-          "Underlying tracking data is 6.2 days old \u2014 treat as less certain",
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "STARLINK-38416 [+]",
-      "object_b": "OBJECT D [-]",
-      "norad_a": "100638",
-      "norad_b": "49398",
-      "time_utc": "2026-11-04 10:01:11.280",
-      "miss_distance_km": 0.021,
-      "relative_speed_km_s": 13.612,
-      "probability_of_collision": 0.1498,
+      "object_a": "CREW DRAGON 13 [+]",
+      "object_b": "ISS (ZARYA) [+]",
+      "norad_a": "100882",
+      "norad_b": "25544",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 61.4,
-      "priority_tier": "MEDIUM",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 9.1
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
       },
       "score_reasons": [
-        "Collision probability (1.50e-01) is in the high-concern range",
-        "Underlying tracking data is 6.5 days old \u2014 treat as less certain"
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -800,39 +113,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "STARLINK-38416 [+] vs OBJECT D [-]: probability of collision 1.50e-01, priority MEDIUM (score 61.4/100).",
-        "why_it_matters": "Collision probability (1.50e-01) is in the high-concern range; Underlying tracking data is 6.5 days old \u2014 treat as less certain",
+        "summary": "CREW DRAGON 13 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (1.50e-01) is in the high-concern range",
-          "Underlying tracking data is 6.5 days old \u2014 treat as less certain",
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "STARLINK-38107 [+]",
-      "object_b": "STARLINK-38325 [+]",
-      "norad_a": "100004",
-      "norad_b": "100445",
-      "time_utc": "2026-11-04 13:55:21.467",
-      "miss_distance_km": 0.058,
-      "relative_speed_km_s": 12.41,
-      "probability_of_collision": 0.07718,
+      "object_a": "DRAGON CRS-35 [+]",
+      "object_b": "ISS (ZARYA) [+]",
+      "norad_a": "101031",
+      "norad_b": "25544",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 61.2,
-      "priority_tier": "MEDIUM",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 7.9
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
       },
       "score_reasons": [
-        "Collision probability (7.72e-02) is in the high-concern range",
-        "Underlying tracking data is 6.5 days old \u2014 treat as less certain"
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -841,39 +154,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "STARLINK-38107 [+] vs STARLINK-38325 [+]: probability of collision 7.72e-02, priority MEDIUM (score 61.2/100).",
-        "why_it_matters": "Collision probability (7.72e-02) is in the high-concern range; Underlying tracking data is 6.5 days old \u2014 treat as less certain",
+        "summary": "DRAGON CRS-35 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (7.72e-02) is in the high-concern range",
-          "Underlying tracking data is 6.5 days old \u2014 treat as less certain",
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "STARLINK-38265 [+]",
-      "object_b": "STARLINK-35048 [+]",
-      "norad_a": "100375",
-      "norad_b": "65286",
-      "time_utc": "2026-11-04 17:16:44.534",
-      "miss_distance_km": 0.038,
-      "relative_speed_km_s": 15.018,
-      "probability_of_collision": 0.1111,
+      "object_a": "SOYUZ-MS 29 [+]",
+      "object_b": "ISS (UNITY) [+]",
+      "norad_a": "100057",
+      "norad_b": "25575",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 60.9,
-      "priority_tier": "MEDIUM",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 6.1
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
       },
       "score_reasons": [
-        "Collision probability (1.11e-01) is in the high-concern range",
-        "Underlying tracking data is 6.6 days old \u2014 treat as less certain"
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -882,39 +195,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "STARLINK-38265 [+] vs STARLINK-35048 [+]: probability of collision 1.11e-01, priority MEDIUM (score 60.9/100).",
-        "why_it_matters": "Collision probability (1.11e-01) is in the high-concern range; Underlying tracking data is 6.6 days old \u2014 treat as less certain",
+        "summary": "SOYUZ-MS 29 [+] vs ISS (UNITY) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (1.11e-01) is in the high-concern range",
-          "Underlying tracking data is 6.6 days old \u2014 treat as less certain",
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "STARLINK-38148 [+]",
-      "object_b": "STARLINK-5877 [+]",
-      "norad_a": "100199",
-      "norad_b": "56354",
-      "time_utc": "2026-11-05 01:44:18.714",
-      "miss_distance_km": 0.05,
-      "relative_speed_km_s": 14.728,
-      "probability_of_collision": 0.07247,
+      "object_a": "PROGRESS-MS 35 [+]",
+      "object_b": "ISS (UNITY) [+]",
+      "norad_a": "100712",
+      "norad_b": "25575",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 60.9,
-      "priority_tier": "MEDIUM",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 5.9
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
       },
       "score_reasons": [
-        "Collision probability (7.25e-02) is in the high-concern range",
-        "Underlying tracking data is 6.6 days old \u2014 treat as less certain"
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -923,39 +236,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "STARLINK-38148 [+] vs STARLINK-5877 [+]: probability of collision 7.25e-02, priority MEDIUM (score 60.9/100).",
-        "why_it_matters": "Collision probability (7.25e-02) is in the high-concern range; Underlying tracking data is 6.6 days old \u2014 treat as less certain",
+        "summary": "PROGRESS-MS 35 [+] vs ISS (UNITY) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (7.25e-02) is in the high-concern range",
-          "Underlying tracking data is 6.6 days old \u2014 treat as less certain",
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "STARLINK-37981 [+]",
-      "object_b": "STARLINK-35627 [+]",
-      "norad_a": "100282",
-      "norad_b": "66172",
-      "time_utc": "2026-11-05 06:06:15.525",
-      "miss_distance_km": 0.033,
-      "relative_speed_km_s": 2.285,
-      "probability_of_collision": 0.2489,
+      "object_a": "CREW DRAGON 13 [+]",
+      "object_b": "ISS (UNITY) [+]",
+      "norad_a": "100882",
+      "norad_b": "25575",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 60.8,
-      "priority_tier": "MEDIUM",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 5.7
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
       },
       "score_reasons": [
-        "Collision probability (2.49e-01) is in the high-concern range",
-        "Underlying tracking data is 6.7 days old \u2014 treat as less certain"
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -964,39 +277,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "STARLINK-37981 [+] vs STARLINK-35627 [+]: probability of collision 2.49e-01, priority MEDIUM (score 60.8/100).",
-        "why_it_matters": "Collision probability (2.49e-01) is in the high-concern range; Underlying tracking data is 6.7 days old \u2014 treat as less certain",
+        "summary": "CREW DRAGON 13 [+] vs ISS (UNITY) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (2.49e-01) is in the high-concern range",
-          "Underlying tracking data is 6.7 days old \u2014 treat as less certain",
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "STARLINK-37874 [+]",
-      "object_b": "STARLINK-35585 [+]",
-      "norad_a": "100300",
-      "norad_b": "66170",
-      "time_utc": "2026-11-04 12:44:47.245",
-      "miss_distance_km": 0.07,
-      "relative_speed_km_s": 2.505,
-      "probability_of_collision": 0.0771,
+      "object_a": "DRAGON CRS-35 [+]",
+      "object_b": "ISS (UNITY) [+]",
+      "norad_a": "101031",
+      "norad_b": "25575",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 60.4,
-      "priority_tier": "MEDIUM",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 2.5
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
       },
       "score_reasons": [
-        "Collision probability (7.71e-02) is in the high-concern range",
-        "Underlying tracking data is 6.9 days old \u2014 treat as less certain"
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -1005,39 +318,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "STARLINK-37874 [+] vs STARLINK-35585 [+]: probability of collision 7.71e-02, priority MEDIUM (score 60.4/100).",
-        "why_it_matters": "Collision probability (7.71e-02) is in the high-concern range; Underlying tracking data is 6.9 days old \u2014 treat as less certain",
+        "summary": "DRAGON CRS-35 [+] vs ISS (UNITY) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (7.71e-02) is in the high-concern range",
-          "Underlying tracking data is 6.9 days old \u2014 treat as less certain",
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "FENGYUN 1C DEB [-]",
-      "object_b": "STARLINK-35021 [+]",
-      "norad_a": "30520",
-      "norad_b": "65282",
-      "time_utc": "2026-11-05 13:09:30.991",
-      "miss_distance_km": 0.013,
-      "relative_speed_km_s": 15.124,
-      "probability_of_collision": 0.2696,
+      "object_a": "SOYUZ-MS 29 [+]",
+      "object_b": "ISS (ZVEZDA) [+]",
+      "norad_a": "100057",
+      "norad_b": "26400",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 60.0,
-      "priority_tier": "MEDIUM",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 0.0
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
       },
       "score_reasons": [
-        "Collision probability (2.70e-01) is in the high-concern range",
-        "Underlying tracking data is 7.2 days old \u2014 treat as less certain"
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -1046,40 +359,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "FENGYUN 1C DEB [-] vs STARLINK-35021 [+]: probability of collision 2.70e-01, priority MEDIUM (score 60.0/100).",
-        "why_it_matters": "Collision probability (2.70e-01) is in the high-concern range; Underlying tracking data is 7.2 days old \u2014 treat as less certain",
+        "summary": "SOYUZ-MS 29 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (2.70e-01) is in the high-concern range",
-          "Underlying tracking data is 7.2 days old \u2014 treat as less certain",
-          "Underlying tracking data is more than 7 days old.",
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "STARLINK-38023 [+]",
-      "object_b": "STARLINK-35523 [+]",
-      "norad_a": "100043",
-      "norad_b": "65910",
-      "time_utc": "2026-11-06 11:28:01.187",
-      "miss_distance_km": 0.038,
-      "relative_speed_km_s": 2.14,
-      "probability_of_collision": 0.2113,
+      "object_a": "PROGRESS-MS 35 [+]",
+      "object_b": "ISS (ZVEZDA) [+]",
+      "norad_a": "100712",
+      "norad_b": "26400",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 60.0,
-      "priority_tier": "MEDIUM",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 0.0
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
       },
       "score_reasons": [
-        "Collision probability (2.11e-01) is in the high-concern range",
-        "Underlying tracking data is 8.6 days old \u2014 treat as less certain"
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -1088,40 +400,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "STARLINK-38023 [+] vs STARLINK-35523 [+]: probability of collision 2.11e-01, priority MEDIUM (score 60.0/100).",
-        "why_it_matters": "Collision probability (2.11e-01) is in the high-concern range; Underlying tracking data is 8.6 days old \u2014 treat as less certain",
+        "summary": "PROGRESS-MS 35 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (2.11e-01) is in the high-concern range",
-          "Underlying tracking data is 8.6 days old \u2014 treat as less certain",
-          "Underlying tracking data is more than 7 days old.",
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "STARLINK-38026 [+]",
-      "object_b": "STARLINK-35231 [+]",
-      "norad_a": "100408",
-      "norad_b": "65849",
-      "time_utc": "2026-11-05 18:26:23.074",
-      "miss_distance_km": 0.059,
-      "relative_speed_km_s": 4.574,
-      "probability_of_collision": 0.101,
+      "object_a": "CREW DRAGON 13 [+]",
+      "object_b": "ISS (ZVEZDA) [+]",
+      "norad_a": "100882",
+      "norad_b": "26400",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 60.0,
-      "priority_tier": "MEDIUM",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 0.0
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
       },
       "score_reasons": [
-        "Collision probability (1.01e-01) is in the high-concern range",
-        "Underlying tracking data is 7.1 days old \u2014 treat as less certain"
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -1130,40 +441,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "STARLINK-38026 [+] vs STARLINK-35231 [+]: probability of collision 1.01e-01, priority MEDIUM (score 60.0/100).",
-        "why_it_matters": "Collision probability (1.01e-01) is in the high-concern range; Underlying tracking data is 7.1 days old \u2014 treat as less certain",
+        "summary": "CREW DRAGON 13 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (1.01e-01) is in the high-concern range",
-          "Underlying tracking data is 7.1 days old \u2014 treat as less certain",
-          "Underlying tracking data is more than 7 days old.",
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "STARLINK-38168 [+]",
-      "object_b": "STARLINK-35080 [+]",
-      "norad_a": "100251",
-      "norad_b": "65437",
-      "time_utc": "2026-11-05 08:35:58.386",
-      "miss_distance_km": 0.051,
-      "relative_speed_km_s": 15.0,
-      "probability_of_collision": 0.06301,
+      "object_a": "DRAGON CRS-35 [+]",
+      "object_b": "ISS (ZVEZDA) [+]",
+      "norad_a": "101031",
+      "norad_b": "26400",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 60.0,
-      "priority_tier": "MEDIUM",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 0.0
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
       },
       "score_reasons": [
-        "Collision probability (6.30e-02) is in the high-concern range",
-        "Underlying tracking data is 7.3 days old \u2014 treat as less certain"
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -1172,40 +482,39 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "STARLINK-38168 [+] vs STARLINK-35080 [+]: probability of collision 6.30e-02, priority MEDIUM (score 60.0/100).",
-        "why_it_matters": "Collision probability (6.30e-02) is in the high-concern range; Underlying tracking data is 7.3 days old \u2014 treat as less certain",
+        "summary": "DRAGON CRS-35 [+] vs ISS (ZVEZDA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (6.30e-02) is in the high-concern range",
-          "Underlying tracking data is 7.3 days old \u2014 treat as less certain",
-          "Underlying tracking data is more than 7 days old.",
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
       }
     },
     {
-      "object_a": "STARLINK-37458 [+]",
-      "object_b": "STARLINK-34477 [+]",
-      "norad_a": "100033",
-      "norad_b": "64487",
-      "time_utc": "2026-11-05 21:21:23.027",
-      "miss_distance_km": 0.077,
-      "relative_speed_km_s": 6.813,
-      "probability_of_collision": 0.06071,
+      "object_a": "SOYUZ-MS 29 [+]",
+      "object_b": "ISS (DESTINY) [+]",
+      "norad_a": "100057",
+      "norad_b": "26700",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
       "pc_provenance": "socrates_real",
-      "priority_score": 60.0,
-      "priority_tier": "MEDIUM",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
       "score_breakdown": {
         "pc_score": 100.0,
-        "urgency_score": 0.0,
-        "freshness_score": 0.0
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
       },
       "score_reasons": [
-        "Collision probability (6.07e-02) is in the high-concern range",
-        "Underlying tracking data is 8.0 days old \u2014 treat as less certain"
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
       ],
       "trend": {
         "direction": "insufficient_data",
@@ -1214,15 +523,711 @@
         "observations": 1
       },
       "analysis": {
-        "summary": "STARLINK-37458 [+] vs STARLINK-34477 [+]: probability of collision 6.07e-02, priority MEDIUM (score 60.0/100).",
-        "why_it_matters": "Collision probability (6.07e-02) is in the high-concern range; Underlying tracking data is 8.0 days old \u2014 treat as less certain",
+        "summary": "SOYUZ-MS 29 [+] vs ISS (DESTINY) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
         "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
-        "suggested_next_step": "Continue monitoring and re-screen as the event approaches.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
         "confidence": "low",
         "limitations": [
-          "Collision probability (6.07e-02) is in the high-concern range",
-          "Underlying tracking data is 8.0 days old \u2014 treat as less certain",
-          "Underlying tracking data is more than 7 days old.",
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PROGRESS-MS 35 [+]",
+      "object_b": "ISS (DESTINY) [+]",
+      "norad_a": "100712",
+      "norad_b": "26700",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PROGRESS-MS 35 [+] vs ISS (DESTINY) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "CREW DRAGON 13 [+]",
+      "object_b": "ISS (DESTINY) [+]",
+      "norad_a": "100882",
+      "norad_b": "26700",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "CREW DRAGON 13 [+] vs ISS (DESTINY) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "DRAGON CRS-35 [+]",
+      "object_b": "ISS (DESTINY) [+]",
+      "norad_a": "101031",
+      "norad_b": "26700",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "DRAGON CRS-35 [+] vs ISS (DESTINY) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "SOYUZ-MS 29 [+]",
+      "object_b": "POISK [+]",
+      "norad_a": "100057",
+      "norad_b": "36086",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "SOYUZ-MS 29 [+] vs POISK [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PROGRESS-MS 35 [+]",
+      "object_b": "POISK [+]",
+      "norad_a": "100712",
+      "norad_b": "36086",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PROGRESS-MS 35 [+] vs POISK [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "CREW DRAGON 13 [+]",
+      "object_b": "POISK [+]",
+      "norad_a": "100882",
+      "norad_b": "36086",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "CREW DRAGON 13 [+] vs POISK [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "DRAGON CRS-35 [+]",
+      "object_b": "POISK [+]",
+      "norad_a": "101031",
+      "norad_b": "36086",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "DRAGON CRS-35 [+] vs POISK [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "SOYUZ-MS 29 [+]",
+      "object_b": "ISS (NAUKA) [+]",
+      "norad_a": "100057",
+      "norad_b": "49044",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "SOYUZ-MS 29 [+] vs ISS (NAUKA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PROGRESS-MS 35 [+]",
+      "object_b": "ISS (NAUKA) [+]",
+      "norad_a": "100712",
+      "norad_b": "49044",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PROGRESS-MS 35 [+] vs ISS (NAUKA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "CREW DRAGON 13 [+]",
+      "object_b": "ISS (NAUKA) [+]",
+      "norad_a": "100882",
+      "norad_b": "49044",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "CREW DRAGON 13 [+] vs ISS (NAUKA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "DRAGON CRS-35 [+]",
+      "object_b": "ISS (NAUKA) [+]",
+      "norad_a": "101031",
+      "norad_b": "49044",
+      "time_utc": "2026-10-31 02:16:25.381",
+      "miss_distance_km": 0.178,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "DRAGON CRS-35 [+] vs ISS (NAUKA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "SOYUZ-MS 29 [+]",
+      "object_b": "ISS (ZARYA) [+]",
+      "norad_a": "100057",
+      "norad_b": "25544",
+      "time_utc": "2026-10-31 03:06:03.612",
+      "miss_distance_km": 0.158,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "SOYUZ-MS 29 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PROGRESS-MS 35 [+]",
+      "object_b": "ISS (ZARYA) [+]",
+      "norad_a": "100712",
+      "norad_b": "25544",
+      "time_utc": "2026-10-31 03:06:03.612",
+      "miss_distance_km": 0.158,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PROGRESS-MS 35 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "CREW DRAGON 13 [+]",
+      "object_b": "ISS (ZARYA) [+]",
+      "norad_a": "100882",
+      "norad_b": "25544",
+      "time_utc": "2026-10-31 03:06:03.612",
+      "miss_distance_km": 0.158,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "CREW DRAGON 13 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "DRAGON CRS-35 [+]",
+      "object_b": "ISS (ZARYA) [+]",
+      "norad_a": "101031",
+      "norad_b": "25544",
+      "time_utc": "2026-10-31 03:06:03.612",
+      "miss_distance_km": 0.158,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "DRAGON CRS-35 [+] vs ISS (ZARYA) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "SOYUZ-MS 29 [+]",
+      "object_b": "ISS (UNITY) [+]",
+      "norad_a": "100057",
+      "norad_b": "25575",
+      "time_utc": "2026-10-31 03:06:03.612",
+      "miss_distance_km": 0.158,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "SOYUZ-MS 29 [+] vs ISS (UNITY) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
+          "Fewer than 3 observations available \u2014 trend estimate is preliminary."
+        ],
+        "source": "rule_based_fallback"
+      }
+    },
+    {
+      "object_a": "PROGRESS-MS 35 [+]",
+      "object_b": "ISS (UNITY) [+]",
+      "norad_a": "100712",
+      "norad_b": "25575",
+      "time_utc": "2026-10-31 03:06:03.612",
+      "miss_distance_km": 0.158,
+      "relative_speed_km_s": 0.0,
+      "probability_of_collision": 1.0,
+      "pc_provenance": "socrates_real",
+      "priority_score": 100.0,
+      "priority_tier": "HIGH",
+      "score_breakdown": {
+        "pc_score": 100.0,
+        "urgency_score": 100.0,
+        "freshness_score": 100.0
+      },
+      "score_reasons": [
+        "Collision probability (1.00e+00) is in the high-concern range",
+        "Closest approach is soon (0.0h away)"
+      ],
+      "trend": {
+        "direction": "insufficient_data",
+        "pc_change_ratio": null,
+        "miss_distance_change_km": null,
+        "observations": 1
+      },
+      "analysis": {
+        "summary": "PROGRESS-MS 35 [+] vs ISS (UNITY) [+]: probability of collision 1.00e+00, priority HIGH (score 100.0/100).",
+        "why_it_matters": "Collision probability (1.00e+00) is in the high-concern range; Closest approach is soon (0.0h away)",
+        "trend_explanation": "Only one observation is available so far; no trend can be established yet.",
+        "suggested_next_step": "Recommend an active maneuver evaluation and re-screen against fresher tracking data.",
+        "confidence": "low",
+        "limitations": [
+          "Collision probability (1.00e+00) is in the high-concern range",
+          "Closest approach is soon (0.0h away)",
           "Fewer than 3 observations available \u2014 trend estimate is preliminary."
         ],
         "source": "rule_based_fallback"
