@@ -1,635 +1,635 @@
 # Orbital Collision-Risk Triage Report
 
 - Data source: CelesTrak SOCRATES Plus (real conjunction data)
-- Generated: 2026-11-11T05:49:22+00:00
+- Generated: 2026-11-11T19:29:03+00:00
 - Conjunctions flagged: 30
 
-## 1. STARLINK-38357 [+] vs STARLINK-34039 [+] — HIGH (97.2/100)
+## 1. STARLINK-38107 [+] vs STARLINK-5849 [+] — HIGH (100.0/100)
 
-- NORAD IDs: 100617 / 63946
-- TCA (UTC): 2026-11-10 11:52:33.747
-- Miss distance: **0.084 km**
-- Probability of collision (real, SOCRATES): **4.534e-02**
-- Priority breakdown: Pc=100.0, urgency=100.0, freshness=81.6
-- Trend: **stable** (Pc ×1.0 across 2 observations)
+- NORAD IDs: 100004 / 55924
+- TCA (UTC): 2026-11-10 20:37:06.561
+- Miss distance: **0.078 km**
+- Probability of collision (real, SOCRATES): **6.264e-02**
+- Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
+- Trend: **insufficient_data** (1 observation(s) so far)
 
-**STARLINK-38357 [+] vs STARLINK-34039 [+]: probability of collision 4.53e-02, priority HIGH (score 97.2/100).**
+**STARLINK-38107 [+] vs STARLINK-5849 [+]: probability of collision 6.26e-02, priority HIGH (score 100.0/100).**
 
-*Why it matters*: Collision probability (4.53e-02) is in the high-concern range; Closest approach is soon (0.0h away)
+*Why it matters*: Collision probability (6.26e-02) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (4.53e-02) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
-
-## 2. STARLINK-38175 [+] vs STARLINK-4447 [+] — HIGH (97.0/100)
-
-- NORAD IDs: 100161 / 53472
-- TCA (UTC): 2026-11-11 12:18:19.535
-- Miss distance: **0.068 km**
-- Probability of collision (real, SOCRATES): **6.902e-02**
-- Priority breakdown: Pc=100.0, urgency=99.3, freshness=81.1
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-38175 [+] vs STARLINK-4447 [+]: probability of collision 6.90e-02, priority HIGH (score 97.0/100).**
-
-*Why it matters*: Collision probability (6.90e-02) is in the high-concern range; Closest approach is soon (6.5h away)
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
+*Trend*: Only one observation is available so far; no trend can be established yet.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: moderate (rule_based_fallback)
+*Confidence*: low (rule_based_fallback)
 
-*Limitations*: Collision probability (6.90e-02) is in the high-concern range; Closest approach is soon (6.5h away); Fewer than 3 observations available — trend estimate is preliminary.
+*Limitations*: Collision probability (6.26e-02) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
-## 3. STARLINK-38405 [+] vs STARLINK-2673 [+] — HIGH (93.3/100)
+## 2. ICEYE-X7 [+] vs STARLINK-35039 [+] — HIGH (100.0/100)
 
-- NORAD IDs: 101177 / 48649
-- TCA (UTC): 2026-11-11 18:44:46.362
-- Miss distance: **0.073 km**
-- Probability of collision (real, SOCRATES): **7.172e-02**
-- Priority breakdown: Pc=100.0, urgency=89.5, freshness=73.1
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-38405 [+] vs STARLINK-2673 [+]: probability of collision 7.17e-02, priority HIGH (score 93.3/100).**
-
-*Why it matters*: Collision probability (7.17e-02) is in the high-concern range; Closest approach is soon (12.9h away)
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (7.17e-02) is in the high-concern range; Closest approach is soon (12.9h away); Fewer than 3 observations available — trend estimate is preliminary.
-
-## 4. STARLINK-37844 [+] vs STARLINK-4290 [+] — HIGH (93.3/100)
-
-- NORAD IDs: 100028 / 53006
-- TCA (UTC): 2026-11-11 20:34:29.947
-- Miss distance: **0.087 km**
-- Probability of collision (real, SOCRATES): **4.813e-02**
-- Priority breakdown: Pc=100.0, urgency=86.7, freshness=77.4
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-37844 [+] vs STARLINK-4290 [+]: probability of collision 4.81e-02, priority HIGH (score 93.3/100).**
-
-*Why it matters*: Collision probability (4.81e-02) is in the high-concern range; Closest approach is soon (14.8h away)
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (4.81e-02) is in the high-concern range; Closest approach is soon (14.8h away); Fewer than 3 observations available — trend estimate is preliminary.
-
-## 5. COSMOS 1862 [?] vs STARLINK-34999 [+] — HIGH (92.1/100)
-
-- NORAD IDs: 18152 / 65222
-- TCA (UTC): 2026-11-11 20:55:53.133
-- Miss distance: **0.035 km**
-- Probability of collision (real, SOCRATES): **7.784e-02**
-- Priority breakdown: Pc=100.0, urgency=86.2, freshness=70.3
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**COSMOS 1862 [?] vs STARLINK-34999 [+]: probability of collision 7.78e-02, priority HIGH (score 92.1/100).**
-
-*Why it matters*: Collision probability (7.78e-02) is in the high-concern range; Closest approach is soon (15.1h away)
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (7.78e-02) is in the high-concern range; Closest approach is soon (15.1h away); Fewer than 3 observations available — trend estimate is preliminary.
-
-## 6. STARLINK-38075 [+] vs STARLINK-35047 [+] — HIGH (92.0/100)
-
-- NORAD IDs: 100227 / 65806
-- TCA (UTC): 2026-11-11 07:38:50.485
-- Miss distance: **0.062 km**
-- Probability of collision (real, SOCRATES): **4.287e-02**
-- Priority breakdown: Pc=100.0, urgency=100.0, freshness=46.9
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-38075 [+] vs STARLINK-35047 [+]: probability of collision 4.29e-02, priority HIGH (score 92.0/100).**
-
-*Why it matters*: Collision probability (4.29e-02) is in the high-concern range; Closest approach is soon (1.8h away)
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (4.29e-02) is in the high-concern range; Closest approach is soon (1.8h away); Fewer than 3 observations available — trend estimate is preliminary.
-
-## 7. NANOSATC-BR1 [+] vs STARLINK-34759 [+] — HIGH (91.8/100)
-
-- NORAD IDs: 40024 / 65096
-- TCA (UTC): 2026-11-11 09:03:42.902
-- Miss distance: **0.013 km**
-- Probability of collision (real, SOCRATES): **3.949e-01**
-- Priority breakdown: Pc=100.0, urgency=100.0, freshness=45.4
-- Trend: **stable** (Pc ×1.0 across 3 observations)
-
-**NANOSATC-BR1 [+] vs STARLINK-34759 [+]: probability of collision 3.95e-01, priority HIGH (score 91.8/100).**
-
-*Why it matters*: Collision probability (3.95e-01) is in the high-concern range; Closest approach is soon (3.2h away)
-
-*Trend*: Probability of collision has stayed roughly stable across 3 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (3.95e-01) is in the high-concern range; Closest approach is soon (3.2h away)
-
-## 8. STARLINK-37805 [+] vs STARLINK-37511 [+] — HIGH (88.7/100)
-
-- NORAD IDs: 100290 / 69512
-- TCA (UTC): 2026-11-12 04:41:18.498
-- Miss distance: **0.092 km**
-- Probability of collision (real, SOCRATES): **4.743e-02**
-- Priority breakdown: Pc=100.0, urgency=74.4, freshness=67.0
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-37805 [+] vs STARLINK-37511 [+]: probability of collision 4.74e-02, priority HIGH (score 88.7/100).**
-
-*Why it matters*: Collision probability (4.74e-02) is in the high-concern range; Closest approach is soon (22.9h away)
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (4.74e-02) is in the high-concern range; Closest approach is soon (22.9h away); Fewer than 3 observations available — trend estimate is preliminary.
-
-## 9. STARLINK-37397 [+] vs STARLINK-4609 [+] — HIGH (86.7/100)
-
-- NORAD IDs: 100411 / 53619
-- TCA (UTC): 2026-11-12 07:54:45.058
-- Miss distance: **0.053 km**
-- Probability of collision (real, SOCRATES): **1.038e-01**
-- Priority breakdown: Pc=100.0, urgency=69.6, freshness=62.0
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-37397 [+] vs STARLINK-4609 [+]: probability of collision 1.04e-01, priority HIGH (score 86.7/100).**
-
-*Why it matters*: Collision probability (1.04e-01) is in the high-concern range; Closest approach is soon (26.1h away)
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (1.04e-01) is in the high-concern range; Closest approach is soon (26.1h away); Fewer than 3 observations available — trend estimate is preliminary.
-
-## 10. SUOMI-100 [+] vs STARLINK-31190 [+] — HIGH (86.7/100)
-
-- NORAD IDs: 43804 / 58897
-- TCA (UTC): 2026-11-12 08:27:10.733
-- Miss distance: **0.04 km**
-- Probability of collision (real, SOCRATES): **4.470e-02**
-- Priority breakdown: Pc=100.0, urgency=68.7, freshness=63.2
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**SUOMI-100 [+] vs STARLINK-31190 [+]: probability of collision 4.47e-02, priority HIGH (score 86.7/100).**
-
-*Why it matters*: Collision probability (4.47e-02) is in the high-concern range; Closest approach is soon (26.6h away)
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (4.47e-02) is in the high-concern range; Closest approach is soon (26.6h away); Fewer than 3 observations available — trend estimate is preliminary.
-
-## 11. STARLINK-37832 [+] vs STARLINK-36559 [+] — HIGH (84.7/100)
-
-- NORAD IDs: 100231 / 67555
-- TCA (UTC): 2026-11-12 08:42:24.565
-- Miss distance: **0.05 km**
-- Probability of collision (real, SOCRATES): **6.501e-02**
-- Priority breakdown: Pc=100.0, urgency=68.4, freshness=50.5
-- Trend: **stable** (Pc ×1.0 across 3 observations)
-
-**STARLINK-37832 [+] vs STARLINK-36559 [+]: probability of collision 6.50e-02, priority HIGH (score 84.7/100).**
-
-*Why it matters*: Collision probability (6.50e-02) is in the high-concern range; Closest approach is soon (26.9h away)
-
-*Trend*: Probability of collision has stayed roughly stable across 3 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (6.50e-02) is in the high-concern range; Closest approach is soon (26.9h away)
-
-## 12. STARLINK-37699 [+] vs STARLINK-5226 [+] — HIGH (84.5/100)
-
-- NORAD IDs: 100279 / 54056
-- TCA (UTC): 2026-11-12 13:49:17.118
-- Miss distance: **0.071 km**
-- Probability of collision (real, SOCRATES): **6.864e-02**
-- Priority breakdown: Pc=100.0, urgency=60.6, freshness=62.0
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-37699 [+] vs STARLINK-5226 [+]: probability of collision 6.86e-02, priority HIGH (score 84.5/100).**
-
-*Why it matters*: Collision probability (6.86e-02) is in the high-concern range
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (6.86e-02) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
-
-## 13. STARLINK-37480 [+] vs STARLINK-34534 [+] — HIGH (82.9/100)
-
-- NORAD IDs: 100287 / 64763
-- TCA (UTC): 2026-11-12 15:26:52.480
-- Miss distance: **0.082 km**
-- Probability of collision (real, SOCRATES): **4.223e-02**
-- Priority breakdown: Pc=100.0, urgency=58.1, freshness=55.8
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-37480 [+] vs STARLINK-34534 [+]: probability of collision 4.22e-02, priority HIGH (score 82.9/100).**
-
-*Why it matters*: Collision probability (4.22e-02) is in the high-concern range
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (4.22e-02) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
-
-## 14. STARLINK-37920 [+] vs STARLINK-32540 [+] — HIGH (81.7/100)
-
-- NORAD IDs: 100489 / 61723
-- TCA (UTC): 2026-11-12 20:21:01.789
-- Miss distance: **0.069 km**
-- Probability of collision (real, SOCRATES): **8.094e-02**
-- Priority breakdown: Pc=100.0, urgency=50.7, freshness=59.9
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-37920 [+] vs STARLINK-32540 [+]: probability of collision 8.09e-02, priority HIGH (score 81.7/100).**
-
-*Why it matters*: Collision probability (8.09e-02) is in the high-concern range
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (8.09e-02) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
-
-## 15. STARLINK-37797 [+] vs STARLINK-32882 [+] — HIGH (80.7/100)
-
-- NORAD IDs: 100052 / 62963
-- TCA (UTC): 2026-11-12 21:52:16.175
-- Miss distance: **0.086 km**
-- Probability of collision (real, SOCRATES): **5.259e-02**
-- Priority breakdown: Pc=100.0, urgency=48.4, freshness=57.0
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-37797 [+] vs STARLINK-32882 [+]: probability of collision 5.26e-02, priority HIGH (score 80.7/100).**
-
-*Why it matters*: Collision probability (5.26e-02) is in the high-concern range
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (5.26e-02) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
-
-## 16. STARLINK-37748 [+] vs STARLINK-3955 [+] — HIGH (78.7/100)
-
-- NORAD IDs: 100416 / 52561
-- TCA (UTC): 2026-11-13 00:24:47.562
-- Miss distance: **0.088 km**
-- Probability of collision (real, SOCRATES): **5.177e-02**
-- Priority breakdown: Pc=100.0, urgency=44.6, freshness=50.7
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-37748 [+] vs STARLINK-3955 [+]: probability of collision 5.18e-02, priority HIGH (score 78.7/100).**
-
-*Why it matters*: Collision probability (5.18e-02) is in the high-concern range
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (5.18e-02) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
-
-## 17. STARLINK-32921 [+] vs KUIPER-00075 [+] — HIGH (77.5/100)
-
-- NORAD IDs: 62920 / 64822
-- TCA (UTC): 2026-11-13 04:27:47.057
-- Miss distance: **0.031 km**
-- Probability of collision (real, SOCRATES): **1.059e-01**
-- Priority breakdown: Pc=100.0, urgency=38.4, freshness=52.4
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-32921 [+] vs KUIPER-00075 [+]: probability of collision 1.06e-01, priority HIGH (score 77.5/100).**
-
-*Why it matters*: Collision probability (1.06e-01) is in the high-concern range
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (1.06e-01) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
-
-## 18. STARLINK-38154 [+] vs STARLINK-34314 [+] — HIGH (73.6/100)
-
-- NORAD IDs: 100258 / 64146
-- TCA (UTC): 2026-11-13 07:23:49.892
-- Miss distance: **0.032 km**
-- Probability of collision (real, SOCRATES): **2.617e-01**
-- Priority breakdown: Pc=100.0, urgency=34.0, freshness=34.3
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-38154 [+] vs STARLINK-34314 [+]: probability of collision 2.62e-01, priority HIGH (score 73.6/100).**
-
-*Why it matters*: Collision probability (2.62e-01) is in the high-concern range; Underlying tracking data is 4.9 days old — treat as less certain
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (2.62e-01) is in the high-concern range; Underlying tracking data is 4.9 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
-
-## 19. STARLINK-38209 [+] vs STARLINK-36350 [+] — HIGH (71.0/100)
-
-- NORAD IDs: 100383 / 67572
-- TCA (UTC): 2026-11-13 16:59:45.357
-- Miss distance: **0.062 km**
-- Probability of collision (real, SOCRATES): **4.560e-02**
-- Priority breakdown: Pc=100.0, urgency=19.4, freshness=41.0
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-38209 [+] vs STARLINK-36350 [+]: probability of collision 4.56e-02, priority HIGH (score 71.0/100).**
-
-*Why it matters*: Collision probability (4.56e-02) is in the high-concern range
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (4.56e-02) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
-
-## 20. STARLINK-38223 [+] vs STARLINK-34173 [+] — HIGH (69.3/100)
-
-- NORAD IDs: 100190 / 64196
-- TCA (UTC): 2026-11-13 21:12:05.464
-- Miss distance: **0.041 km**
-- Probability of collision (real, SOCRATES): **1.151e-01**
-- Priority breakdown: Pc=100.0, urgency=13.1, freshness=40.4
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-38223 [+] vs STARLINK-34173 [+]: probability of collision 1.15e-01, priority HIGH (score 69.3/100).**
-
-*Why it matters*: Collision probability (1.15e-01) is in the high-concern range
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (1.15e-01) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
-
-## 21. STARLINK-35692 [+] vs LUCA (RS90S) [+] — HIGH (69.0/100)
-
-- NORAD IDs: 66513 / 67287
-- TCA (UTC): 2026-11-13 21:19:57.559
+- NORAD IDs: 46496 / 65451
+- TCA (UTC): 2026-11-11 01:39:11.715
 - Miss distance: **0.038 km**
-- Probability of collision (real, SOCRATES): **7.421e-02**
-- Priority breakdown: Pc=100.0, urgency=12.9, freshness=38.5
-- Trend: **stable** (Pc ×1.0 across 2 observations)
+- Probability of collision (real, SOCRATES): **4.891e-02**
+- Priority breakdown: Pc=100.0, urgency=100.0, freshness=100.0
+- Trend: **insufficient_data** (1 observation(s) so far)
 
-**STARLINK-35692 [+] vs LUCA (RS90S) [+]: probability of collision 7.42e-02, priority HIGH (score 69.0/100).**
+**ICEYE-X7 [+] vs STARLINK-35039 [+]: probability of collision 4.89e-02, priority HIGH (score 100.0/100).**
 
-*Why it matters*: Collision probability (7.42e-02) is in the high-concern range
+*Why it matters*: Collision probability (4.89e-02) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (7.42e-02) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
-
-## 22. STARLINK-38218 [+] vs STARLINK-36946 [+] — HIGH (65.1/100)
-
-- NORAD IDs: 100195 / 68382
-- TCA (UTC): 2026-11-14 06:39:26.684
-- Miss distance: **0.05 km**
-- Probability of collision (real, SOCRATES): **1.255e-01**
-- Priority breakdown: Pc=100.0, urgency=0.0, freshness=33.7
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-38218 [+] vs STARLINK-36946 [+]: probability of collision 1.26e-01, priority HIGH (score 65.1/100).**
-
-*Why it matters*: Collision probability (1.26e-01) is in the high-concern range; Underlying tracking data is 5.0 days old — treat as less certain
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
+*Trend*: Only one observation is available so far; no trend can be established yet.
 
 *Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: moderate (rule_based_fallback)
+*Confidence*: low (rule_based_fallback)
 
-*Limitations*: Collision probability (1.26e-01) is in the high-concern range; Underlying tracking data is 5.0 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
+*Limitations*: Collision probability (4.89e-02) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
-## 23. STARLINK-37874 [+] vs STARLINK-35527 [+] — MEDIUM (64.5/100)
+## 3. PIESAT-1 A [+] vs PIESAT-1 D [+] — HIGH (99.5/100)
 
-- NORAD IDs: 100300 / 66092
-- TCA (UTC): 2026-11-14 11:12:39.009
-- Miss distance: **0.052 km**
-- Probability of collision (real, SOCRATES): **1.279e-01**
-- Priority breakdown: Pc=100.0, urgency=0.0, freshness=30.1
-- Trend: **stable** (Pc ×1.0 across 2 observations)
+- NORAD IDs: 56153 / 56156
+- TCA (UTC): 2026-11-10 18:59:21.146
+- Miss distance: **0.141 km**
+- Probability of collision (real, SOCRATES): **4.282e-02**
+- Priority breakdown: Pc=100.0, urgency=100.0, freshness=96.7
+- Trend: **insufficient_data** (1 observation(s) so far)
 
-**STARLINK-37874 [+] vs STARLINK-35527 [+]: probability of collision 1.28e-01, priority MEDIUM (score 64.5/100).**
+**PIESAT-1 A [+] vs PIESAT-1 D [+]: probability of collision 4.28e-02, priority HIGH (score 99.5/100).**
 
-*Why it matters*: Collision probability (1.28e-01) is in the high-concern range; Underlying tracking data is 5.2 days old — treat as less certain
+*Why it matters*: Collision probability (4.28e-02) is in the high-concern range; Closest approach is soon (0.0h away)
 
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
+*Trend*: Only one observation is available so far; no trend can be established yet.
 
-*Suggested next step*: Continue monitoring and re-screen as the event approaches.
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: moderate (rule_based_fallback)
+*Confidence*: low (rule_based_fallback)
 
-*Limitations*: Collision probability (1.28e-01) is in the high-concern range; Underlying tracking data is 5.2 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
+*Limitations*: Collision probability (4.28e-02) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
 
-## 24. STARLINK-37764 [+] vs STARLINK-36310 [+] — MEDIUM (63.9/100)
+## 4. STARLINK-37756 [+] vs STARLINK-31688 [+] — HIGH (97.3/100)
 
-- NORAD IDs: 100414 / 68244
-- TCA (UTC): 2026-11-14 21:54:44.457
-- Miss distance: **0.058 km**
-- Probability of collision (real, SOCRATES): **8.211e-02**
-- Priority breakdown: Pc=100.0, urgency=0.0, freshness=26.0
-- Trend: **stable** (Pc ×1.0 across 2 observations)
+- NORAD IDs: 100047 / 59386
+- TCA (UTC): 2026-11-12 01:19:19.759
+- Miss distance: **0.045 km**
+- Probability of collision (real, SOCRATES): **1.513e-01**
+- Priority breakdown: Pc=100.0, urgency=100.0, freshness=81.7
+- Trend: **insufficient_data** (1 observation(s) so far)
 
-**STARLINK-37764 [+] vs STARLINK-36310 [+]: probability of collision 8.21e-02, priority MEDIUM (score 63.9/100).**
+**STARLINK-37756 [+] vs STARLINK-31688 [+]: probability of collision 1.51e-01, priority HIGH (score 97.3/100).**
 
-*Why it matters*: Collision probability (8.21e-02) is in the high-concern range; Underlying tracking data is 5.4 days old — treat as less certain
+*Why it matters*: Collision probability (1.51e-01) is in the high-concern range; Closest approach is soon (5.8h away)
 
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
+*Trend*: Only one observation is available so far; no trend can be established yet.
 
-*Suggested next step*: Continue monitoring and re-screen as the event approaches.
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
 
-*Confidence*: moderate (rule_based_fallback)
+*Confidence*: low (rule_based_fallback)
 
-*Limitations*: Collision probability (8.21e-02) is in the high-concern range; Underlying tracking data is 5.4 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
+*Limitations*: Collision probability (1.51e-01) is in the high-concern range; Closest approach is soon (5.8h away); Fewer than 3 observations available — trend estimate is preliminary.
 
-## 25. STARLINK-37846 [+] vs STARLINK-34759 [+] — MEDIUM (62.5/100)
+## 5. STARLINK-38353 [+] vs STARLINK-35734 [+] — HIGH (97.0/100)
 
-- NORAD IDs: 100492 / 65096
-- TCA (UTC): 2026-11-15 07:50:01.699
-- Miss distance: **0.081 km**
-- Probability of collision (real, SOCRATES): **5.862e-02**
-- Priority breakdown: Pc=100.0, urgency=0.0, freshness=16.5
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-37846 [+] vs STARLINK-34759 [+]: probability of collision 5.86e-02, priority MEDIUM (score 62.5/100).**
-
-*Why it matters*: Collision probability (5.86e-02) is in the high-concern range; Underlying tracking data is 6.0 days old — treat as less certain
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Continue monitoring and re-screen as the event approaches.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (5.86e-02) is in the high-concern range; Underlying tracking data is 6.0 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
-
-## 26. STARLINK-38416 [+] vs STARLINK-34360 [+] — MEDIUM (62.0/100)
-
-- NORAD IDs: 100638 / 64304
-- TCA (UTC): 2026-11-15 13:55:51.847
+- NORAD IDs: 100559 / 66225
+- TCA (UTC): 2026-11-11 22:49:58.236
 - Miss distance: **0.05 km**
-- Probability of collision (real, SOCRATES): **7.890e-02**
-- Priority breakdown: Pc=100.0, urgency=0.0, freshness=13.2
-- Trend: **stable** (Pc ×1.0 across 2 observations)
+- Probability of collision (real, SOCRATES): **9.322e-02**
+- Priority breakdown: Pc=100.0, urgency=100.0, freshness=80.0
+- Trend: **insufficient_data** (1 observation(s) so far)
 
-**STARLINK-38416 [+] vs STARLINK-34360 [+]: probability of collision 7.89e-02, priority MEDIUM (score 62.0/100).**
+**STARLINK-38353 [+] vs STARLINK-35734 [+]: probability of collision 9.32e-02, priority HIGH (score 97.0/100).**
 
-*Why it matters*: Collision probability (7.89e-02) is in the high-concern range; Underlying tracking data is 6.2 days old — treat as less certain
+*Why it matters*: Collision probability (9.32e-02) is in the high-concern range; Closest approach is soon (3.3h away)
 
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (9.32e-02) is in the high-concern range; Closest approach is soon (3.3h away); Fewer than 3 observations available — trend estimate is preliminary.
+
+## 6. OBJECT C [+] vs STARLINK-35808 [+] — HIGH (93.1/100)
+
+- NORAD IDs: 64627 / 68052
+- TCA (UTC): 2026-11-11 12:29:59.305
+- Miss distance: **0.038 km**
+- Probability of collision (real, SOCRATES): **6.686e-02**
+- Priority breakdown: Pc=100.0, urgency=100.0, freshness=54.1
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**OBJECT C [+] vs STARLINK-35808 [+]: probability of collision 6.69e-02, priority HIGH (score 93.1/100).**
+
+*Why it matters*: Collision probability (6.69e-02) is in the high-concern range; Closest approach is soon (0.0h away)
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (6.69e-02) is in the high-concern range; Closest approach is soon (0.0h away); Fewer than 3 observations available — trend estimate is preliminary.
+
+## 7. STARLINK-38372 [+] vs STARLINK-31448 [+] — HIGH (89.8/100)
+
+- NORAD IDs: 100522 / 59611
+- TCA (UTC): 2026-11-12 15:45:53.471
+- Miss distance: **0.069 km**
+- Probability of collision (real, SOCRATES): **6.732e-02**
+- Priority breakdown: Pc=100.0, urgency=78.4, freshness=68.2
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-38372 [+] vs STARLINK-31448 [+]: probability of collision 6.73e-02, priority HIGH (score 89.8/100).**
+
+*Why it matters*: Collision probability (6.73e-02) is in the high-concern range; Closest approach is soon (20.3h away)
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (6.73e-02) is in the high-concern range; Closest approach is soon (20.3h away); Fewer than 3 observations available — trend estimate is preliminary.
+
+## 8. STARLINK-38171 [+] vs STARLINK-34679 [+] — HIGH (86.4/100)
+
+- NORAD IDs: 100382 / 65442
+- TCA (UTC): 2026-11-12 23:35:07.133
+- Miss distance: **0.063 km**
+- Probability of collision (real, SOCRATES): **9.446e-02**
+- Priority breakdown: Pc=100.0, urgency=66.5, freshness=65.3
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-38171 [+] vs STARLINK-34679 [+]: probability of collision 9.45e-02, priority HIGH (score 86.4/100).**
+
+*Why it matters*: Collision probability (9.45e-02) is in the high-concern range; Closest approach is soon (28.1h away)
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (9.45e-02) is in the high-concern range; Closest approach is soon (28.1h away); Fewer than 3 observations available — trend estimate is preliminary.
+
+## 9. STARLINK-37330 [+] vs STARLINK-35852 [+] — HIGH (86.2/100)
+
+- NORAD IDs: 100498 / 66889
+- TCA (UTC): 2026-11-13 01:32:34.715
+- Miss distance: **0.016 km**
+- Probability of collision (real, SOCRATES): **1.000e+00**
+- Priority breakdown: Pc=100.0, urgency=63.5, freshness=68.6
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-37330 [+] vs STARLINK-35852 [+]: probability of collision 1.00e+00, priority HIGH (score 86.2/100).**
+
+*Why it matters*: Collision probability (1.00e+00) is in the high-concern range
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (1.00e+00) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 10. STARLINK-4499 [+] vs HUNITY [+] — HIGH (81.5/100)
+
+- NORAD IDs: 53402 / 66670
+- TCA (UTC): 2026-11-13 11:09:26.844
+- Miss distance: **0.043 km**
+- Probability of collision (real, SOCRATES): **5.978e-02**
+- Priority breakdown: Pc=100.0, urgency=49.0, freshness=61.9
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-4499 [+] vs HUNITY [+]: probability of collision 5.98e-02, priority HIGH (score 81.5/100).**
+
+*Why it matters*: Collision probability (5.98e-02) is in the high-concern range
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (5.98e-02) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 11. STARLINK-38241 [+] vs STARLINK-36574 [+] — HIGH (81.4/100)
+
+- NORAD IDs: 100225 / 67535
+- TCA (UTC): 2026-11-12 23:31:21.154
+- Miss distance: **0.028 km**
+- Probability of collision (real, SOCRATES): **2.016e-01**
+- Priority breakdown: Pc=100.0, urgency=66.6, freshness=31.4
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-38241 [+] vs STARLINK-36574 [+]: probability of collision 2.02e-01, priority HIGH (score 81.4/100).**
+
+*Why it matters*: Collision probability (2.02e-01) is in the high-concern range; Closest approach is soon (28.0h away); Underlying tracking data is 5.1 days old — treat as less certain
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (2.02e-01) is in the high-concern range; Closest approach is soon (28.0h away); Underlying tracking data is 5.1 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 12. COSMOS 397 DEB [-] vs STARLINK-35860 [+] — HIGH (81.1/100)
+
+- NORAD IDs: 21723 / 66881
+- TCA (UTC): 2026-11-13 09:48:28.389
+- Miss distance: **0.033 km**
+- Probability of collision (real, SOCRATES): **1.013e-01**
+- Priority breakdown: Pc=100.0, urgency=51.0, freshness=55.9
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**COSMOS 397 DEB [-] vs STARLINK-35860 [+]: probability of collision 1.01e-01, priority HIGH (score 81.1/100).**
+
+*Why it matters*: Collision probability (1.01e-01) is in the high-concern range
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (1.01e-01) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 13. STARLINK-37973 [+] vs STARLINK-35559 [+] — HIGH (77.5/100)
+
+- NORAD IDs: 100281 / 66095
+- TCA (UTC): 2026-11-13 18:46:47.846
+- Miss distance: **0.089 km**
+- Probability of collision (real, SOCRATES): **5.030e-02**
+- Priority breakdown: Pc=100.0, urgency=37.4, freshness=53.9
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-37973 [+] vs STARLINK-35559 [+]: probability of collision 5.03e-02, priority HIGH (score 77.5/100).**
+
+*Why it matters*: Collision probability (5.03e-02) is in the high-concern range
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (5.03e-02) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 14. STARLINK-38175 [+] vs STARLINK-36357 [+] — HIGH (77.2/100)
+
+- NORAD IDs: 100161 / 67963
+- TCA (UTC): 2026-11-13 16:00:54.023
+- Miss distance: **0.082 km**
+- Probability of collision (real, SOCRATES): **5.793e-02**
+- Priority breakdown: Pc=100.0, urgency=41.6, freshness=45.2
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-38175 [+] vs STARLINK-36357 [+]: probability of collision 5.79e-02, priority HIGH (score 77.2/100).**
+
+*Why it matters*: Collision probability (5.79e-02) is in the high-concern range
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (5.79e-02) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 15. STARLINK-37648 [+] vs STARLINK-35326 [+] — HIGH (74.3/100)
+
+- NORAD IDs: 100276 / 66031
+- TCA (UTC): 2026-11-14 00:50:39.049
+- Miss distance: **0.025 km**
+- Probability of collision (real, SOCRATES): **3.677e-01**
+- Priority breakdown: Pc=100.0, urgency=28.2, freshness=48.0
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-37648 [+] vs STARLINK-35326 [+]: probability of collision 3.68e-01, priority HIGH (score 74.3/100).**
+
+*Why it matters*: Collision probability (3.68e-01) is in the high-concern range
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (3.68e-01) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 16. STARLINK-37721 [+] vs STARLINK-35286 [+] — HIGH (71.6/100)
+
+- NORAD IDs: 100220 / 65803
+- TCA (UTC): 2026-11-14 06:26:30.069
+- Miss distance: **0.034 km**
+- Probability of collision (real, SOCRATES): **1.404e-01**
+- Priority breakdown: Pc=100.0, urgency=19.8, freshness=44.2
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-37721 [+] vs STARLINK-35286 [+]: probability of collision 1.40e-01, priority HIGH (score 71.6/100).**
+
+*Why it matters*: Collision probability (1.40e-01) is in the high-concern range
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (1.40e-01) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 17. STARLINK-37648 [+] vs STARLINK-35575 [+] — HIGH (70.5/100)
+
+- NORAD IDs: 100276 / 66165
+- TCA (UTC): 2026-11-14 08:36:15.175
+- Miss distance: **0.08 km**
+- Probability of collision (real, SOCRATES): **6.123e-02**
+- Priority breakdown: Pc=100.0, urgency=16.5, freshness=42.6
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-37648 [+] vs STARLINK-35575 [+]: probability of collision 6.12e-02, priority HIGH (score 70.5/100).**
+
+*Why it matters*: Collision probability (6.12e-02) is in the high-concern range
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (6.12e-02) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 18. STARLINK-37847 [+] vs STARLINK-33902 [+] — HIGH (69.6/100)
+
+- NORAD IDs: 100037 / 65920
+- TCA (UTC): 2026-11-14 09:18:39.716
+- Miss distance: **0.094 km**
+- Probability of collision (real, SOCRATES): **4.581e-02**
+- Priority breakdown: Pc=100.0, urgency=15.4, freshness=38.2
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-37847 [+] vs STARLINK-33902 [+]: probability of collision 4.58e-02, priority HIGH (score 69.6/100).**
+
+*Why it matters*: Collision probability (4.58e-02) is in the high-concern range
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (4.58e-02) is in the high-concern range; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 19. STARLINK-38186 [+] vs STARLINK-34948 [+] — HIGH (67.9/100)
+
+- NORAD IDs: 100162 / 65191
+- TCA (UTC): 2026-11-14 05:52:18.733
+- Miss distance: **0.031 km**
+- Probability of collision (real, SOCRATES): **1.706e-01**
+- Priority breakdown: Pc=100.0, urgency=20.6, freshness=18.4
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-38186 [+] vs STARLINK-34948 [+]: probability of collision 1.71e-01, priority HIGH (score 67.9/100).**
+
+*Why it matters*: Collision probability (1.71e-01) is in the high-concern range; Underlying tracking data is 5.9 days old — treat as less certain
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (1.71e-01) is in the high-concern range; Underlying tracking data is 5.9 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 20. STARLINK-37668 [+] vs STARLINK-37888 [+] — HIGH (67.8/100)
+
+- NORAD IDs: 100432 / 69535
+- TCA (UTC): 2026-11-14 11:33:46.322
+- Miss distance: **0.061 km**
+- Probability of collision (real, SOCRATES): **9.204e-02**
+- Priority breakdown: Pc=100.0, urgency=12.0, freshness=32.2
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-37668 [+] vs STARLINK-37888 [+]: probability of collision 9.20e-02, priority HIGH (score 67.8/100).**
+
+*Why it matters*: Collision probability (9.20e-02) is in the high-concern range; Underlying tracking data is 5.1 days old — treat as less certain
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (9.20e-02) is in the high-concern range; Underlying tracking data is 5.1 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 21. STARLINK-37984 [+] vs STARLINK-3629 [+] — HIGH (66.8/100)
+
+- NORAD IDs: 100044 / 51774
+- TCA (UTC): 2026-11-14 14:05:40.788
+- Miss distance: **0.015 km**
+- Probability of collision (real, SOCRATES): **1.000e+00**
+- Priority breakdown: Pc=100.0, urgency=8.2, freshness=32.0
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-37984 [+] vs STARLINK-3629 [+]: probability of collision 1.00e+00, priority HIGH (score 66.8/100).**
+
+*Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Underlying tracking data is 5.1 days old — treat as less certain
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Recommend an active maneuver evaluation and re-screen against fresher tracking data.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (1.00e+00) is in the high-concern range; Underlying tracking data is 5.1 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 22. STARLINK-6071 [+] vs HAWK-7B [+] — MEDIUM (63.4/100)
+
+- NORAD IDs: 56132 / 56193
+- TCA (UTC): 2026-11-15 15:31:57.960
+- Miss distance: **0.008 km**
+- Probability of collision (real, SOCRATES): **1.000e+00**
+- Priority breakdown: Pc=100.0, urgency=0.0, freshness=22.8
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-6071 [+] vs HAWK-7B [+]: probability of collision 1.00e+00, priority MEDIUM (score 63.4/100).**
+
+*Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Underlying tracking data is 5.6 days old — treat as less certain
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
 
 *Suggested next step*: Continue monitoring and re-screen as the event approaches.
 
-*Confidence*: moderate (rule_based_fallback)
+*Confidence*: low (rule_based_fallback)
 
-*Limitations*: Collision probability (7.89e-02) is in the high-concern range; Underlying tracking data is 6.2 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
+*Limitations*: Collision probability (1.00e+00) is in the high-concern range; Underlying tracking data is 5.6 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
 
-## 27. STARLINK-37481 [+] vs STARLINK-34814 [+] — MEDIUM (61.7/100)
+## 23. STARLINK-37626 [+] vs STARLINK-3904 [+] — MEDIUM (63.4/100)
 
-- NORAD IDs: 100032 / 65100
-- TCA (UTC): 2026-11-15 15:11:30.778
-- Miss distance: **0.046 km**
-- Probability of collision (real, SOCRATES): **1.208e-01**
-- Priority breakdown: Pc=100.0, urgency=0.0, freshness=11.4
-- Trend: **stable** (Pc ×1.0 across 2 observations)
+- NORAD IDs: 100419 / 52464
+- TCA (UTC): 2026-11-15 13:25:27.305
+- Miss distance: **0.023 km**
+- Probability of collision (real, SOCRATES): **3.917e-01**
+- Priority breakdown: Pc=100.0, urgency=0.0, freshness=22.5
+- Trend: **insufficient_data** (1 observation(s) so far)
 
-**STARLINK-37481 [+] vs STARLINK-34814 [+]: probability of collision 1.21e-01, priority MEDIUM (score 61.7/100).**
+**STARLINK-37626 [+] vs STARLINK-3904 [+]: probability of collision 3.92e-01, priority MEDIUM (score 63.4/100).**
 
-*Why it matters*: Collision probability (1.21e-01) is in the high-concern range; Underlying tracking data is 6.3 days old — treat as less certain
+*Why it matters*: Collision probability (3.92e-01) is in the high-concern range; Underlying tracking data is 5.7 days old — treat as less certain
 
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Continue monitoring and re-screen as the event approaches.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (1.21e-01) is in the high-concern range; Underlying tracking data is 6.3 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
-
-## 28. STARLINK-38002 [+] vs STARLINK-34318 [+] — MEDIUM (60.8/100)
-
-- NORAD IDs: 100042 / 64222
-- TCA (UTC): 2026-11-16 00:40:55.803
-- Miss distance: **0.059 km**
-- Probability of collision (real, SOCRATES): **8.012e-02**
-- Priority breakdown: Pc=100.0, urgency=0.0, freshness=5.5
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-38002 [+] vs STARLINK-34318 [+]: probability of collision 8.01e-02, priority MEDIUM (score 60.8/100).**
-
-*Why it matters*: Collision probability (8.01e-02) is in the high-concern range; Underlying tracking data is 6.7 days old — treat as less certain
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
+*Trend*: Only one observation is available so far; no trend can be established yet.
 
 *Suggested next step*: Continue monitoring and re-screen as the event approaches.
 
-*Confidence*: moderate (rule_based_fallback)
+*Confidence*: low (rule_based_fallback)
 
-*Limitations*: Collision probability (8.01e-02) is in the high-concern range; Underlying tracking data is 6.7 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
+*Limitations*: Collision probability (3.92e-01) is in the high-concern range; Underlying tracking data is 5.7 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
 
-## 29. STARLINK-37703 [+] vs STARLINK-37379 [+] — MEDIUM (60.2/100)
+## 24. STARLINK-38011 [+] vs STARLINK-36332 [+] — MEDIUM (62.4/100)
 
-- NORAD IDs: 100418 / 69522
-- TCA (UTC): 2026-11-16 05:44:00.247
-- Miss distance: **0.074 km**
-- Probability of collision (real, SOCRATES): **6.455e-02**
-- Priority breakdown: Pc=100.0, urgency=0.0, freshness=1.4
-- Trend: **stable** (Pc ×1.0 across 2 observations)
+- NORAD IDs: 100412 / 67862
+- TCA (UTC): 2026-11-15 21:06:35.501
+- Miss distance: **0.086 km**
+- Probability of collision (real, SOCRATES): **4.930e-02**
+- Priority breakdown: Pc=100.0, urgency=0.0, freshness=15.9
+- Trend: **insufficient_data** (1 observation(s) so far)
 
-**STARLINK-37703 [+] vs STARLINK-37379 [+]: probability of collision 6.45e-02, priority MEDIUM (score 60.2/100).**
+**STARLINK-38011 [+] vs STARLINK-36332 [+]: probability of collision 4.93e-02, priority MEDIUM (score 62.4/100).**
 
-*Why it matters*: Collision probability (6.45e-02) is in the high-concern range; Underlying tracking data is 6.9 days old — treat as less certain
+*Why it matters*: Collision probability (4.93e-02) is in the high-concern range; Underlying tracking data is 6.0 days old — treat as less certain
 
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
-
-*Suggested next step*: Continue monitoring and re-screen as the event approaches.
-
-*Confidence*: moderate (rule_based_fallback)
-
-*Limitations*: Collision probability (6.45e-02) is in the high-concern range; Underlying tracking data is 6.9 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
-
-## 30. STARLINK-37939 [+] vs STARLINK-37136 [+] — MEDIUM (60.0/100)
-
-- NORAD IDs: 100480 / 68347
-- TCA (UTC): 2026-11-16 03:29:16.732
-- Miss distance: **0.026 km**
-- Probability of collision (real, SOCRATES): **3.463e-01**
-- Priority breakdown: Pc=100.0, urgency=0.0, freshness=0.3
-- Trend: **stable** (Pc ×1.0 across 2 observations)
-
-**STARLINK-37939 [+] vs STARLINK-37136 [+]: probability of collision 3.46e-01, priority MEDIUM (score 60.0/100).**
-
-*Why it matters*: Collision probability (3.46e-01) is in the high-concern range; Underlying tracking data is 7.0 days old — treat as less certain
-
-*Trend*: Probability of collision has stayed roughly stable across 2 observations.
+*Trend*: Only one observation is available so far; no trend can be established yet.
 
 *Suggested next step*: Continue monitoring and re-screen as the event approaches.
 
-*Confidence*: moderate (rule_based_fallback)
+*Confidence*: low (rule_based_fallback)
 
-*Limitations*: Collision probability (3.46e-01) is in the high-concern range; Underlying tracking data is 7.0 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
+*Limitations*: Collision probability (4.93e-02) is in the high-concern range; Underlying tracking data is 6.0 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 25. YAOGAN-35 01A [+] vs STARLINK-36054 [+] — MEDIUM (62.1/100)
+
+- NORAD IDs: 49390 / 66812
+- TCA (UTC): 2026-11-16 00:12:01.056
+- Miss distance: **0.031 km**
+- Probability of collision (real, SOCRATES): **1.069e-01**
+- Priority breakdown: Pc=100.0, urgency=0.0, freshness=13.8
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**YAOGAN-35 01A [+] vs STARLINK-36054 [+]: probability of collision 1.07e-01, priority MEDIUM (score 62.1/100).**
+
+*Why it matters*: Collision probability (1.07e-01) is in the high-concern range; Underlying tracking data is 6.2 days old — treat as less certain
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Continue monitoring and re-screen as the event approaches.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (1.07e-01) is in the high-concern range; Underlying tracking data is 6.2 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 26. STARLINK-37939 [+] vs STARLINK-35749 [+] — MEDIUM (60.9/100)
+
+- NORAD IDs: 100480 / 66879
+- TCA (UTC): 2026-11-16 12:10:08.364
+- Miss distance: **0.086 km**
+- Probability of collision (real, SOCRATES): **5.238e-02**
+- Priority breakdown: Pc=100.0, urgency=0.0, freshness=6.2
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-37939 [+] vs STARLINK-35749 [+]: probability of collision 5.24e-02, priority MEDIUM (score 60.9/100).**
+
+*Why it matters*: Collision probability (5.24e-02) is in the high-concern range; Underlying tracking data is 6.6 days old — treat as less certain
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Continue monitoring and re-screen as the event approaches.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (5.24e-02) is in the high-concern range; Underlying tracking data is 6.6 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 27. STARLINK-38132 [+] vs STARLINK-35359 [+] — MEDIUM (60.3/100)
+
+- NORAD IDs: 100154 / 65670
+- TCA (UTC): 2026-11-15 22:36:20.221
+- Miss distance: **0.016 km**
+- Probability of collision (real, SOCRATES): **1.000e+00**
+- Priority breakdown: Pc=100.0, urgency=0.0, freshness=2.2
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-38132 [+] vs STARLINK-35359 [+]: probability of collision 1.00e+00, priority MEDIUM (score 60.3/100).**
+
+*Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Underlying tracking data is 6.9 days old — treat as less certain
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Continue monitoring and re-screen as the event approaches.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (1.00e+00) is in the high-concern range; Underlying tracking data is 6.9 days old — treat as less certain; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 28. STARLINK-38298 [+] vs STARLINK-34544 [+] — MEDIUM (60.0/100)
+
+- NORAD IDs: 100324 / 64865
+- TCA (UTC): 2026-11-17 17:12:10.572
+- Miss distance: **0.015 km**
+- Probability of collision (real, SOCRATES): **1.000e+00**
+- Priority breakdown: Pc=100.0, urgency=0.0, freshness=0.0
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-38298 [+] vs STARLINK-34544 [+]: probability of collision 1.00e+00, priority MEDIUM (score 60.0/100).**
+
+*Why it matters*: Collision probability (1.00e+00) is in the high-concern range; Underlying tracking data is 7.8 days old — treat as less certain
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Continue monitoring and re-screen as the event approaches.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (1.00e+00) is in the high-concern range; Underlying tracking data is 7.8 days old — treat as less certain; Underlying tracking data is more than 7 days old.; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 29. HULIANWANG DIGUI-215 [+] vs SL-8 R/B [-] — MEDIUM (60.0/100)
+
+- NORAD IDs: 100974 / 19827
+- TCA (UTC): 2026-11-15 21:49:05.679
+- Miss distance: **0.012 km**
+- Probability of collision (real, SOCRATES): **1.249e-01**
+- Priority breakdown: Pc=100.0, urgency=0.0, freshness=0.0
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**HULIANWANG DIGUI-215 [+] vs SL-8 R/B [-]: probability of collision 1.25e-01, priority MEDIUM (score 60.0/100).**
+
+*Why it matters*: Collision probability (1.25e-01) is in the high-concern range; Underlying tracking data is 7.3 days old — treat as less certain
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Continue monitoring and re-screen as the event approaches.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (1.25e-01) is in the high-concern range; Underlying tracking data is 7.3 days old — treat as less certain; Underlying tracking data is more than 7 days old.; Fewer than 3 observations available — trend estimate is preliminary.
+
+## 30. STARLINK-37750 [+] vs STARLINK-37920 [+] — MEDIUM (60.0/100)
+
+- NORAD IDs: 100275 / 100489
+- TCA (UTC): 2026-11-17 01:57:53.459
+- Miss distance: **0.057 km**
+- Probability of collision (real, SOCRATES): **1.094e-01**
+- Priority breakdown: Pc=100.0, urgency=0.0, freshness=0.0
+- Trend: **insufficient_data** (1 observation(s) so far)
+
+**STARLINK-37750 [+] vs STARLINK-37920 [+]: probability of collision 1.09e-01, priority MEDIUM (score 60.0/100).**
+
+*Why it matters*: Collision probability (1.09e-01) is in the high-concern range; Underlying tracking data is 7.3 days old — treat as less certain
+
+*Trend*: Only one observation is available so far; no trend can be established yet.
+
+*Suggested next step*: Continue monitoring and re-screen as the event approaches.
+
+*Confidence*: low (rule_based_fallback)
+
+*Limitations*: Collision probability (1.09e-01) is in the high-concern range; Underlying tracking data is 7.3 days old — treat as less certain; Underlying tracking data is more than 7 days old.; Fewer than 3 observations available — trend estimate is preliminary.
